@@ -39,11 +39,19 @@ _DEFAULT_CORS = [
     "http://127.0.0.1:3000",
 ]
 
+_cors_set = set(_DEFAULT_CORS)
 _env_cors = os.getenv("CORS_ORIGINS", "")
 if _env_cors:
-    CORS_ORIGINS: List[str] = [origin.strip() for origin in _env_cors.split(",") if origin.strip()]
-else:
-    CORS_ORIGINS: List[str] = _DEFAULT_CORS
+    for origin in _env_cors.split(","):
+        cleaned = origin.strip().rstrip("/")
+        if cleaned:
+            _cors_set.add(cleaned)
+
+_frontend_url = os.getenv("FRONTEND_URL", "").strip().rstrip("/")
+if _frontend_url:
+    _cors_set.add(_frontend_url)
+
+CORS_ORIGINS: List[str] = sorted(list(_cors_set))
 
 # File & Storage Limits
 # 50 MB maximum image file size

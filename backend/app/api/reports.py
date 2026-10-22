@@ -12,14 +12,13 @@ from fastapi import APIRouter, Depends, HTTPException
 from app.services.history import get_history_by_id
 from app.services.report import generate_analysis_report
 from app.core.auth import get_current_user_optional
+from app.core.config import REPORTS_DIR
 
 router = APIRouter(
     prefix="/api/reports",
     tags=["Reports"]
 )
 
-REPORTS_DIR = Path("reports")
-REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 @router.post("/{analysis_id}")

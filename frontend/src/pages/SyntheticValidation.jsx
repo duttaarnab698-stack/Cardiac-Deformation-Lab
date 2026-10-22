@@ -7,6 +7,7 @@ import {
   getValidationHistory,
   generateValidationReport,
   getReportDownloadUrl,
+  API_BASE_URL,
 } from "../services/api";
 import ImageViewerModal from "../components/ImageViewerModal";
 import {
@@ -21,7 +22,8 @@ import {
 } from "recharts";
 import "./SyntheticValidation.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = API_BASE_URL;
+
 
 const DEFORMATION_MODES = [
   { value: "radial_expansion", label: "Radial Expansion" },

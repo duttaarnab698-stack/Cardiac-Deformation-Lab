@@ -21,14 +21,13 @@ from app.services.comparison_history import (
 )
 from app.services.comparison_report import generate_comparison_report
 from app.core.auth import get_current_user_optional
+from app.core.config import REPORTS_DIR
 
 router = APIRouter(
     prefix="/api/comparison",
     tags=["Comparison"]
 )
 
-REPORTS_DIR = Path("reports")
-REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 class CompareRequest(BaseModel):

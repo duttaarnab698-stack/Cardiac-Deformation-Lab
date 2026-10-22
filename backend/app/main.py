@@ -63,50 +63,42 @@ async def global_unhandled_exception_handler(request: Request, exc: Exception):
         }
     )
 
-outputs_dir = Path("outputs")
-outputs_dir.mkdir(parents=True, exist_ok=True)
-
-reports_dir = Path("reports")
-reports_dir.mkdir(parents=True, exist_ok=True)
-
-uploads_dir = Path("uploads")
-uploads_dir.mkdir(parents=True, exist_ok=True)
-
-frames_dir = Path("data/video_frames")
+frames_dir = DATA_DIR / "video_frames"
 frames_dir.mkdir(parents=True, exist_ok=True)
 
-synthetic_dir = Path("data/synthetic")
+synthetic_dir = DATA_DIR / "synthetic"
 synthetic_dir.mkdir(parents=True, exist_ok=True)
 
 app.mount(
     "/outputs",
-    StaticFiles(directory="outputs"),
+    StaticFiles(directory=str(OUTPUTS_DIR)),
     name="outputs"
 )
 
 app.mount(
     "/reports",
-    StaticFiles(directory="reports"),
+    StaticFiles(directory=str(REPORTS_DIR)),
     name="reports"
 )
 
 app.mount(
     "/uploads",
-    StaticFiles(directory="uploads"),
+    StaticFiles(directory=str(UPLOADS_DIR)),
     name="uploads"
 )
 
 app.mount(
     "/video-frames",
-    StaticFiles(directory="data/video_frames"),
+    StaticFiles(directory=str(frames_dir)),
     name="video-frames"
 )
 
 app.mount(
     "/synthetic-data",
-    StaticFiles(directory="data/synthetic"),
+    StaticFiles(directory=str(synthetic_dir)),
     name="synthetic-data"
 )
+
 
 
 app.include_router(upload_router)

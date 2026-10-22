@@ -15,21 +15,21 @@ from fastapi import APIRouter, UploadFile, File, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from app.services.video_processing import get_video_metadata, extract_video_frames
+from app.core.config import UPLOADS_DIR, DATA_DIR
 
 router = APIRouter(
     prefix="/api/video",
     tags=["Video"]
 )
 
-VIDEO_UPLOAD_DIR = Path("uploads/videos")
+VIDEO_UPLOAD_DIR = UPLOADS_DIR / "videos"
 VIDEO_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-FRAMES_BASE_DIR = Path("data/video_frames")
+FRAMES_BASE_DIR = DATA_DIR / "video_frames"
 FRAMES_BASE_DIR.mkdir(parents=True, exist_ok=True)
 
-# Also ensure regular uploads dir exists for temporal analysis access
-GENERAL_UPLOADS_DIR = Path("uploads")
-GENERAL_UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
+GENERAL_UPLOADS_DIR = UPLOADS_DIR
+
 
 ALLOWED_VIDEO_EXTENSIONS = {
     ".mp4",

@@ -46,7 +46,7 @@
 30. [Reproducibility & Scientific Manifest](#30-reproducibility--scientific-manifest)
 31. [Data Persistence & Storage Model](#31-data-persistence--storage-model)
 32. [Physical Limitations & Assumptions](#32-physical-limitations--assumptions)
-33. [Docker & Container Deployment Blueprint](#33-docker--container-deployment-blueprint)
+33. [Production Cloud Deployment & Architecture](#33-production-cloud-deployment--architecture)
 34. [Repository Directory Structure](#34-repository-directory-structure)
 35. [Contributing, Citation & License](#35-contributing-citation--license)
 36. [Team Collaboration & Git Workflow](#36-team-collaboration--git-workflow)
@@ -522,26 +522,41 @@ Refer to [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) for an in-depth analysis o
 
 ---
 
-## 33. Docker & Container Deployment Blueprint
+## 33. Production Cloud Deployment & Architecture
 
-Deploy via standard Docker containers:
-
-```dockerfile
-# Multi-stage production container
-FROM python:3.10-slim AS backend
-WORKDIR /app
-COPY backend/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY backend/ .
-EXPOSE 8000
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+### Deployment Architecture
+```text
+Frontend: React + Vite → Vercel
+Backend: FastAPI + Python → Render
+Persistence: Existing JSON/File-based system
+Scientific Processing: NumPy + SciPy + OpenCV + scikit-image
 ```
 
-Build and run:
-```bash
-docker build -t cardiac-deformation-lab .
-docker run -p 8000:8000 cardiac-deformation-lab
-```
+### Backend Deployment (Render Web Service)
+1. Connect repository `https://github.com/duttaarnab698-stack/Cardiac-Deformation-Lab` in the Render dashboard.
+2. Select **Web Service** with the following parameters:
+   - **Branch**: `main`
+   - **Root Directory**: `backend`
+   - **Runtime**: `Python 3`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+   - **Plan**: `Free`
+3. Configure Environment Variables in Render:
+   - `ENVIRONMENT`: `production`
+   - `JWT_SECRET_KEY`: *(Generate a secure 32+ byte string)*
+   - `FRONTEND_URL`: `https://<your-vercel-project>.vercel.app`
+   - `CORS_ORIGINS`: `https://<your-vercel-project>.vercel.app,http://localhost:5173`
+
+### Frontend Deployment (Vercel)
+1. Import repository `https://github.com/duttaarnab698-stack/Cardiac-Deformation-Lab` in Vercel.
+2. Configure project parameters:
+   - **Framework Preset**: `Vite`
+   - **Root Directory**: `frontend`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+3. Configure Environment Variable in Vercel:
+   - `VITE_API_BASE_URL`: `https://<your-render-service>.onrender.com` *(no trailing slash)*
+4. SPA client-side routing is handled seamlessly via `frontend/vercel.json`.
 
 ---
 

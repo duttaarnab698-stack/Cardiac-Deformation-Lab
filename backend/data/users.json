@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "4d631831-92c2-433f-aabf-a90b6a89e835",
+    "name": "Demo Researcher",
+    "email": "demo@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$26b3c2604e2f24c6726920042205dac6$ce9df89a857a787ea52840423bbdb7515618a6fa30709ba54f1e38705bd4e643",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:33:13.151915+00:00",
+    "updated_at": "2026-10-22T16:24:25.424759+00:00"
+  },
+  {
+    "id": "b661b789-e055-4d28-b49f-e39be81ca1b3",
+    "name": "Clinical Reviewer",
+    "email": "reviewer@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$addbd9f6c6bd1839378bafe6b7569ee1$f1ec91abfb067f1b4520948e93703eed7a806aa651cd9be1548db2b4c9b2b89e",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T08:33:13.221999+00:00",
+    "updated_at": "2026-10-18T08:33:13.221999+00:00"
+  },
+  {
+    "id": "f0769510-3469-43b6-9972-60591cb5146c",
+    "name": "System Administrator",
+    "email": "admin@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$9b44d4d42ff74d6401a46e025b181cdd$28c260e6fc855902f5131f28eaf241ef1dee4aa07455c8481605d07fdf5d1f4b",
+    "role": "admin",
+    "is_active": true,
+    "created_at": "2026-10-18T08:33:13.288870+00:00",
+    "updated_at": "2026-10-18T08:33:13.288870+00:00"
+  },
+  {
+    "id": "7b028c23-c2a7-470c-be84-2d7c3a068c17",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_15aadd@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$a3cd1149301b5593b600b3c2ea04023f$6ec3e4ef40c90d6fa0b1d45e5d3dbc94e04ae733480e118101a446aaa5f9c72a",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:40:40.911162+00:00",
+    "updated_at": "2026-10-18T08:40:40.911162+00:00"
+  },
+  {
+    "id": "7fde72a2-ba60-4147-9e26-9ccba9743231",
+    "name": "Initial Name",
+    "email": "prof_b1f2b8@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$3f254945c3ce08127c179e48bbeb3c1e$414e6ee798a1c114ea633a03b800daee8edfb18907cab2d7a9c9cd14e53dc477",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:40:41.130406+00:00",
+    "updated_at": "2026-10-18T08:40:41.130406+00:00"
+  },
+  {
+    "id": "d59c893e-264c-4846-93e3-15a2c212c847",
+    "name": "Alice Researcher",
+    "email": "alice_41f3a7@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$8e356e6d8e777162d08c68bf5a8d4a05$5fae2296a99b0ce015dc174051ae3ff0e977d1c0e24b19f95ec4fb87030aea6c",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:40:41.204491+00:00",
+    "updated_at": "2026-10-18T08:40:41.204491+00:00"
+  },
+  {
+    "id": "c60134b1-961c-47eb-b1b9-6143eafcd36a",
+    "name": "User A",
+    "email": "a_981999@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$2fdc086307785c4bfd3f630096cdc72c$99bb2437723ec4e10e39168ffb0d9af11081018c2f5485f61cb14ded23245dbb",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:40:41.413022+00:00",
+    "updated_at": "2026-10-18T08:40:41.413022+00:00"
+  },
+  {
+    "id": "f845defe-7fc6-4677-96df-a4f304a3b334",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_89e175@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$ff0db78e52868646656dd129f021b42e$f81d3226bf8eb068446efcc92cc7686e2ef7ef09d226e4f73574408019061188",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:42:39.964284+00:00",
+    "updated_at": "2026-10-18T08:42:39.964284+00:00"
+  },
+  {
+    "id": "9492651b-14b7-4bae-99b0-4c86369a4b57",
+    "name": "Updated Name",
+    "email": "prof_731d7c@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$af658e88e9d2cd7ee298f606524ce086$72c13be151116bb8768faa510612994fff51b7238fbb0bd6ea6728c310c8c6c3",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:42:40.180660+00:00",
+    "updated_at": "2026-10-18T08:42:40.389880+00:00"
+  },
+  {
+    "id": "e004ed59-2aee-4ed8-8a02-214bd094cdec",
+    "name": "Alice Researcher",
+    "email": "alice_6a92eb@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$87d4c99b7dc3e5dd99cc254f7b264e56$a47452feadc3329cf9587f203b6317a39292603549b4b55f491868581f7f1568",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:42:40.456664+00:00",
+    "updated_at": "2026-10-18T08:42:40.456664+00:00"
+  },
+  {
+    "id": "0e151661-8bca-48d5-9575-1b201d809819",
+    "name": "Bob Researcher",
+    "email": "bob_41b7dd@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$2bc99fe75a2dab6a18a42eaeff3d0cef$09eb0bf7c03d4259c9264819964c801306513123b750fd60e6b574deb4ce106c",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:42:40.512487+00:00",
+    "updated_at": "2026-10-18T08:42:40.512487+00:00"
+  },
+  {
+    "id": "ba0d13c7-82a7-4a5f-a28d-121dce1fb9b4",
+    "name": "User A",
+    "email": "a_f28d82@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$ba31a5ba94e4425827fe12d72cabaa50$1003f1f8fb87a4c1b59bcd9f32c689212b87c7e21e2baa17b7dce63cf8935b5c",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:42:40.768871+00:00",
+    "updated_at": "2026-10-18T08:42:40.768871+00:00"
+  },
+  {
+    "id": "8c9fffbb-4c78-4392-9916-debfb5383d03",
+    "name": "User B",
+    "email": "b_bf7c63@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$6998b9bbafc2b957faa57083083fd457$7429f2e29bb461241f86f3c62f6a45f0d4dd0af1000977f9add264118b03e9d8",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:42:40.833479+00:00",
+    "updated_at": "2026-10-18T08:42:40.833479+00:00"
+  },
+  {
+    "id": "5f57b99b-7594-4c0f-aff6-26fb35a490b4",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_c28025@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$4087d7f31a5f74ab498a5e04799054ec$21e90ab5e6a214d01bac9c0221600d100bece8bfee35d3e609b8701569cdbcad",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:43:30.075640+00:00",
+    "updated_at": "2026-10-18T08:43:30.075640+00:00"
+  },
+  {
+    "id": "4d03e1dc-4bfd-4bb2-8eba-ea0ecfbe56cc",
+    "name": "Updated Name",
+    "email": "prof_6fe9b6@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$55cebb853bdf3f7fa3b50e6d4a62d9ab$a1262b98e4ae95d87c8cffebddea22c706b7f27fe60696ad20ee326eacf36e0e",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:43:30.392319+00:00",
+    "updated_at": "2026-10-18T08:43:30.595975+00:00"
+  },
+  {
+    "id": "cbbc1e93-cf0a-4e00-90cf-6b93ba6824c6",
+    "name": "Alice Researcher",
+    "email": "alice_3d13e8@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$9ffdb9cc8380ee0e8404bbe28aca6026$ea6cd1cf8fd204aac63261b2f057f59b03bb7c1404f30f892a2cb913f50e61b7",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:43:30.658828+00:00",
+    "updated_at": "2026-10-18T08:43:30.658828+00:00"
+  },
+  {
+    "id": "e4c2e285-af1b-412e-b915-000a8c262a24",
+    "name": "Bob Researcher",
+    "email": "bob_15eff8@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$76431a6959472fb2921eeb08e3e2e108$77c19c50c7e6cf450307e882e880c11735e398011379cf92d51b5fb1e987d46d",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:43:30.718586+00:00",
+    "updated_at": "2026-10-18T08:43:30.718586+00:00"
+  },
+  {
+    "id": "dadf32f3-18fa-4ff3-ac7e-a0cfcaee2a2c",
+    "name": "User A",
+    "email": "a_a910e3@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$c1d17492e99365e79b1bff57d41f5ab5$5df513a434fd21d65a220e8780430cfef10e442e7035b67ec51610c94154e37f",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:43:31.022909+00:00",
+    "updated_at": "2026-10-18T08:43:31.022909+00:00"
+  },
+  {
+    "id": "2e013cd6-c5f8-4342-828d-39bf3d039326",
+    "name": "User B",
+    "email": "b_d9f24a@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$b73418495f408b1d2727cf42eb7c363d$74180847ccee12f2f10bb1a43ce9450ce5ad59c722b1bf4acdf9c3bb00ae88d7",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:43:31.076640+00:00",
+    "updated_at": "2026-10-18T08:43:31.076640+00:00"
+  },
+  {
+    "id": "a897a3fa-36ef-4e4f-b3b6-938ee96524e5",
+    "name": "Dr. Explorer",
+    "email": "explorer_anno_cf772f@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$cec9b5ce19d9fdba334b4513ceaa7bf8$5fd95a70860694c868d6f19e1544e3a748e0682ae98e174a3bff73a8ad65fa8d",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:58:18.896910+00:00",
+    "updated_at": "2026-10-18T08:58:18.896910+00:00"
+  },
+  {
+    "id": "de8d0404-33ab-4880-9d43-6eac16394ef4",
+    "name": "User 1",
+    "email": "u1_0f52db@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$4bc9eb03e30ac09c3074cff79e05384e$fc4bcdaa215f4f4952709ac8bea84d506819ee24ff16802320742ac4b9df5d4b",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:58:19.051060+00:00",
+    "updated_at": "2026-10-18T08:58:19.051060+00:00"
+  },
+  {
+    "id": "79fbc92b-32af-4c6a-83ae-2f2fc984ffe9",
+    "name": "User 2",
+    "email": "u2_82b8fa@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$8824b39676e463012b41dd8358cd5ce1$bdd9265531e4e6a2286163642fb6024349ec3d8bf75e71f115ad6ee98d26d1c4",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T08:58:19.119158+00:00",
+    "updated_at": "2026-10-18T08:58:19.119158+00:00"
+  },
+  {
+    "id": "02385df2-c32c-4b3a-b17e-aa0c1e59a250",
+    "name": "Dr. Explorer",
+    "email": "explorer_anno_a2829b@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$eaf09cb2539376fd43279b1b8a318735$1de11d8f22968363f797d3ca789a2aaef666ae756f644442526d90dd1c1cb5aa",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:24.144428+00:00",
+    "updated_at": "2026-10-18T09:01:24.144428+00:00"
+  },
+  {
+    "id": "011e9416-bf7e-4e5e-b23f-8fbc25580d31",
+    "name": "User 1",
+    "email": "u1_31d13c@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$ae13f77badc26733fbbbce114396d39e$2ad99eee61081814f8fd6522d521e8fbe8eea23458efcf77f4d2f91c4ac1a8ef",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:24.301146+00:00",
+    "updated_at": "2026-10-18T09:01:24.301146+00:00"
+  },
+  {
+    "id": "1c307716-7a31-48a7-a1af-b32034c173a1",
+    "name": "User 2",
+    "email": "u2_2b6639@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$b7406dd71409494cceb63986869c60ab$c1097b553be4687cf9e0aad263c56651b5765dff9137469eb8de629ec90f3278",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:24.381334+00:00",
+    "updated_at": "2026-10-18T09:01:24.381334+00:00"
+  },
+  {
+    "id": "84c4b47b-8f3c-4c9b-9cb5-5fc17a50b2f8",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_069d70@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$130474fdc2c10c22b6bd8d914a939eeb$780e6baa95a68c4a91ec0786f2370461f803985f0194d82e4cfd4f0a1e9f7c4e",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:50.509818+00:00",
+    "updated_at": "2026-10-18T09:01:50.509818+00:00"
+  },
+  {
+    "id": "784bb764-6722-4136-94b2-6dd63e2ad2ad",
+    "name": "Updated Name",
+    "email": "prof_984c71@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$678e59f6cbceaf7b06af29976f506d9c$2ebd40432c460d270eb9ef974d331292ce6849f24d94f45e04741bd9ab901753",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:50.828930+00:00",
+    "updated_at": "2026-10-18T09:01:51.120805+00:00"
+  },
+  {
+    "id": "92f7f6b3-2782-4803-bf81-acc6a9a666be",
+    "name": "Alice Researcher",
+    "email": "alice_7bbc84@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$faacf4f132288a40b35656eff2fcbee0$9ffe70fea7f7d22587175070f20a29f5f4beada50d8ed53f4abfe6f4be5da853",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:51.208474+00:00",
+    "updated_at": "2026-10-18T09:01:51.208474+00:00"
+  },
+  {
+    "id": "6c3af989-b973-451c-95f0-51280ab42ba5",
+    "name": "Bob Researcher",
+    "email": "bob_6464e0@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$c2e2de06281fc7964c723fbd1d746f84$4b5f17118121ce24aa73ca173f9b043520ec4e2d2286077eaa48c387b983b8da",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:51.290327+00:00",
+    "updated_at": "2026-10-18T09:01:51.290327+00:00"
+  },
+  {
+    "id": "0c8f5bb0-5c2d-4f5a-a83d-c4759bbe568a",
+    "name": "User A",
+    "email": "a_2bc025@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$93ac0cc77ad0935f08e95ab00df83c4c$81151fc633158e636e5917bec9b71a5ea044fa3ccfeed86fec56038ff2f89339",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:51.709612+00:00",
+    "updated_at": "2026-10-18T09:01:51.709612+00:00"
+  },
+  {
+    "id": "0ceda117-4051-4508-a2bc-c1d41632ed7e",
+    "name": "User B",
+    "email": "b_d50463@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$e07d4f3de18535ea9695a24459ac0d38$99e961a9a0cf1c4879f7ad7c145a54f868f65845ff15e9053842c570c7106360",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:01:51.791961+00:00",
+    "updated_at": "2026-10-18T09:01:51.791961+00:00"
+  },
+  {
+    "id": "545cd842-08c5-414b-bfa0-c759a709a935",
+    "name": "Alice User",
+    "email": "alice_56819b@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$5a7dd9d61f033071298d40da572283e0$fcbbb6ed0e8f9bade84cb48959f41c7c718487ecc4d11de38ae02e0b5285feaa",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:20.604867+00:00",
+    "updated_at": "2026-10-18T09:15:20.604867+00:00"
+  },
+  {
+    "id": "fda51610-950f-47ea-9866-52385e9047f8",
+    "name": "Bob User",
+    "email": "bob_14d43d@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$d15643df14a4b4098aae8711a71ed7db$91307fa6a87a9cae651701afb91dfd77ea1c4ecb0daf3a6fdd0adf49f9378559",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:20.704823+00:00",
+    "updated_at": "2026-10-18T09:15:20.704823+00:00"
+  },
+  {
+    "id": "0bec63e9-fee9-4b69-9d7c-d21994ec2768",
+    "name": "Dr. Explorer",
+    "email": "explorer_anno_c16f0e@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$2bb37ffbbfd2d3e98db5dd3e0af2b6f6$5da36b166b394d8343cc9fdca16938d01beaddd4f68d6443c14e58eee295583a",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:31.534080+00:00",
+    "updated_at": "2026-10-18T09:15:31.534080+00:00"
+  },
+  {
+    "id": "d9707914-e8a7-4aaf-bd94-f401b07c0bc7",
+    "name": "User 1",
+    "email": "u1_29151f@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$6a90d433be872a23b74c0030bd2354d8$4b36fddce6adc333da16a8df8f4f7c3e4009e8cfe9066f47bf4a1626244543c4",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:31.679460+00:00",
+    "updated_at": "2026-10-18T09:15:31.679460+00:00"
+  },
+  {
+    "id": "6d02835b-1fd4-444c-ac16-16d20e2ce50b",
+    "name": "User 2",
+    "email": "u2_d3a4d8@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$46a0191be5110419714dee05af2193f8$9a0e6594cb1ee6d0864ba6a007b9e3b6f5639f6a9b975753efdf7fcd87d57ce2",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:31.755649+00:00",
+    "updated_at": "2026-10-18T09:15:31.755649+00:00"
+  },
+  {
+    "id": "4a7ade0e-f056-4eef-bdf6-6b9d4007b15b",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_0b2787@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$97b617c18089334b3947464304b8bf40$0ee1b6e771777a0fbb45f95964482149b0fa00f3c18d0818547095bd073c2d2d",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:44.266179+00:00",
+    "updated_at": "2026-10-18T09:15:44.266179+00:00"
+  },
+  {
+    "id": "53f202d0-11c9-433d-b330-c8a188ef224b",
+    "name": "Updated Name",
+    "email": "prof_785140@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$c5de7e06f8adb2ee23139cb78c99fd4d$3c5a432c6badaf29fc5674b0e992fe71d1cf6a6b8f766835411cb4112acf8fca",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:44.584640+00:00",
+    "updated_at": "2026-10-18T09:15:44.877960+00:00"
+  },
+  {
+    "id": "4a9d0ce6-ad3f-42fd-bb8a-9116af04c689",
+    "name": "Alice Researcher",
+    "email": "alice_c123b4@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$0635af4054f1ac68ab124ff543423c91$40b20f8e167b3b77c9f2bc47528f1b9af1d42606f16ea309d56b06f2175d37db",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:44.969411+00:00",
+    "updated_at": "2026-10-18T09:15:44.969411+00:00"
+  },
+  {
+    "id": "7052327c-97ef-4fb3-b1df-c2e755498024",
+    "name": "Bob Researcher",
+    "email": "bob_42d71d@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$c5257aef1e0310a23c193dd65ccd3546$820e51e08187cddf9a25b3bec56daddb7d3a0ebc24e47caa857a352124bc3c98",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:45.055162+00:00",
+    "updated_at": "2026-10-18T09:15:45.055162+00:00"
+  },
+  {
+    "id": "80ccc4c6-eb36-43eb-822e-631854a85c20",
+    "name": "User A",
+    "email": "a_4b6d88@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$74137b8d5312d7c8b72376e999cae5e1$4516402a4bdf3767bb4871e790c26a867327d26b318cb7297425de2161d9db40",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:45.470170+00:00",
+    "updated_at": "2026-10-18T09:15:45.470170+00:00"
+  },
+  {
+    "id": "5da9787e-fb05-4ced-ba0e-a5000b59c615",
+    "name": "User B",
+    "email": "b_255f97@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$4a9032e9b0a98de447893a69ae181a7a$50c08e5f84e9ce47818d43a0931a7b15568f91e87a41f69c5257b3c6e9fe0078",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:15:45.548181+00:00",
+    "updated_at": "2026-10-18T09:15:45.548181+00:00"
+  },
+  {
+    "id": "fa803796-3893-4e27-9f56-e17df83a1ce9",
+    "name": "Researcher One",
+    "email": "u1_res@test.org",
+    "password_hash": "pbkdf2_sha256$100000$fc3f657f2490fa8345cc51be99d90a0b$4bb49c0f21585daf6545a74a97d8c92595cd668c90913f4c7c1774f5ec295f83",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:11.978051+00:00",
+    "updated_at": "2026-10-18T09:38:11.978051+00:00"
+  },
+  {
+    "id": "d7376119-385e-41c5-8eee-3cd7d91b6392",
+    "name": "Researcher Two",
+    "email": "u2_res@test.org",
+    "password_hash": "pbkdf2_sha256$100000$6de0e56df38423ad406a75adfa18bacf$72afecde29bf2e9d1f097eae003ea362e0acbc334b85351caaa710af3b847897",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:12.030254+00:00",
+    "updated_at": "2026-10-18T09:38:12.030254+00:00"
+  },
+  {
+    "id": "981851e4-e217-4bc2-9e99-85f24dd83324",
+    "name": "Alice User",
+    "email": "alice_fb1877@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$af724afca6cdee22d68174f3d606a8c9$62f20faa92a1e64f914611dad214fe6ceb8bda7eae098f61cc2a9dc07726b1f0",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:21.585828+00:00",
+    "updated_at": "2026-10-18T09:38:21.585828+00:00"
+  },
+  {
+    "id": "760db701-3d37-4427-9a18-02d03dc04d31",
+    "name": "Bob User",
+    "email": "bob_a14d0e@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$4bae74bfc600c568a01649688604eef2$62a9c8be611a095ca562882c64b9dfb92ef39f05ac345cccbad373e606f66f29",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:21.666022+00:00",
+    "updated_at": "2026-10-18T09:38:21.666022+00:00"
+  },
+  {
+    "id": "0194c662-6fc6-4357-9862-600b4e06c9f5",
+    "name": "Dr. Explorer",
+    "email": "explorer_anno_cc9c21@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$f07ab773992e667a71d517df6d690230$66e9ff9122b0a5220f39102012b8e9a5a5cdd40e0c1588fb5b123cfbbf69d981",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:30.727630+00:00",
+    "updated_at": "2026-10-18T09:38:30.727630+00:00"
+  },
+  {
+    "id": "1c993ec9-b29f-4ad6-95d2-b228aef8e92a",
+    "name": "User 1",
+    "email": "u1_71f9b2@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$7a7288317d2c1c4715a80f7c02a75352$527029d8b18b8364e6b9371e279fa74ae31ea5574c4b66d7cc74463331a22751",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:30.859308+00:00",
+    "updated_at": "2026-10-18T09:38:30.859308+00:00"
+  },
+  {
+    "id": "a8a427c4-f90d-4064-98ac-69402bd83ef3",
+    "name": "User 2",
+    "email": "u2_645a3f@lab.local",
+    "password_hash": "pbkdf2_sha256$100000$08190a6faab0c6ef186554140daf5b07$6ecef2481e351b93c56c33df86217d709c5caf994a5579414d9f2e2a4ad37afa",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:30.934313+00:00",
+    "updated_at": "2026-10-18T09:38:30.934313+00:00"
+  },
+  {
+    "id": "c5ce93cf-f389-4159-a503-2994b04e9a4d",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_1aa9dc@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$ab0065bf2a85c4e5b474d918f6da1793$edb01749d50f9177e08eb18dedd5ec41b6f718e601164ec01372ad077d4ef252",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:39.575871+00:00",
+    "updated_at": "2026-10-18T09:38:39.575871+00:00"
+  },
+  {
+    "id": "12a43056-7f68-4607-a015-ecfccbdf0549",
+    "name": "Updated Name",
+    "email": "prof_3fd242@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$f1e02a387f8852502829fcbed46c12de$e8de331e5799c2acba2affb929c1a89935eefa171f3936ce73cb8ce497824838",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:39.796219+00:00",
+    "updated_at": "2026-10-18T09:38:39.998184+00:00"
+  },
+  {
+    "id": "b3bc50cf-7761-47fe-9732-bbd640839924",
+    "name": "Alice Researcher",
+    "email": "alice_4650f9@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$51cd9fced47fa46fd5093ee0a09203c0$207bcf07ce37fef42674a5df4a092d216085ef0bd5b7f940ab2f1cf71dda84c3",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:40.077263+00:00",
+    "updated_at": "2026-10-18T09:38:40.077263+00:00"
+  },
+  {
+    "id": "9f434b6d-0522-4ab9-becb-3252b2da0f62",
+    "name": "Bob Researcher",
+    "email": "bob_f2af5e@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$c25d1d08080b8b5c0bb4c0edcd605a5e$eb3a44c841c4ae4936a948e2b1f60e5f74d1ac86f6d67e0094e6b2049553f171",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:40.141760+00:00",
+    "updated_at": "2026-10-18T09:38:40.141760+00:00"
+  },
+  {
+    "id": "c31785be-92f3-4900-9880-5fd5b650ea38",
+    "name": "User A",
+    "email": "a_771e85@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$5b91969b4c5fd9fc06bf56d8c9617033$87e145e2e1ab9afb31905e0a2d420135f566de52a7559c04a500cb80fbf9e127",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:40.447840+00:00",
+    "updated_at": "2026-10-18T09:38:40.447840+00:00"
+  },
+  {
+    "id": "f0ba2ebd-bd73-46f7-a45b-b16633a43f57",
+    "name": "User B",
+    "email": "b_7b49aa@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$b55b2bfa039c019296157a7aed52b949$7b55332857209faa5d1ef265b21f420ac27de24d88445d694fafa6df143ef925",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:38:40.514074+00:00",
+    "updated_at": "2026-10-18T09:38:40.514074+00:00"
+  },
+  {
+    "id": "34121a49-6d82-4d17-bdf2-1e289132a31f",
+    "name": "Dr. Researcher",
+    "email": "tester_e36528@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$0d1227bf4f9de6f234e1099ab3b407f3$8bd660b98fd7cfaffbe88b5654a622b48faa4158a05db7192b9b101a09cea0dd",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:48:19.598165+00:00",
+    "updated_at": "2026-10-18T09:48:19.598165+00:00"
+  },
+  {
+    "id": "9512a82d-5e4f-40c6-88ee-7b4a68ff7e7e",
+    "name": "Dr. Researcher",
+    "email": "tester_748be5@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$1784d6bb3b0787adacb93f774ad325e9$bec4c6ccfdd1c4682c2554be72930888b809c55a25876076721b4cb72c818560",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:50:23.512423+00:00",
+    "updated_at": "2026-10-18T09:50:23.512423+00:00"
+  },
+  {
+    "id": "a31ad6a9-3d58-4427-abf8-7d57a504616d",
+    "name": "Reviewer One",
+    "email": "rev_94711a@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$1357088cb1e897a785df437c27ad20f0$dc8988f3e92252e18df3b0347d176fab2a806b2781fc39e2b1f80de65e56a096",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:50:23.756755+00:00",
+    "updated_at": "2026-10-18T09:50:23.756755+00:00"
+  },
+  {
+    "id": "b0765522-666e-4b28-9db2-4eac65c4ac54",
+    "name": "Dr. Researcher",
+    "email": "tester_0a4ec1@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$32e155fac09da904e05b8afb039b1467$02f01ff7546233fb593d4021c5b08ec3b58f75684619b8e6e4299681009f47f6",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:51:17.051981+00:00",
+    "updated_at": "2026-10-18T09:51:17.051981+00:00"
+  },
+  {
+    "id": "531e334f-cc9b-4b04-bb97-f0c604929818",
+    "name": "Reviewer One",
+    "email": "rev_861dfc@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$56eeb6198a30ef172de15fa9382a9bb6$88299f7a01d56cf8c9e1bcbbb688f4f29380025b7924749b03512ce43a1ab03c",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:51:17.306623+00:00",
+    "updated_at": "2026-10-18T09:51:17.306623+00:00"
+  },
+  {
+    "id": "575923d6-f371-4fbd-b3bf-20c6c97390db",
+    "name": "Dr. Researcher",
+    "email": "tester_f4f688@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$080657f4e5f504e9b60645e398970a35$e9ea4f58bf4e4ce53fbf01b4ac462d923ca6039d4a85466ba2d6d94fe18d39ba",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:52:06.475013+00:00",
+    "updated_at": "2026-10-18T09:52:06.475013+00:00"
+  },
+  {
+    "id": "b55b97eb-12c9-4fa3-8200-e81ce2de62b7",
+    "name": "Reviewer One",
+    "email": "rev_cf69e3@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$8637342ac480f309f42aba31d82260c2$11708406880abd397aceacd028598ed8e56d78c6bd04771c43cdf9f0a88c9901",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:52:06.706071+00:00",
+    "updated_at": "2026-10-18T09:52:06.706071+00:00"
+  },
+  {
+    "id": "8662c69d-e349-46b1-a1ff-e6aaa8110fad",
+    "name": "Dr. Researcher",
+    "email": "tester_af8121@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$488ce815d42002689feef01b807bf987$53dc5c8b187fdd8c7a9dcce16ee920e4edc5a1bf605ed47cd610490faf70fdc9",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:53:43.916960+00:00",
+    "updated_at": "2026-10-18T09:53:43.916960+00:00"
+  },
+  {
+    "id": "d166defa-5c33-4cf8-b6d0-5267e5c50242",
+    "name": "Reviewer One",
+    "email": "rev_745469@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$0ff97d311cf4674c4a8a96a9e8e3eb8a$37e4d7de0fc6f032036fdd8f6599812a982da22e4880a3db4b9cf29193e2e21d",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:53:44.094021+00:00",
+    "updated_at": "2026-10-18T09:53:44.094021+00:00"
+  },
+  {
+    "id": "c5916f27-1b06-404a-8edd-03b6087241e2",
+    "name": "Res User 1",
+    "email": "res1_18736a@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$0941caf6f3376cccb03f82a96e0abff4$1e1059db09bdc465cb16d3f33cce4ecf50cb39fba2160f20c52e88c17f768cea",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:53:44.691994+00:00",
+    "updated_at": "2026-10-18T09:53:44.691994+00:00"
+  },
+  {
+    "id": "5f9a86a1-1002-45c9-a881-1ffd2d3a8df0",
+    "name": "Res User 2",
+    "email": "res2_90b65f@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$d23c5d82bda786055f40fd2900520c31$1651603c81b9d92defcd4d23a15a17a9fbdf1365ce5058faea20e8b14b3a7a22",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:53:44.744178+00:00",
+    "updated_at": "2026-10-18T09:53:44.744178+00:00"
+  },
+  {
+    "id": "69fc1f27-0fa2-4c56-8cb2-5ea5dcb02216",
+    "name": "Dr. Researcher",
+    "email": "tester_f5b85c@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$8b059a00c11a66d553fc09e61efc83ec$9df97a75545a85722afab7af5432cb8952f894c3f520df195df741914ee05b36",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:54:19.542835+00:00",
+    "updated_at": "2026-10-18T09:54:19.542835+00:00"
+  },
+  {
+    "id": "454e6675-abca-4c62-8609-267408b4f3f0",
+    "name": "Reviewer One",
+    "email": "rev_b52080@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$4391c6f1000ade676397528a422558b3$c43efc62ec530cc98e852e6083e4c875c76cf4204cc2b851728ab506894da8d4",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:54:19.789037+00:00",
+    "updated_at": "2026-10-18T09:54:19.789037+00:00"
+  },
+  {
+    "id": "3d32d560-6301-4d56-8e50-0ab3600f7303",
+    "name": "Res User 1",
+    "email": "res1_a8524d@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$988955a504ad387d224643a92ed3de80$559d744fcb340df4b9d7251ed299a7668ce2898737829b1018bd85f95eb372d9",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:54:20.452572+00:00",
+    "updated_at": "2026-10-18T09:54:20.452572+00:00"
+  },
+  {
+    "id": "1efe9764-1c4f-4cf7-8e59-82447791a973",
+    "name": "Res User 2",
+    "email": "res2_7f6178@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$87a3bff9632cb19a96407daf588b1f0e$5cf49bc63557a0a87781c83885938b818ec229d338a1eff0f7427c4c45d36622",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:54:20.517712+00:00",
+    "updated_at": "2026-10-18T09:54:20.517712+00:00"
+  },
+  {
+    "id": "6d8155ff-2631-4650-a999-04f27768390c",
+    "name": "Dr. Researcher",
+    "email": "tester_db08da@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$65ff2a9704183e2c1c3b587dc964f879$09fcdb6fad520d373e6c73271159dcd6db51e52f2ac5bfe60e260cae00524310",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:55:05.681121+00:00",
+    "updated_at": "2026-10-18T09:55:05.681121+00:00"
+  },
+  {
+    "id": "3df3ed5b-aac7-4eca-88f1-b3f1c07118f8",
+    "name": "Reviewer One",
+    "email": "rev_57d447@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$947402dd2720c925ce9773a2ebb114e0$ab615520297056ca6ae51233955a256733052ea44e6196adf5c6e84ec42f6315",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:55:05.912698+00:00",
+    "updated_at": "2026-10-18T09:55:05.912698+00:00"
+  },
+  {
+    "id": "34153701-5851-4b41-a685-b233d33fa709",
+    "name": "Res User 1",
+    "email": "res1_08b9dc@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$28ee23b9008ac2b7117db7ec7b943470$ccb179ef295c405715a46441c94adb38778ce2c47a537ff2d9bb5765477b5003",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:55:06.646567+00:00",
+    "updated_at": "2026-10-18T09:55:06.646567+00:00"
+  },
+  {
+    "id": "ebce3f00-a63f-4beb-8fe5-cf9f7f606304",
+    "name": "Res User 2",
+    "email": "res2_eff862@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$c0ad60945a10192c8ff0dc870478cd9d$564ba83f078f44fe95bde021d021ffc4ad9573800db27cd33e9e1ccd834fc2bb",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:55:06.706611+00:00",
+    "updated_at": "2026-10-18T09:55:06.706611+00:00"
+  },
+  {
+    "id": "d7fb3024-3533-48a8-bb91-4903428c90fc",
+    "name": "Dr. Researcher",
+    "email": "tester_1e34e3@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$d7ed9c60616fe21e6790c448300eaeee$cea44257d07c3b1b27573227533e0cb690233a01becf006f295d9e27867c4527",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:00.989058+00:00",
+    "updated_at": "2026-10-18T09:56:00.989058+00:00"
+  },
+  {
+    "id": "d27cc6bc-22dd-4230-bb9a-2931c42764ca",
+    "name": "Reviewer One",
+    "email": "rev_73ea70@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$4657d5b143d95077fe1ef270aeebca8c$d086f71a4fe5634d6a1ef80ce670477512079a32795800dfc4c7921db4e11df6",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:01.177022+00:00",
+    "updated_at": "2026-10-18T09:56:01.177022+00:00"
+  },
+  {
+    "id": "c4fbc458-c930-4439-b56e-1a551d7907a3",
+    "name": "Res User 1",
+    "email": "res1_5963c0@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$dc260e5e2de14ecaab5b4635769d134c$22789479d68bc4186e0f9edfccaf27c413ac8fe06c2397c883c215452cf39451",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:01.767894+00:00",
+    "updated_at": "2026-10-18T09:56:01.767894+00:00"
+  },
+  {
+    "id": "88406ad2-9255-44d9-a5d0-f7b65992ef3c",
+    "name": "Res User 2",
+    "email": "res2_bd5b1d@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$b3efe9b27f106879733b38135c70726a$a0695c4bc32518af84642be1ed7608e36d2241c5a526de3fbf80160b12ee07d8",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:01.831423+00:00",
+    "updated_at": "2026-10-18T09:56:01.831423+00:00"
+  },
+  {
+    "id": "3f2069d7-c25f-45b5-ba78-3bb8c110cc99",
+    "name": "Dr. Researcher",
+    "email": "tester_ad550e@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$71e0216af188127f367a6a0e15268701$bec698a11351a4a946c4f1d2104a20d53ef7d7d861ef3538dbab0eba35fa99e6",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:40.648730+00:00",
+    "updated_at": "2026-10-18T09:56:40.648730+00:00"
+  },
+  {
+    "id": "7c29e4cb-563b-4e1b-80e9-1c20d43dfe31",
+    "name": "Reviewer One",
+    "email": "rev_a089fa@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$660e39eac2c78811e8ce4dad02494ad2$ff2a056fd7fb672e85d0d43a82f6fd7e222a2a6f201aac5da0358ad7a0c7885c",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:40.894837+00:00",
+    "updated_at": "2026-10-18T09:56:40.894837+00:00"
+  },
+  {
+    "id": "5f93f62d-8989-41fc-9f04-fb17ae59e778",
+    "name": "Res User 1",
+    "email": "res1_8f96d4@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$151b19c94daede7a53b59b30c5e9a2ba$a957e2b1dd09c5fbcceed7180d08fe4e3e325db04d01c024a73ed5238e24b2d0",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:41.600241+00:00",
+    "updated_at": "2026-10-18T09:56:41.600241+00:00"
+  },
+  {
+    "id": "aab6d4ac-5d67-42e0-a167-d8e0bdaf71ee",
+    "name": "Res User 2",
+    "email": "res2_0a246e@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$c1c3c7ec356c97894791c82691b5e6d7$e8c6f88f3410d49e532118a26fce45822cbdae837a1864badfb4fc7de484f6d4",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:56:41.664722+00:00",
+    "updated_at": "2026-10-18T09:56:41.664722+00:00"
+  },
+  {
+    "id": "e2204745-9512-4145-bab6-3bf2c7fe416d",
+    "name": "Dr. Researcher",
+    "email": "tester_b04eba@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$98f4093f2e043d85c3628457aa4fa15c$83727032d03b65876cbed1c34d4869b5df68997aff8bf40cb7cfd2aab921de2b",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:57:17.187380+00:00",
+    "updated_at": "2026-10-18T09:57:17.187380+00:00"
+  },
+  {
+    "id": "6e522a1c-fe4d-484e-9057-0cfac926feda",
+    "name": "Reviewer One",
+    "email": "rev_86eb47@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$c1ee6b80f852805b447ec29747440859$0fe7d0a92923dd652be24872086fecb1aa0256e4515eb992794c232b8999f6bd",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:57:17.415955+00:00",
+    "updated_at": "2026-10-18T09:57:17.415955+00:00"
+  },
+  {
+    "id": "fdf15b0c-ec21-48ba-bbe3-a8c34bef797d",
+    "name": "Res User 1",
+    "email": "res1_fbdcae@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$7fd4a0370135627edf304ccf819400b2$84e114fdce3d08d15ab7ba3c1b719c2c7b97a2d6c67d21d877661204f68163ee",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:57:18.097872+00:00",
+    "updated_at": "2026-10-18T09:57:18.097872+00:00"
+  },
+  {
+    "id": "2174d294-d672-46d8-9cf2-4b18983d22e9",
+    "name": "Res User 2",
+    "email": "res2_593f78@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$b5f4f5c050cc0180f1f5bcde58ff97c1$0effd6f65424cea0888ba7110a05e7c6a2e0ad819274dc784ec02be10246ec29",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:57:18.165441+00:00",
+    "updated_at": "2026-10-18T09:57:18.165441+00:00"
+  },
+  {
+    "id": "024994f9-cd15-4389-885a-0a44f91bd359",
+    "name": "Dr. Researcher",
+    "email": "tester_30496c@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$53033288010ec31b84da10ae8e40ac88$fab3fb1e5ed3f3c68d75dbf7fca024912769a2f24a66945a47df58922b9031d5",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:37.763075+00:00",
+    "updated_at": "2026-10-18T09:59:37.763075+00:00"
+  },
+  {
+    "id": "24f81162-1047-4c39-bb52-6031532dba1f",
+    "name": "Reviewer One",
+    "email": "rev_d862cb@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$254373f8829b37cb162728525b745e71$43ad5c3ed86a7bcab9d19efbfe33019141c84f450c36ca7de3b4d60803b80f45",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:37.998442+00:00",
+    "updated_at": "2026-10-18T09:59:37.998442+00:00"
+  },
+  {
+    "id": "73ef1fef-590a-4fcc-bec8-9bd3696aa262",
+    "name": "Res User 1",
+    "email": "res1_2393c5@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$ec82004efaa21b2fc9ce7f8f96f99b0e$f2a71e7c9be83dc266a9c129127eddf36c7307575e568d962e9a5bd794f4f5da",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:38.669130+00:00",
+    "updated_at": "2026-10-18T09:59:38.669130+00:00"
+  },
+  {
+    "id": "8910fa4c-6f98-4ab2-bd28-6af9a8cb72fc",
+    "name": "Res User 2",
+    "email": "res2_bd03ff@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$d09a7d9defa25b04e47c7321eb948977$fa397b075d38cefc58ef3ded3ae7d34a8f28fe3a4c974364d216eec0ad434c72",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:38.734191+00:00",
+    "updated_at": "2026-10-18T09:59:38.734191+00:00"
+  },
+  {
+    "id": "6e44dc7a-bfa3-4a2f-b148-91c98560473e",
+    "name": "Dr. Researcher",
+    "email": "tester_75f3a1@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$9eebe2eb4b707bace3e1f61c09a3292c$3c287fdccda0c020df5bff9663f807b41b36f042c05a41b4dc24c8c48b7b289a",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:58.702051+00:00",
+    "updated_at": "2026-10-18T09:59:58.702051+00:00"
+  },
+  {
+    "id": "b2158708-7208-4dfa-ac8f-ce97d46388fb",
+    "name": "Reviewer One",
+    "email": "rev_0bdc24@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$cde50bade5cf921fda7004805a571096$c66e7bec55380e8c69db27c7279eacb33b618915310a6d6485bc1cc64c544da8",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:58.940786+00:00",
+    "updated_at": "2026-10-18T09:59:58.940786+00:00"
+  },
+  {
+    "id": "d56cec68-6d65-4aaf-80db-b57d3e20ea49",
+    "name": "Res User 1",
+    "email": "res1_2a9177@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$a80ef942f150b85ab4dd2f479cbb25eb$183124622d38eb166cc2f38b0eea2210dbe2fe18a49480e4ac8d794a86b2d3e7",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:59.726412+00:00",
+    "updated_at": "2026-10-18T09:59:59.726412+00:00"
+  },
+  {
+    "id": "5fb986a5-7277-419f-8449-50238c445f29",
+    "name": "Res User 2",
+    "email": "res2_dd6088@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$45b9a9b31a3e02f4843dc458a16e0c1c$21a19cbd540aa1c9f2aba25987c527d718c2da39a6631df9d59b0505fb848fb5",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T09:59:59.816771+00:00",
+    "updated_at": "2026-10-18T09:59:59.816771+00:00"
+  },
+  {
+    "id": "392de29a-ef1f-46ee-b53c-83c56da09de0",
+    "name": "Dr. Researcher",
+    "email": "tester_880d96@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$58699d809f1ec1d178cf2f7c56cb09f6$70c21e1297b535bafd10cd87fd2685ad1a47e3d7bf400876604124b2f45204b2",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:01:29.898352+00:00",
+    "updated_at": "2026-10-18T10:01:29.898352+00:00"
+  },
+  {
+    "id": "face1df8-d895-44ed-8a61-e46400fa7853",
+    "name": "Reviewer One",
+    "email": "rev_7a0b57@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$43c377b08afe1020c49d50494ff4fb3e$384581bfa2aa76b95b1c0e8306d74fb345bbaa03169e0cbf0d1936a112199fe0",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T10:01:30.123633+00:00",
+    "updated_at": "2026-10-18T10:01:30.123633+00:00"
+  },
+  {
+    "id": "de519488-1a4a-487d-b4b7-cbfb39269918",
+    "name": "Res User 1",
+    "email": "res1_7ee6ef@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$e46d066116d8c8bb228031b661435a80$6787528541b182b7eb382b42148fbe66d052d9493ea2d98da79c7de240ab1e65",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:01:30.889049+00:00",
+    "updated_at": "2026-10-18T10:01:30.889049+00:00"
+  },
+  {
+    "id": "92a9bb33-f051-4451-a1d4-70c289d8599b",
+    "name": "Res User 2",
+    "email": "res2_e4b666@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$320231e9fcc4ebbea19d1ce861c4ef26$35408be23c9daa3300e3f302b5af234aad1e44373b1024e0c0514647751194e0",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:01:30.979670+00:00",
+    "updated_at": "2026-10-18T10:01:30.979670+00:00"
+  },
+  {
+    "id": "c0a373be-4805-4dbc-9b7e-02ba208e4912",
+    "name": "Dr. Researcher",
+    "email": "tester_1354be@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$16d138d69d5473d550e57a0f7d2a73f3$dc21933e87c9d721e941440631022d036d3b560e7408095e4e9d1f24fec3c390",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:05.002748+00:00",
+    "updated_at": "2026-10-18T10:02:05.002748+00:00"
+  },
+  {
+    "id": "841c1a75-d45c-4a41-9ddd-41be878b2f8c",
+    "name": "Reviewer One",
+    "email": "rev_e30176@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$5d0b4d48d89d0cc67f0d7dd6f3d83ad6$c6ea827c38b58b7aed9a6a1916189b4f9dcff6e7d9ebd46bc5d0ad4541cd98b4",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:05.219615+00:00",
+    "updated_at": "2026-10-18T10:02:05.219615+00:00"
+  },
+  {
+    "id": "282cd280-79d1-4dbb-839e-4b00382015c2",
+    "name": "Res User 1",
+    "email": "res1_38531e@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$c6e3a9359403ce377db5225cb538841a$b91da79f637dbc48a65026983a8aeb99a5983978f20706a596322788b55a1f4b",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:06.012644+00:00",
+    "updated_at": "2026-10-18T10:02:06.012644+00:00"
+  },
+  {
+    "id": "699b2f2e-d634-4f1f-b77d-8de25fe6da2b",
+    "name": "Res User 2",
+    "email": "res2_e74e36@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$3f6195a0f845dc43ca38e916016f6062$16aadec417310d0b981bb7a8647fe7abb517ea6879e3516c05502d42e4f4c23e",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:06.106249+00:00",
+    "updated_at": "2026-10-18T10:02:06.106249+00:00"
+  },
+  {
+    "id": "d374df2f-1c8d-45e6-907c-b975cd2edca5",
+    "name": "Dr. Researcher",
+    "email": "tester_4d8eb5@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$62cc4fb8d35ece43e5558e2b677c3a05$e20ad18604754e9d700c93008a07b96df71fc4f4bced717f0f558b34851e1644",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:52.452307+00:00",
+    "updated_at": "2026-10-18T10:02:52.452307+00:00"
+  },
+  {
+    "id": "3b85c987-1549-4554-9b57-7e50702b2e3b",
+    "name": "Reviewer One",
+    "email": "rev_9cf0bd@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$ddad7dfdf1d9e7676a94a0d02860d7e5$d8cb11117ee49a506959db2484ff1a1781eb8a66458be93ef9b82c51cc826976",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:52.688393+00:00",
+    "updated_at": "2026-10-18T10:02:52.688393+00:00"
+  },
+  {
+    "id": "2027249a-d592-4a7f-87f1-daf2f1b66648",
+    "name": "Res User 1",
+    "email": "res1_436133@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$9890708a2dd4911dd601139dd887a44f$3c236241b1e6f3c354efd4dca1fbd10688e3c4378a38fd171bb18241d498d0d7",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:53.472921+00:00",
+    "updated_at": "2026-10-18T10:02:53.472921+00:00"
+  },
+  {
+    "id": "692018f9-8ddb-4cda-853f-0daf95dd58b5",
+    "name": "Res User 2",
+    "email": "res2_aa57c8@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$bd6d924bc356b77b3e586d3b2ddc1234$4a30f560d2ece9d9989f780e91fbd8a75f064cde68e7891dd272e5fc0fb2fa37",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:53.569295+00:00",
+    "updated_at": "2026-10-18T10:02:53.569295+00:00"
+  },
+  {
+    "id": "9527fca1-55e8-47d6-ae37-f771c175d8e4",
+    "name": "Temp Reviewer",
+    "email": "revtemp_648705@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$310644171d94d72b364ad504ec527621$37281cdfb16308165e1d2964dadf0f9144fc6edbf3cbea7519711bece4a8d961",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T10:02:55.487029+00:00",
+    "updated_at": "2026-10-18T10:02:55.487029+00:00"
+  },
+  {
+    "id": "604e5872-b56b-42e9-9e5f-f1df657d0020",
+    "name": "Dr. Researcher",
+    "email": "tester_118556@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$d6e17824efb847ec5ead1cbebb5113b9$939d675bef3aac2bc6c213f51975585f324d64798065cb11423a220a9b8ac6ce",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:13:47.304895+00:00",
+    "updated_at": "2026-10-18T10:13:47.304895+00:00"
+  },
+  {
+    "id": "13a3bcec-7699-44e6-88f6-51fd28b6f74e",
+    "name": "Reviewer One",
+    "email": "rev_6aefde@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$7d0aae53eeb83a7f1d42b91c8863e287$d95cfd2ccffda501a7c1ee21b96cae6e49b7567ee09090f26d9175ef6cbee166",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T10:13:47.536363+00:00",
+    "updated_at": "2026-10-18T10:13:47.536363+00:00"
+  },
+  {
+    "id": "fbf1267c-c6aa-45c9-a79b-e010593d811b",
+    "name": "Res User 1",
+    "email": "res1_03c5f3@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$cc9e03cd0598f38b3c3f9d2700e2dd74$721179e7446acb35cf6016acbf36f38b5b33e4f473d38034ea1633e8cc51bcf4",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:13:48.482695+00:00",
+    "updated_at": "2026-10-18T10:13:48.482695+00:00"
+  },
+  {
+    "id": "b5a55d76-7063-4261-98d4-8d07a4b16552",
+    "name": "Res User 2",
+    "email": "res2_05c486@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$eebd0fb6a42d25e2becf44c6bed1ba8f$aee6f684f56acd65fd58e9b71b9e2bf8a074b6dfb893bec23e67e90633eb5466",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-18T10:13:48.587126+00:00",
+    "updated_at": "2026-10-18T10:13:48.587126+00:00"
+  },
+  {
+    "id": "c912931f-10e3-4db4-9278-fc24b0b9fd0c",
+    "name": "Temp Reviewer",
+    "email": "revtemp_b6f0f4@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$1a5698b786c2c08889b78ced3e90d366$e68f5686074e395f1f46d052c55363c1d925d68f03447d7782c73673d464f5db",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-18T10:13:50.496437+00:00",
+    "updated_at": "2026-10-18T10:13:50.496437+00:00"
+  },
+  {
+    "id": "0f883d3f-7829-44f8-915e-4858384dca7b",
+    "name": "Dr. Researcher",
+    "email": "tester_722385@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$a5334972e326102a592f7deeb68eb2da$5542cd4ed6cc749449c00766b65b74b87938ab88f3aaa2ca1e10d1f0ec059aa7",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T04:58:10.460689+00:00",
+    "updated_at": "2026-10-21T04:58:10.460689+00:00"
+  },
+  {
+    "id": "039a13f5-c6b2-43a9-9cc5-bdc8dbc5f230",
+    "name": "Reviewer One",
+    "email": "rev_1d0d6b@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$23e8119bba2e99fb6dc611cc8f280666$2cab7a63e1ce434d3c43111e0b7f4b6376a393699d667272fbc50c402b3b52ac",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-21T04:58:10.703979+00:00",
+    "updated_at": "2026-10-21T04:58:10.703979+00:00"
+  },
+  {
+    "id": "821f1568-21f8-470d-8ef9-6fdc4842c066",
+    "name": "Res User 1",
+    "email": "res1_283919@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$60438a8f88f1c39f0a1cf3f7458a6824$3fc94b1ac6d46bf9fcb9930bde99758c6749ff85861a0bc467e996e16b72442f",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T04:58:11.960159+00:00",
+    "updated_at": "2026-10-21T04:58:11.960159+00:00"
+  },
+  {
+    "id": "498742bf-0a4a-41c4-9107-d6527a1c1bfa",
+    "name": "Res User 2",
+    "email": "res2_af8522@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$6477a03683e266d5c87ecb5cdebc75ce$37781a64f5b78dcac3e88c2e5347767a28c7b5b4bcd6666d837be1b18da06deb",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T04:58:12.033023+00:00",
+    "updated_at": "2026-10-21T04:58:12.033023+00:00"
+  },
+  {
+    "id": "025317a0-9d5e-49e0-b26d-32677dd7ae3d",
+    "name": "Temp Reviewer",
+    "email": "revtemp_ca8100@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$8f557c1e93d9d88a313386963ad18519$0f2a53ca925e039799aebc15f4e58b60d6b7bfe1f1915609d1da97d5f8c86d62",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-21T04:58:15.208207+00:00",
+    "updated_at": "2026-10-21T04:58:15.208207+00:00"
+  },
+  {
+    "id": "8a18d08e-ad9e-49cb-b89b-7855ce02fb3a",
+    "name": "Dr. Test Researcher",
+    "email": "test_reg_113224@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$93ffc9c92f06175d024f1bcf14542191$7372c33ee41b4cda8fe6d9a603cab7fb3b457bf7382727305e2940624e0fa7aa",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T05:05:23.471684+00:00",
+    "updated_at": "2026-10-21T05:05:23.471684+00:00"
+  },
+  {
+    "id": "d12596ed-57b7-4e3c-8ef9-34acaf78fe21",
+    "name": "Dr. Researcher",
+    "email": "tester_3126a5@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$5904e5c19ac3d84a4d8bfbb07e27b99d$c8b378a1492ae192d1fe2c68d7247e2ee1867b382f4d9fa0afeb969fd9359cc6",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T05:06:23.148350+00:00",
+    "updated_at": "2026-10-21T05:06:23.148350+00:00"
+  },
+  {
+    "id": "4fcb2190-c009-405e-a5c5-9211185aa14b",
+    "name": "Reviewer One",
+    "email": "rev_cdf47d@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$c05c1e9968c9ace2625b4daac6a8b657$bec0572d572ec2988eac1eacc05acd0d4934df9e570c92dcd1c62b34aa615318",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-21T05:06:23.398566+00:00",
+    "updated_at": "2026-10-21T05:06:23.398566+00:00"
+  },
+  {
+    "id": "af92441c-5e39-4725-8c11-d2ac675bb1de",
+    "name": "Res User 1",
+    "email": "res1_64082a@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$3262ddee4b301661d388ef744769a4a1$a1d4bdb980b52fed8090abd18b04977f047f1a52b1025546ae9434e6dd3dda86",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T05:06:24.202778+00:00",
+    "updated_at": "2026-10-21T05:06:24.202778+00:00"
+  },
+  {
+    "id": "9a6168e1-d147-4cce-9f2d-ffd74df17de1",
+    "name": "Res User 2",
+    "email": "res2_b0c675@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$987be6d5da2ff0020aa46e8928b0fcd3$6a620a6438550dbb5e8d71c1e5f848d0b25f4110aa728e6b8ec13777c5bf8b41",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T05:06:24.289093+00:00",
+    "updated_at": "2026-10-21T05:06:24.289093+00:00"
+  },
+  {
+    "id": "3a9f0a9a-388e-4f98-a77c-85d23a2005a4",
+    "name": "Temp Reviewer",
+    "email": "revtemp_4e5adf@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$67d96b5bff18df85bc139cfdf8df0944$388471eae87e5f26c579700f9dfebfad28a96e550d52b0a713d16a78cf45cc1b",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-21T05:06:26.211094+00:00",
+    "updated_at": "2026-10-21T05:06:26.211094+00:00"
+  },
+  {
+    "id": "3bcf8d8e-f808-43f2-be3c-9949bc4ec898",
+    "name": "Arnab Dutta",
+    "email": "duttaarnab698@gmail.com",
+    "password_hash": "pbkdf2_sha256$100000$78261a78ad2275c66999ed4441c0c979$632570ffb27198967f1356d12347e58003cb6d03f45f8a4f406bee919b0901a9",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-21T17:32:16.444493+00:00",
+    "updated_at": "2026-10-21T17:32:16.444493+00:00"
+  },
+  {
+    "id": "75eeb929-dc3f-4e1d-81d3-0ba61c46355f",
+    "name": "Dr. Eleanor Vance",
+    "email": "researcher_3b1dce@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$32cafa6eeda8e9557cd381339b44f149$68f29822a9ea13b1d14663a1cfcba9dc3dc4db681cfb13ea547768da5a940fc0",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:24.644588+00:00",
+    "updated_at": "2026-10-22T16:24:24.644588+00:00"
+  },
+  {
+    "id": "efdb0bbb-34f2-4495-9695-297f96b89674",
+    "name": "Updated Name",
+    "email": "prof_27bdac@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$8c43f5404c6e7752392ab8e69ba5c36b$10124fe820b4b7b7dadc6883cd0c25aac7555d9cd9e6ede69be44d3fb21f2618",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:24.848403+00:00",
+    "updated_at": "2026-10-22T16:24:25.039864+00:00"
+  },
+  {
+    "id": "bb187dee-f940-48d0-8d3d-87f7e5c0c3b8",
+    "name": "Alice Researcher",
+    "email": "alice_46b444@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$4d5c5187f0b2eb282604e81a460afa70$4e128d4a163c543bc77a04baab846987e1201de32b9f6dfc57fa5ad30c3bb18d",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:25.104586+00:00",
+    "updated_at": "2026-10-22T16:24:25.104586+00:00"
+  },
+  {
+    "id": "a159ae74-7fe4-4310-9f3b-9d0eaaf78fd3",
+    "name": "Bob Researcher",
+    "email": "bob_5793ea@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$59820efee2910186a00e7d2abf1d2f0a$48439bd2bd9ba3f8b1acb6c7a5f52334653c04143c733fa6063ddf2153ca6bea",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:25.161697+00:00",
+    "updated_at": "2026-10-22T16:24:25.161697+00:00"
+  },
+  {
+    "id": "126ffa49-24bd-474c-a516-1e4879e7f70b",
+    "name": "User A",
+    "email": "a_ed206b@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$c6c106cab44421d9a48f0081790a6927$b5370424e7197aa7c66b553572bdb25f8ab361e2c3e8585d7bb9c15dce693220",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:25.445799+00:00",
+    "updated_at": "2026-10-22T16:24:25.445799+00:00"
+  },
+  {
+    "id": "57e327df-c538-4ebb-9791-db93d65505d7",
+    "name": "User B",
+    "email": "b_adfd43@cardiaclab.local",
+    "password_hash": "pbkdf2_sha256$100000$47d6571d5612d4a1e497716aa3a97da1$9cec91e415cb154ed2e4af7c1bef6fd6143abb7f99c5293dac09103140486304",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:25.500333+00:00",
+    "updated_at": "2026-10-22T16:24:25.500333+00:00"
+  },
+  {
+    "id": "9422855a-3f45-4288-abd6-24aa6beba96d",
+    "name": "Dr. Researcher",
+    "email": "tester_f728af@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$6b67eea99580a3c18ed9901a2f4adff8$4965edc475137d7473028809fc0284d826aeab5400e90632df226282a5789802",
+    "role": "researcher",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:33.318247+00:00",
+    "updated_at": "2026-10-22T16:24:33.318247+00:00"
+  },
+  {
+    "id": "c765c5a1-0b0e-4715-b495-ecef9a81b462",
+    "name": "Reviewer One",
+    "email": "rev_28d274@lab.test",
+    "password_hash": "pbkdf2_sha256$100000$1ecccacaaf24ced706dcef35eae17a75$d5f2cbfd04bfefc77b8b2c83495a0d60b405f2fe6db08fda93fb3929250096a1",
+    "role": "reviewer",
+    "is_active": true,
+    "created_at": "2026-10-22T16:24:33.459735+00:00",
+    "updated_at": "2026-10-22T16:24:33.459735+00:00"
+  }
+]

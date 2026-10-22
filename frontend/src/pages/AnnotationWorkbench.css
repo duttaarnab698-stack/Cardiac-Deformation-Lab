@@ -1,0 +1,1012 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — ANNOTATION WORKSPACE STYLESHEET
+   Unified Scientific Design: Dark Navy / Royal Blue / Electric Cyan / Indigo
+   ========================================================================== */
+
+/* Page Container */
+.cdl-anno-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 4px 60px;
+  box-sizing: border-box;
+  animation: cdlAnnoFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #1e293b;
+  position: relative;
+}
+
+@keyframes cdlAnnoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   1. PAGE HEADER & BREADCRUMBS
+   ========================================================================== */
+.cdl-anno-header-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 4px 2px;
+}
+
+.cdl-anno-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.cdl-anno-breadcrumb .bc-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.cdl-anno-breadcrumb .bc-link:hover {
+  color: #1d4ed8;
+}
+
+.cdl-anno-breadcrumb .bc-sep {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.cdl-anno-breadcrumb .bc-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.cdl-anno-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-anno-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.cdl-anno-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdl-anno-badge-blue {
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.cdl-anno-badge-purple {
+  background: rgba(139, 92, 246, 0.1);
+  color: #7c3aed;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.cdl-anno-badge-emerald {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.cdl-anno-badge-slate {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.cdl-anno-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+}
+
+.cdl-anno-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin: 2px 0 0;
+  max-width: 840px;
+  line-height: 1.45;
+}
+
+/* Header Actions */
+.cdl-anno-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cdl-anno-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.cdl-anno-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-anno-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.cdl-anno-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+/* ==========================================================================
+   2. TOP WORKFLOW PROGRESS TRACKER
+   ========================================================================== */
+.cdl-anno-workflow-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.cdl-anno-workflow-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow-x: auto;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.cdl-anno-workflow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 145px;
+  position: relative;
+}
+
+.cdl-anno-step-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  background: #f1f5f9;
+  color: #64748b;
+  border: 2px solid #cbd5e1;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.cdl-anno-step-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cdl-anno-step-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.cdl-anno-step-sub {
+  font-size: 10px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.cdl-anno-workflow-step.completed .cdl-anno-step-num {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #059669;
+}
+
+.cdl-anno-workflow-step.completed .cdl-anno-step-title {
+  color: #065f46;
+}
+
+.cdl-anno-workflow-step.active .cdl-anno-step-num {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.cdl-anno-workflow-step.active .cdl-anno-step-title {
+  color: #1d4ed8;
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   3. NOTICES & DISCLAIMERS
+   ========================================================================== */
+.cdl-anno-disclaimer-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+}
+
+.cdl-anno-disclaimer-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.cdl-anno-disclaimer-text {
+  font-size: 12.5px;
+  color: #475569;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cdl-anno-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  animation: cdlAnnoFadeIn 0.25s ease;
+}
+
+.cdl-anno-banner-success {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  color: #065f46;
+}
+
+.cdl-anno-banner-error {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  color: #991b1b;
+}
+
+.cdl-anno-banner-info {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: #1e40af;
+}
+
+/* ==========================================================================
+   4. 3-ZONE SCIENTIFIC WORKSPACE LAYOUT
+   ========================================================================== */
+.cdl-anno-workspace-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 1280px) {
+  .cdl-anno-workspace-grid {
+    grid-template-columns: 260px 1fr;
+  }
+  .cdl-anno-inspector-col {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 860px) {
+  .cdl-anno-workspace-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   ZONE 1: LEFT TOOL PANEL
+   ========================================================================== */
+.cdl-anno-tool-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cdl-anno-panel-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cdl-anno-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cdl-anno-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdl-anno-select-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cdl-anno-select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #0f172a;
+  background: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-anno-select:focus {
+  border-color: #3b82f6;
+}
+
+/* Annotation Tools List */
+.cdl-anno-tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdl-anno-tool-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.cdl-anno-tool-btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  transform: translateX(2px);
+}
+
+.cdl-anno-tool-btn.active {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.15);
+}
+
+.cdl-anno-tool-icon-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-anno-tool-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.cdl-anno-tool-btn.active .cdl-anno-tool-badge {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   ZONE 2: CENTER SCIENTIFIC ANNOTATION CANVAS
+   ========================================================================== */
+.cdl-anno-canvas-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cdl-anno-canvas-card {
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating Scientific Toolbar */
+.cdl-anno-floating-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid #1e293b;
+  z-index: 5;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cdl-anno-tool-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-anno-btn-mini {
+  padding: 5px 10px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #cbd5e1;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cdl-anno-btn-mini:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+.cdl-anno-btn-mini:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.cdl-anno-btn-mini.active {
+  background: #2563eb;
+  border-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.cdl-anno-zoom-readout {
+  font-size: 11px;
+  font-weight: 700;
+  color: #38bdf8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  padding: 0 4px;
+}
+
+/* Canvas Viewport */
+.cdl-anno-viewport {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 480px;
+  max-height: 660px;
+  background: #050811;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: crosshair;
+}
+
+.cdl-anno-viewport.panning {
+  cursor: grab;
+}
+
+.cdl-anno-viewport.panning:active {
+  cursor: grabbing;
+}
+
+.cdl-anno-transform-wrap {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.05s ease-out;
+}
+
+.cdl-anno-cardiac-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.cdl-anno-svg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  cursor: crosshair;
+}
+
+/* SVG Shapes Styling */
+.cdl-anno-svg-overlay .saved-polygon-shape {
+  fill: rgba(56, 189, 248, 0.22);
+  stroke: #0ea5e9;
+  stroke-width: 2.2;
+  transition: all 0.15s ease;
+}
+
+.cdl-anno-svg-overlay .saved-polygon-shape:hover {
+  fill: rgba(56, 189, 248, 0.38);
+  stroke: #38bdf8;
+  stroke-width: 2.8;
+}
+
+.cdl-anno-svg-overlay .saved-vertex-point {
+  fill: #ffffff;
+  stroke: #0284c7;
+  stroke-width: 1.5;
+}
+
+.cdl-anno-svg-overlay .saved-polyline-shape {
+  fill: none;
+  stroke: #a855f7;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cdl-anno-svg-overlay .saved-landmark-point {
+  fill: #ec4899;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.cdl-anno-svg-overlay .saved-landmark-text {
+  fill: #fdf2f8;
+  font-size: 11px;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.cdl-anno-svg-overlay .saved-label-text {
+  fill: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  text-anchor: middle;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Draft / In-Progress Shapes */
+.cdl-anno-svg-overlay .draft-polygon-shape {
+  fill: rgba(234, 179, 8, 0.2);
+  stroke: #eab308;
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
+
+.cdl-anno-svg-overlay .draft-polyline-shape {
+  fill: none;
+  stroke: #eab308;
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
+
+.cdl-anno-svg-overlay .draft-vertex-point {
+  fill: #eab308;
+  stroke: #ffffff;
+  stroke-width: 1.5;
+}
+
+.cdl-anno-svg-overlay .draft-vertex-point.closing-target {
+  fill: #22c55e;
+  stroke: #ffffff;
+  stroke-width: 2;
+  animation: cdlAnnoPulse 1s infinite alternate;
+}
+
+@keyframes cdlAnnoPulse {
+  from {
+    r: 5;
+  }
+  to {
+    r: 8;
+  }
+}
+
+/* Canvas Bottom Status Bar */
+.cdl-anno-canvas-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+
+.cdl-anno-canvas-footer strong {
+  color: #38bdf8;
+}
+
+/* ==========================================================================
+   ZONE 3: RIGHT ANNOTATION INSPECTOR PANEL
+   ========================================================================== */
+.cdl-anno-inspector-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Category Counts Bar */
+.cdl-anno-counts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 6px;
+}
+
+.cdl-anno-count-tile {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.cdl-anno-count-num {
+  font-size: 14px;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.cdl-anno-count-lbl {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+/* Properties Form */
+.cdl-anno-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-anno-form-group label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.cdl-anno-text-input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 12.5px;
+  color: #0f172a;
+  outline: none;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.cdl-anno-text-input:focus {
+  border-color: #3b82f6;
+}
+
+/* Saved Annotation Items List */
+.cdl-anno-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.cdl-anno-item-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.cdl-anno-item-card:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.cdl-anno-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cdl-anno-item-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-anno-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.cdl-anno-item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  padding-top: 4px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.cdl-anno-btn-action {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.cdl-anno-btn-action.roi {
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+.cdl-anno-btn-action.roi:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.cdl-anno-btn-action.delete {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+.cdl-anno-btn-action.delete:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+/* Benchmark Launcher Banner */
+.cdl-anno-benchmark-card {
+  background: linear-gradient(135deg, #090e1a 0%, #1e1b4b 100%);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.cdl-anno-benchmark-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #c084fc;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.cdl-anno-benchmark-desc {
+  font-size: 11.5px;
+  color: #cbd5e1;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ==========================================================================
+   DARK THEME OVERRIDES ([data-theme="dark"])
+   ========================================================================== */
+[data-theme="dark"] .cdl-anno-page {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .cdl-anno-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-anno-subtitle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-anno-breadcrumb .bc-current {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-anno-workflow-card,
+[data-theme="dark"] .cdl-anno-panel-card {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .cdl-anno-panel-header,
+[data-theme="dark"] .cdl-anno-item-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-anno-panel-header {
+  border-bottom-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-anno-select,
+[data-theme="dark"] .cdl-anno-text-input {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-anno-tool-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-anno-tool-btn:hover {
+  background: #273549;
+  border-color: #475569;
+}
+
+[data-theme="dark"] .cdl-anno-tool-btn.active {
+  background: rgba(37, 99, 235, 0.25);
+  border-color: #3b82f6;
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .cdl-anno-count-tile {
+  background: #131d31;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-anno-count-num {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-anno-item-card {
+  background: #131d31;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-anno-item-card:hover {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .cdl-anno-item-actions {
+  border-top-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-anno-disclaimer-card {
+  background: #0f172a;
+  border-color: #1e293b;
+  border-left-color: #3b82f6;
+}
+
+[data-theme="dark"] .cdl-anno-disclaimer-text {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-anno-btn-secondary {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-anno-btn-secondary:hover {
+  background: #334155;
+  color: #ffffff;
+}
+

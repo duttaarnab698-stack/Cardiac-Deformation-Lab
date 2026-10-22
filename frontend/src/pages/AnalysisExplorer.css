@@ -1,0 +1,693 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — ANALYSIS EXPLORER WORKSTATION STYLESHEET
+   Unified Scientific Design: Dark Navy / Royal Blue / Electric Cyan
+   ========================================================================== */
+
+/* Page Container */
+.cdl-explorer-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 64px);
+  background: #f8fafc;
+  color: #1e293b;
+  position: relative;
+  box-sizing: border-box;
+  animation: cdlExplorerFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cdlExplorerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   TOP EXPLORER HEADER & METADATA BAR
+   ========================================================================== */
+.cdl-explorer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.cdl-exp-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cdl-exp-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0284c7;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.cdl-exp-back-btn:hover {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+  color: #0369a1;
+  transform: translateX(-1px);
+}
+
+.cdl-exp-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-exp-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdl-exp-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
+
+.cdl-exp-id-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  background: #f1f5f9;
+  color: #2563eb;
+  border: 1px solid #cbd5e1;
+}
+
+.cdl-exp-meta-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.cdl-exp-meta-sub strong {
+  color: #334155;
+}
+
+/* Header Right Actions */
+.cdl-exp-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cdl-exp-session-select {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-exp-session-select:focus {
+  border-color: #2563eb;
+}
+
+.cdl-exp-btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.cdl-exp-btn-action:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+.cdl-exp-btn-primary {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+.cdl-exp-btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   MAIN 3-ZONE WORKSTATION GRID
+   ========================================================================== */
+.cdl-explorer-workspace {
+  display: grid;
+  grid-template-columns: 290px 1fr 340px;
+  gap: 14px;
+  padding: 12px 16px;
+  flex: 1;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+@media (max-width: 1300px) {
+  .cdl-explorer-workspace {
+    grid-template-columns: 270px 1fr 310px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .cdl-explorer-workspace {
+    grid-template-columns: 280px 1fr;
+  }
+  .cdl-exp-panel-right {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .cdl-explorer-workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Base Panel Styles */
+.cdl-exp-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   ZONE 1: LEFT TOOL & LAYER MANAGER
+   ========================================================================== */
+.cdl-exp-panel-left {
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+  padding: 12px;
+  gap: 12px;
+}
+
+/* Collapsible Card Group */
+.cdl-exp-group {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-exp-group:hover {
+  border-color: #cbd5e1;
+}
+
+.cdl-exp-group-header {
+  padding: 10px 12px;
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cdl-exp-group-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.cdl-exp-group-chevron {
+  font-size: 10px;
+  color: #94a3b8;
+  transition: transform 0.2s ease;
+}
+
+.cdl-exp-group-chevron.open {
+  transform: rotate(180deg);
+}
+
+.cdl-exp-group-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Analysis Info Box */
+.cdl-exp-info-table {
+  width: 100%;
+  font-size: 11px;
+  border-collapse: collapse;
+}
+
+.cdl-exp-info-table td {
+  padding: 4px 0;
+  color: #475569;
+}
+
+.cdl-exp-info-table td strong {
+  color: #0f172a;
+}
+
+/* Visualization Layer Manager Item List */
+.cdl-exp-layers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.cdl-exp-layer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.cdl-exp-layer-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.cdl-exp-layer-item.active {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.12);
+}
+
+.cdl-exp-layer-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cdl-exp-layer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cdl-exp-layer-unit {
+  font-size: 10px;
+  color: #94a3b8;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Sliders & Controls */
+.cdl-exp-control-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-exp-control-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.cdl-exp-slider {
+  width: 100%;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Checkbox Checklist */
+.cdl-exp-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdl-exp-check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.cdl-exp-check-item input[type="checkbox"] {
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Scale Mode Radio Buttons */
+.cdl-exp-radio-group {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+}
+
+.cdl-exp-radio-btn {
+  flex: 1;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  background: #ffffff;
+  color: #64748b;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cdl-exp-radio-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   ZONE 2: CENTER SCIENTIFIC CANVAS
+   ========================================================================== */
+.cdl-exp-panel-center {
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 540px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cdl-exp-canvas-body {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bottom Status Bar */
+.cdl-exp-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px;
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+  font-size: 11px;
+  color: #94a3b8;
+  flex-wrap: wrap;
+  gap: 8px;
+  user-select: none;
+}
+
+.cdl-exp-status-items {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cdl-exp-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #1e293b;
+  color: #cbd5e1;
+  font-weight: 500;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+.cdl-exp-status-pill.highlight {
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* ==========================================================================
+   ZONE 3: RIGHT SCIENTIFIC METRIC INSPECTOR & ANALYTICS
+   ========================================================================== */
+.cdl-exp-panel-right {
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Tab Bar inside Right Inspector */
+.cdl-exp-tabs-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f1f5f9;
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  overflow-x: auto;
+}
+
+.cdl-exp-tab-btn {
+  flex: 1;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.cdl-exp-tab-btn:hover {
+  color: #0f172a;
+}
+
+.cdl-exp-tab-btn.active {
+  background: #ffffff;
+  color: #1d4ed8;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+/* Tab Content Areas */
+.cdl-exp-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Sampled Pixel Card */
+.cdl-exp-sample-card {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 3px solid #0284c7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.cdl-exp-sample-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-exp-sample-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.cdl-exp-sample-val {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-weight: 700;
+  color: #0284c7;
+}
+
+/* QC Pill */
+.cdl-exp-qc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cdl-exp-qc-badge.high {
+  background: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+
+.cdl-exp-qc-badge.moderate {
+  background: #fffbeb;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+
+.cdl-exp-qc-badge.low {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+/* ==========================================================================
+   DARK THEME COMPATIBILITY [data-theme="dark"]
+   ========================================================================== */
+[data-theme="dark"] .cdl-explorer-page {
+  background: #020617;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-explorer-header,
+[data-theme="dark"] .cdl-exp-panel {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .cdl-exp-title,
+[data-theme="dark"] .cdl-exp-group-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-exp-group {
+  background: #111827;
+  border-color: #1f2937;
+}
+
+[data-theme="dark"] .cdl-exp-group-header {
+  background: #0f172a;
+  border-bottom-color: #1f2937;
+}
+
+[data-theme="dark"] .cdl-exp-layer-item {
+  background: #0f172a;
+  border-color: #1e293b;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-exp-layer-item:hover {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .cdl-exp-layer-item.active {
+  background: #1e293b;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .cdl-exp-tabs-nav {
+  background: #020617;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-exp-tab-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-exp-tab-btn:hover {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-exp-tab-btn.active {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .cdl-exp-session-select,
+[data-theme="dark"] .cdl-exp-btn-action,
+[data-theme="dark"] .cdl-exp-radio-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-exp-radio-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-exp-sample-card {
+  background: #111827;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+

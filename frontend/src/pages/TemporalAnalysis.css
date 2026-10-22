@@ -1,0 +1,787 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — TEMPORAL ANALYSIS WORKSPACE STYLESHEET
+   ========================================================================== */
+
+/* Page Wrapper */
+.cdl-temporal-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 4px 48px;
+  box-sizing: border-box;
+  animation: cdlTemporalFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #1e293b;
+}
+
+@keyframes cdlTemporalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   PAGE HEADER & BREADCRUMB
+   ========================================================================== */
+.cdl-temporal-header-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.cdl-temporal-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 2px;
+}
+
+.cdl-temporal-breadcrumb .bc-home {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cdl-temporal-breadcrumb .bc-sep {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.cdl-temporal-breadcrumb .bc-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.cdl-temporal-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+}
+
+.cdl-temporal-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin: 2px 0 0;
+}
+
+/* ==========================================================================
+   VISUAL WORKFLOW BAR (5 STAGES)
+   ========================================================================== */
+.cdl-temporal-workflow-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  overflow-x: auto;
+  gap: 12px;
+}
+
+.cdl-temporal-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.cdl-temporal-step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--mono, monospace);
+  background: #f1f5f9;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.cdl-temporal-step.completed .cdl-temporal-step-badge {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.cdl-temporal-step.active .cdl-temporal-step-badge {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+}
+
+.cdl-temporal-step-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.3px;
+}
+
+.cdl-temporal-step.active .cdl-temporal-step-label {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.cdl-temporal-step.completed .cdl-temporal-step-label {
+  color: #15803d;
+}
+
+.cdl-temporal-arrow {
+  color: #cbd5e1;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* ==========================================================================
+   MODE SWITCHER TABS & CONTROL BAR
+   ========================================================================== */
+.cdl-temporal-controls-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cdl-temporal-mode-pills {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 3px;
+  gap: 4px;
+}
+
+.cdl-temporal-mode-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-temporal-mode-btn.active {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cdl-temporal-quick-configs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   3-ZONE TEMPORAL WORKSTATION (DESKTOP)
+   ========================================================================== */
+.cdl-temporal-workstation-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr 310px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* ==========================================================================
+   ZONE 1: FRAME NAVIGATOR (LEFT)
+   ========================================================================== */
+.cdl-temporal-zone-left {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 720px;
+}
+
+.cdl-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cdl-nav-title {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-nav-counter-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-family: var(--mono, monospace);
+}
+
+.cdl-frames-scroll-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  padding-right: 4px;
+  max-height: 600px;
+}
+
+.cdl-frame-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.cdl-frame-list-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.cdl-frame-list-item.selected {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+.cdl-frame-thumb-mini {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: #090e1a;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cdl-frame-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.cdl-frame-item-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cdl-frame-item-index {
+  font-size: 11px;
+  color: #64748b;
+  font-family: var(--mono, monospace);
+}
+
+/* ==========================================================================
+   ZONE 2: CARDIAC FRAME VIEWER & TIMELINE (CENTER)
+   ========================================================================== */
+.cdl-temporal-zone-center {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cdl-cine-viewer-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cdl-viewer-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cdl-viewer-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-viewer-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Dark visualization canvas */
+.cdl-cine-screen {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background: #090e1a;
+  border-radius: 14px;
+  border: 1px solid #1e293b;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) inset;
+}
+
+.cdl-cine-display-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cdl-cine-hud-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  font-size: 11px;
+  font-family: var(--mono, monospace);
+  color: #38bdf8;
+  backdrop-filter: blur(6px);
+}
+
+/* Playback Control Bar */
+.cdl-playback-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.cdl-playback-btns {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-playback-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #1e293b;
+  transition: all 0.15s ease;
+}
+
+.cdl-playback-btn:hover:not(:disabled) {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.cdl-playback-btn.play-btn {
+  width: 42px;
+  height: 42px;
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.cdl-playback-btn.play-btn:hover {
+  background: #1d4ed8;
+}
+
+.cdl-playback-info {
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: var(--mono, monospace);
+  color: #0f172a;
+}
+
+.cdl-speed-toggle-btn {
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  color: #475569;
+}
+
+/* Horizontal Cardiac Timeline Scrubber */
+.cdl-horizontal-timeline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 4px 4px;
+}
+
+.cdl-timeline-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  min-width: 48px;
+  padding: 6px 4px;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.cdl-timeline-node:hover {
+  background: #f1f5f9;
+}
+
+.cdl-timeline-node.active {
+  background: #eff6ff;
+}
+
+.cdl-timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.cdl-timeline-node.active .cdl-timeline-dot {
+  background: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-timeline-label {
+  font-size: 10px;
+  font-weight: 700;
+  font-family: var(--mono, monospace);
+  color: #64748b;
+}
+
+.cdl-timeline-node.active .cdl-timeline-label {
+  color: #2563eb;
+}
+
+/* ==========================================================================
+   ZONE 3: TEMPORAL METRICS & EXECUTION (RIGHT)
+   ========================================================================== */
+.cdl-temporal-zone-right {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cdl-temporal-inspector-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cdl-inspector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cdl-inspector-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-inspector-metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cdl-inspector-metric-tile {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-tile-label {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cdl-tile-val {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: var(--mono, monospace);
+}
+
+.cdl-temporal-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12.5px;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.cdl-check-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cdl-check-label {
+  color: #64748b;
+}
+
+.cdl-check-val {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Primary Execution Button */
+.cdl-btn-start-temporal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(135deg, #2563eb 0%, #4338ca 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cdl-btn-start-temporal:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+}
+
+.cdl-btn-start-temporal:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Processing indicator */
+.cdl-temporal-progress-card {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.cdl-temporal-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #93c5fd;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: cdlTemporalSpin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes cdlTemporalSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   RESULTS SECTIONS BELOW WORKSTATION
+   ========================================================================== */
+.cdl-temporal-results-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.cdl-temporal-chart-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.04);
+}
+
+.cdl-temporal-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cdl-temporal-chart-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .cdl-temporal-workstation-grid {
+    grid-template-columns: 240px 1fr;
+  }
+  .cdl-temporal-zone-right {
+    grid-column: 1 / -1;
+    position: static;
+  }
+}
+
+@media (max-width: 860px) {
+  .cdl-temporal-workstation-grid {
+    grid-template-columns: 1fr;
+  }
+  .cdl-temporal-zone-left {
+    max-height: 240px;
+  }
+}
+
+/* ==========================================================================
+   DARK THEME OVERRIDES
+   ========================================================================== */
+[data-theme="dark"] .cdl-temporal-page {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-temporal-title,
+[data-theme="dark"] .cdl-nav-title,
+[data-theme="dark"] .cdl-viewer-title,
+[data-theme="dark"] .cdl-inspector-title,
+[data-theme="dark"] .cdl-tile-val,
+[data-theme="dark"] .cdl-check-val,
+[data-theme="dark"] .cdl-temporal-chart-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-temporal-workflow-bar,
+[data-theme="dark"] .cdl-temporal-controls-panel,
+[data-theme="dark"] .cdl-temporal-zone-left,
+[data-theme="dark"] .cdl-cine-viewer-card,
+[data-theme="dark"] .cdl-temporal-inspector-card,
+[data-theme="dark"] .cdl-temporal-chart-card {
+  background: #111827;
+  border-color: #1f2937;
+  color: #f8fafc;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .cdl-temporal-mode-pills,
+[data-theme="dark"] .cdl-frame-list-item,
+[data-theme="dark"] .cdl-playback-bar,
+[data-theme="dark"] .cdl-inspector-metric-tile {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-playback-btn,
+[data-theme="dark"] .cdl-speed-toggle-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-temporal-mode-btn.active {
+  background: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-temporal-progress-card {
+  background: #1e3a8a;
+  border-color: #3b82f6;
+  color: #bfdbfe;
+}
+

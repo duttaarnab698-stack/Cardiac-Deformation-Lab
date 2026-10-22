@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "2aa6eaaf-f41d-48cf-9045-a7c853b544fb",
+    "created_at": "2026-10-22T16:24:25.215770+00:00",
+    "updated_at": "2026-10-22T16:24:25.247873+00:00",
+    "owner_id": "bb187dee-f940-48d0-8d3d-87f7e5c0c3b8",
+    "title": "Alice Cardiac Deformation Study",
+    "subject_code": "P-ALICE-01",
+    "description": "Updated by Alice",
+    "analysis_ids": []
+  },
+  {
+    "id": "c8da97dc-ec26-4365-9787-4a4c74c41463",
+    "created_at": "2026-10-18T10:13:48.683002+00:00",
+    "updated_at": "2026-10-18T10:13:48.809681+00:00",
+    "owner_id": "fbf1267c-c6aa-45c9-a79b-e010593d811b",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "7a16acf5-7aa4-4645-8d61-83b8e5fbb5c7",
+      "e83a4c64-fe2a-40c0-a476-a23ac0dde30f"
+    ]
+  },
+  {
+    "id": "dfbc274e-4c54-4d75-beb0-b625fb1631a8",
+    "created_at": "2026-10-18T10:02:53.660176+00:00",
+    "updated_at": "2026-10-18T10:02:53.762836+00:00",
+    "owner_id": "2027249a-d592-4a7f-87f1-daf2f1b66648",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "d56e6ac2-1ce5-4610-9228-15c3a45ca7dc",
+      "1dde5970-1800-4b97-9c32-b3412244a44f"
+    ]
+  },
+  {
+    "id": "86f577a2-3264-4bf9-9f47-b9c770dd96fe",
+    "created_at": "2026-10-18T10:02:06.185948+00:00",
+    "updated_at": "2026-10-18T10:02:06.275948+00:00",
+    "owner_id": "282cd280-79d1-4dbb-839e-4b00382015c2",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "a0b89e90-03bc-4fd2-9e63-ab5c4845ff56",
+      "729fe34f-eef2-4873-a8b1-3019ec93b367"
+    ]
+  },
+  {
+    "id": "b9561e1a-f32e-4f0e-ba45-fab706b1cb13",
+    "created_at": "2026-10-18T10:01:31.067602+00:00",
+    "updated_at": "2026-10-18T10:01:31.170253+00:00",
+    "owner_id": "de519488-1a4a-487d-b4b7-cbfb39269918",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "6072e956-a1a7-40d9-b21b-c6d4e65b3b26",
+      "686bba2f-afaf-4239-a83c-2612c438892e"
+    ]
+  },
+  {
+    "id": "d2f15707-ec02-43b0-a85a-cdd093e1cbb6",
+    "created_at": "2026-10-18T10:01:07.917445+00:00",
+    "updated_at": "2026-10-18T10:01:07.949624+00:00",
+    "owner_id": null,
+    "title": "T",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [
+      "bd447d9d-9197-4b1e-b3ee-0c94c7d3c35c"
+    ]
+  },
+  {
+    "id": "fd53cb24-55c4-4f85-90b8-65c0bab456ad",
+    "created_at": "2026-10-18T09:59:59.908278+00:00",
+    "updated_at": "2026-10-18T10:00:00.000260+00:00",
+    "owner_id": "d56cec68-6d65-4aaf-80db-b57d3e20ea49",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "f13933d4-1bd0-4d82-a91e-27e4cfb69b3b",
+      "ffd6c538-4142-4282-8965-bfa0a5e48b5e"
+    ]
+  },
+  {
+    "id": "e58aca8c-f678-4bad-be39-2fd7fa0b4ae4",
+    "created_at": "2026-10-18T09:59:38.805711+00:00",
+    "updated_at": "2026-10-18T09:59:38.886282+00:00",
+    "owner_id": "73ef1fef-590a-4fcc-bec8-9bd3696aa262",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "bdf20370-d756-43dc-a8ae-d90fe376bec6",
+      "71db9b61-106b-45e1-9818-c21510814d92"
+    ]
+  },
+  {
+    "id": "d20d65c0-6dbe-4d4b-b1a0-ba0a86ff0cec",
+    "created_at": "2026-10-18T09:57:18.233995+00:00",
+    "updated_at": "2026-10-18T09:57:18.310880+00:00",
+    "owner_id": "fdf15b0c-ec21-48ba-bbe3-a8c34bef797d",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "83eaf19f-63a1-4c8a-892b-7505cbdf8169",
+      "cdfd3c0f-7f61-4ed2-892c-fe893c1be0b8"
+    ]
+  },
+  {
+    "id": "61e99375-c9fd-483c-957d-6852487b1c83",
+    "created_at": "2026-10-18T09:56:41.735213+00:00",
+    "updated_at": "2026-10-18T09:56:41.807543+00:00",
+    "owner_id": "5f93f62d-8989-41fc-9f04-fb17ae59e778",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "58e66db6-6b21-4435-a9b4-351048a08aee",
+      "d5a84267-57f1-462c-87ef-a4bcc9ca6599"
+    ]
+  },
+  {
+    "id": "2087757e-3e36-4311-9051-f0204bb7a35b",
+    "created_at": "2026-10-18T09:56:01.898830+00:00",
+    "updated_at": "2026-10-18T09:56:01.982329+00:00",
+    "owner_id": "c4fbc458-c930-4439-b56e-1a551d7907a3",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "91a6bb2f-fbc8-4a14-963c-28d22b3981e8",
+      "cf4d0972-333b-4581-8375-8e3fd2fdfa9c"
+    ]
+  },
+  {
+    "id": "1ad4b8be-1b18-4fca-869b-24c959b9382c",
+    "created_at": "2026-10-18T09:55:06.774786+00:00",
+    "updated_at": "2026-10-18T09:55:06.852574+00:00",
+    "owner_id": "34153701-5851-4b41-a685-b233d33fa709",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "47f51269-7329-4827-b645-6ecd2203b496",
+      "912d7fd8-cb64-49a9-8a4f-fb7d9063a2b3"
+    ]
+  },
+  {
+    "id": "f1b5e184-52d5-412f-9011-bc01f164afe6",
+    "created_at": "2026-10-18T09:54:20.600561+00:00",
+    "updated_at": "2026-10-18T09:54:20.669267+00:00",
+    "owner_id": "3d32d560-6301-4d56-8e50-0ab3600f7303",
+    "title": "Study Cohort Alpha - Phase 2",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": [
+      "99786796-2f8b-4514-be35-2216a4007b87",
+      "682cb0fa-e1a3-45dd-95f8-da74d817ee1d"
+    ]
+  },
+  {
+    "id": "79fde246-fa82-4ab0-95f5-b509a3e0a3ab",
+    "created_at": "2026-10-18T09:53:44.810764+00:00",
+    "updated_at": "2026-10-18T09:53:44.810764+00:00",
+    "owner_id": "c5916f27-1b06-404a-8edd-03b6087241e2",
+    "title": "Study Cohort Alpha",
+    "subject_code": "SUBJ-A01",
+    "description": "Longitudinal cardiac motion study",
+    "analysis_ids": []
+  },
+  {
+    "id": "018cf0a9-2291-4369-b780-2079ce000abf",
+    "created_at": "2026-10-18T09:38:40.200398+00:00",
+    "updated_at": "2026-10-18T09:38:40.231877+00:00",
+    "owner_id": "b3bc50cf-7761-47fe-9732-bbd640839924",
+    "title": "Alice Cardiac Deformation Study",
+    "subject_code": "P-ALICE-01",
+    "description": "Updated by Alice",
+    "analysis_ids": []
+  },
+  {
+    "id": "0fc7d605-68d0-4366-93e9-e2bc69c576c5",
+    "created_at": "2026-10-18T09:38:21.998605+00:00",
+    "updated_at": "2026-10-18T09:38:22.052600+00:00",
+    "owner_id": null,
+    "title": "Report Test Study e101ad",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "f1cd4290-e473-4f01-87e4-daa139a125e3",
+      "46c840c7-af85-4c25-83be-e35dc27029b8"
+    ]
+  },
+  {
+    "id": "5b3128ee-9ae8-48d8-9e6c-4a868836a81a",
+    "created_at": "2026-10-18T09:38:21.659062+00:00",
+    "updated_at": "2026-10-18T09:38:21.659062+00:00",
+    "owner_id": "981851e4-e217-4bc2-9e99-85f24dd83324",
+    "title": "Private Research Study A",
+    "subject_code": "PRIV-A",
+    "description": "",
+    "analysis_ids": []
+  },
+  {
+    "id": "21966095-1def-401e-ad76-a364c1bcf04c",
+    "created_at": "2026-10-18T09:38:21.155921+00:00",
+    "updated_at": "2026-10-18T09:38:21.210348+00:00",
+    "owner_id": null,
+    "title": "Report Test Study c341d2",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "0e538c75-15f1-4285-951f-53bdcc9deeea",
+      "f2fd2e8d-2d79-4fe1-82c9-07f4ef1a966f"
+    ]
+  },
+  {
+    "id": "7170cf6c-6d16-49bc-ba72-9cdb1c8c347b",
+    "created_at": "2026-10-18T09:38:20.715829+00:00",
+    "updated_at": "2026-10-18T09:38:20.753963+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 4aa938",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "d58fc647-85ec-4913-bb60-185966a49678",
+      "81b6cfcf-d827-4b9a-be84-fa3c8954769d"
+    ]
+  },
+  {
+    "id": "996bf881-8220-45de-b863-b9c48bdec8e9",
+    "created_at": "2026-10-18T09:38:19.823691+00:00",
+    "updated_at": "2026-10-18T09:38:19.873379+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 03d0d7",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "cee5ec5e-a94f-4334-b3e7-8e9f4118fa86",
+      "64fca1be-a4e3-4479-889b-e80647793c38"
+    ]
+  },
+  {
+    "id": "3d256260-1189-47d3-8b04-751396199504",
+    "created_at": "2026-10-18T09:15:45.137127+00:00",
+    "updated_at": "2026-10-18T09:15:45.173302+00:00",
+    "owner_id": "4a9d0ce6-ad3f-42fd-bb8a-9116af04c689",
+    "title": "Alice Cardiac Deformation Study",
+    "subject_code": "P-ALICE-01",
+    "description": "Updated by Alice",
+    "analysis_ids": []
+  },
+  {
+    "id": "6edfbf63-20bf-481c-b37c-e16c55c0e04c",
+    "created_at": "2026-10-18T09:15:21.174598+00:00",
+    "updated_at": "2026-10-18T09:15:21.220433+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 8bf8f4",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "b88954d9-db39-411a-837a-142385b01598",
+      "723e928a-a400-4180-809e-ef36fa4bcd41"
+    ]
+  },
+  {
+    "id": "6b56de26-b366-4594-955b-9ca35293f3a6",
+    "created_at": "2026-10-18T09:15:20.694801+00:00",
+    "updated_at": "2026-10-18T09:15:20.694801+00:00",
+    "owner_id": "545cd842-08c5-414b-bfa0-c759a709a935",
+    "title": "Private Research Study A",
+    "subject_code": "PRIV-A",
+    "description": "",
+    "analysis_ids": []
+  },
+  {
+    "id": "3c3fde2f-b5d3-4dd8-9817-c4141107e797",
+    "created_at": "2026-10-18T09:15:20.179182+00:00",
+    "updated_at": "2026-10-18T09:15:20.212537+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 50d91b",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "2461f0ed-60f7-4428-a237-c43900c6288a",
+      "13eb6514-053b-4cab-8119-f7b035d709ef"
+    ]
+  },
+  {
+    "id": "42e4385e-41b7-4c18-aa92-ab70e672bcf4",
+    "created_at": "2026-10-18T09:15:19.736627+00:00",
+    "updated_at": "2026-10-18T09:15:19.774591+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 2c8166",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "42b959a5-b031-4ede-b159-b0d958162275",
+      "3da6f17c-1c44-49de-a4c8-655458b29450"
+    ]
+  },
+  {
+    "id": "189571ff-3af7-4e3d-9529-d856fe95bd38",
+    "created_at": "2026-10-18T09:15:18.757780+00:00",
+    "updated_at": "2026-10-18T09:15:18.797155+00:00",
+    "owner_id": null,
+    "title": "Report Test Study b2de2d",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "9e6c05d1-921d-46c5-8efa-25cb255b0b69",
+      "078f4f82-963f-44de-81d9-ba9d25f93f38"
+    ]
+  },
+  {
+    "id": "13508c90-4735-40ba-aeda-5dce9485d5ee",
+    "created_at": "2026-10-18T09:12:49.091612+00:00",
+    "updated_at": "2026-10-18T09:12:49.132247+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 60a9ec",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "d6ff4183-3795-483b-8be2-fce92f130c87",
+      "83c21f2a-6367-4368-8e86-247ce433ef75"
+    ]
+  },
+  {
+    "id": "6dc89aea-318b-4a85-99e7-9493b5761bd5",
+    "created_at": "2026-10-18T09:12:48.793761+00:00",
+    "updated_at": "2026-10-18T09:12:48.793761+00:00",
+    "owner_id": null,
+    "title": "Private Research Study A",
+    "subject_code": "PRIV-A",
+    "description": "",
+    "analysis_ids": []
+  },
+  {
+    "id": "c92f45c6-b94c-4072-ae2a-3af632fef426",
+    "created_at": "2026-10-18T09:12:48.471146+00:00",
+    "updated_at": "2026-10-18T09:12:48.515263+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 4dba8c",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "f2fa5dbc-f828-4e09-b32a-fdb3d3f54b56",
+      "a9061ccb-c24b-4670-a6bd-84b8d8f71467"
+    ]
+  },
+  {
+    "id": "d9387b49-06bb-40ee-a07a-ddf326d7c531",
+    "created_at": "2026-10-18T09:12:48.023917+00:00",
+    "updated_at": "2026-10-18T09:12:48.067770+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 78398a",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "ca089c38-dead-4d8a-ba07-32e58d549004",
+      "8983d781-31a0-4d7a-8547-893f707466c1"
+    ]
+  },
+  {
+    "id": "9d39c8b9-4a40-45d5-bc1d-68f45175f3d9",
+    "created_at": "2026-10-18T09:12:46.904483+00:00",
+    "updated_at": "2026-10-18T09:12:46.945617+00:00",
+    "owner_id": null,
+    "title": "Report Test Study acd1d5",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "a7a982ba-9310-44da-8696-ec4efee54de6",
+      "be84ddf7-965f-4ac4-a5d0-e8ce55041b66"
+    ]
+  },
+  {
+    "id": "4d771ebd-92b2-4228-8ab6-ae0fdd4cb131",
+    "created_at": "2026-10-18T09:12:31.884984+00:00",
+    "updated_at": "2026-10-18T09:12:31.931949+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 6dbd0e",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "1411ef57-fef0-43aa-b801-e3580e4c309a",
+      "de5a1f13-5643-45a8-b888-dc6b497b9bc9"
+    ]
+  },
+  {
+    "id": "fe071fa4-a630-4636-a4ab-beb0202b0187",
+    "created_at": "2026-10-18T09:12:31.525167+00:00",
+    "updated_at": "2026-10-18T09:12:31.525167+00:00",
+    "owner_id": null,
+    "title": "Private Research Study A",
+    "subject_code": "PRIV-A",
+    "description": "",
+    "analysis_ids": []
+  },
+  {
+    "id": "884f9b64-c72e-4c21-ad07-75fd06637c42",
+    "created_at": "2026-10-18T09:12:31.259660+00:00",
+    "updated_at": "2026-10-18T09:12:31.296381+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 1f2dff",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "bcd42927-dae3-4a8e-86ab-1fe1af0d2822",
+      "a4cbb6ca-6dd1-475a-b3a8-bd03e5e31972"
+    ]
+  },
+  {
+    "id": "f7a7b009-211c-4cf2-b5d8-6e6e7c8a635f",
+    "created_at": "2026-10-18T09:12:30.872375+00:00",
+    "updated_at": "2026-10-18T09:12:30.910333+00:00",
+    "owner_id": null,
+    "title": "Report Test Study da009d",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "2185db77-4a17-4d07-b188-0d8bd53fd33d",
+      "79c3892d-f42a-420f-ad04-c26546ad0e5b"
+    ]
+  },
+  {
+    "id": "ffe01e88-1ec2-4170-a98e-55885459c28e",
+    "created_at": "2026-10-18T09:12:30.016852+00:00",
+    "updated_at": "2026-10-18T09:12:30.058568+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 032e5f",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "0fec7c3a-e94b-4ee7-9959-050b82820958",
+      "e3ab2f2b-42ce-4460-b619-7265a514d271"
+    ]
+  },
+  {
+    "id": "71964e6b-1f20-4743-9a1f-e4c7364f06d6",
+    "created_at": "2026-10-18T09:11:05.014489+00:00",
+    "updated_at": "2026-10-18T09:11:05.050762+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 7e94d8",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "13ab0561-065d-4fa2-af35-2d4e1bcc9d6a",
+      "e013a06c-a475-4e8a-a816-1d85360f06b8"
+    ]
+  },
+  {
+    "id": "a6dfc4e9-691d-48e0-9208-202d06940398",
+    "created_at": "2026-10-18T09:11:04.891652+00:00",
+    "updated_at": "2026-10-18T09:11:04.930719+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 7d0e28",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "9699989c-8b18-4c28-a976-0bcf03d75a5a",
+      "b502606e-a398-4f48-aec0-3d8f6ef93c72"
+    ]
+  },
+  {
+    "id": "e7cf0cfa-30bd-49d1-8815-e83dbe6f09bb",
+    "created_at": "2026-10-18T09:11:04.767978+00:00",
+    "updated_at": "2026-10-18T09:11:04.805075+00:00",
+    "owner_id": null,
+    "title": "Report Test Study c3c43d",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "680a45d4-830a-41e0-8f31-79aa02ec2e65",
+      "8f545880-15c9-42c2-a962-363246978ac7"
+    ]
+  },
+  {
+    "id": "1dbe2340-5c24-4d00-9be2-e32e96bab543",
+    "created_at": "2026-10-18T09:11:04.011428+00:00",
+    "updated_at": "2026-10-18T09:11:04.053011+00:00",
+    "owner_id": null,
+    "title": "Report Test Study 624a77",
+    "subject_code": "TEST-REP-01",
+    "description": "Validation study for Step 11.18 reporting and export package.",
+    "analysis_ids": [
+      "7e550e3e-5d48-4ee1-a6a7-48c97b2cb8fc",
+      "2c8ff7da-031f-49fe-ad75-3e6070a9c4cc"
+    ]
+  },
+  {
+    "id": "54805532-8486-4bb2-9481-a42b35e51a27",
+    "created_at": "2026-10-18T09:01:51.372338+00:00",
+    "updated_at": "2026-10-18T09:01:51.414264+00:00",
+    "owner_id": "92f7f6b3-2782-4803-bf81-acc6a9a666be",
+    "title": "Alice Cardiac Deformation Study",
+    "subject_code": "P-ALICE-01",
+    "description": "Updated by Alice",
+    "analysis_ids": []
+  },
+  {
+    "id": "efe0685c-2fa0-40a4-a5a5-1e5a6f615e05",
+    "created_at": "2026-10-18T08:44:10.772338+00:00",
+    "updated_at": "2026-10-18T08:44:10.809804+00:00",
+    "owner_id": null,
+    "title": "ROI Test Study",
+    "subject_code": "ROI-01",
+    "description": "",
+    "analysis_ids": [
+      "5756ca89-d109-4b79-af45-fa07e8a8bbf4",
+      "492d7e84-15dc-43f9-b220-a431421e0782"
+    ]
+  },
+  {
+    "id": "a5213cd8-55f5-4e09-9ad0-f4405d555ff1",
+    "created_at": "2026-10-18T08:44:10.709930+00:00",
+    "updated_at": "2026-10-18T08:44:10.745418+00:00",
+    "owner_id": null,
+    "title": "Calibration Test Study",
+    "subject_code": "CAL-01",
+    "description": "",
+    "analysis_ids": [
+      "5756ca89-d109-4b79-af45-fa07e8a8bbf4",
+      "da4a3fe5-241c-4e3a-9fb6-04d8418c29e5"
+    ]
+  },
+  {
+    "id": "c0ef9801-3e80-4e24-bb36-f70280baf338",
+    "created_at": "2026-10-18T08:44:10.591002+00:00",
+    "updated_at": "2026-10-18T08:44:10.655882+00:00",
+    "owner_id": null,
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "5756ca89-d109-4b79-af45-fa07e8a8bbf4",
+      "bc587026-ac36-4dce-8bc9-72807acc0611",
+      "00000000-0000-0000-0000-000000000000"
+    ]
+  },
+  {
+    "id": "fd063da9-115e-44e4-9b8e-2cd5b9e2fa94",
+    "created_at": "2026-10-18T08:44:10.546365+00:00",
+    "updated_at": "2026-10-18T08:44:10.564538+00:00",
+    "owner_id": null,
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "5756ca89-d109-4b79-af45-fa07e8a8bbf4"
+    ]
+  },
+  {
+    "id": "4cb5c701-dc59-49fd-8499-3b2da523bb4e",
+    "created_at": "2026-10-18T08:44:03.725638+00:00",
+    "updated_at": "2026-10-18T08:44:03.780016+00:00",
+    "owner_id": null,
+    "title": "ROI Cohort Study",
+    "subject_code": "STAT-ROI-01",
+    "description": "Cohort with masked region of interest analyses",
+    "analysis_ids": [
+      "b25bd550-5030-471a-bb86-f798b04dbd78",
+      "f2d2a8e1-28cf-4d41-9ff1-a25a927ddf2a",
+      "332c0914-882d-45b9-bbb1-3f7de9527c84"
+    ]
+  },
+  {
+    "id": "ddcc8be4-4b8f-4721-af5d-3e3985ad132e",
+    "created_at": "2026-10-18T08:44:03.455389+00:00",
+    "updated_at": "2026-10-18T08:44:03.551458+00:00",
+    "owner_id": null,
+    "title": "Longitudinal Research Cohort",
+    "subject_code": "STAT-P002",
+    "description": "5 session research study with calibration and high deformation",
+    "analysis_ids": [
+      "7ad56fb9-dc7a-4583-b017-b1de79040926",
+      "3c9aa3e3-e717-4f0c-bd93-47d1bf02b407",
+      "2164763e-aa55-4231-9a82-45c8c600d2d8",
+      "a4508a42-0211-432e-9160-c892fddce984",
+      "83fc5b1b-1ee8-4d28-863d-83dbd93d67a9"
+    ]
+  },
+  {
+    "id": "4701e603-d3ae-43c2-8044-82e6d5be002d",
+    "created_at": "2026-10-18T08:44:03.407644+00:00",
+    "updated_at": "2026-10-18T08:44:03.426120+00:00",
+    "owner_id": null,
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "7ad56fb9-dc7a-4583-b017-b1de79040926"
+    ]
+  },
+  {
+    "id": "2ff798c3-31dc-4186-a5c1-1b6cc2fd9475",
+    "created_at": "2026-10-18T08:43:30.794053+00:00",
+    "updated_at": "2026-10-18T08:43:30.823207+00:00",
+    "owner_id": "cbbc1e93-cf0a-4e00-90cf-6b93ba6824c6",
+    "title": "Alice Cardiac Deformation Study",
+    "subject_code": "P-ALICE-01",
+    "description": "Updated by Alice",
+    "analysis_ids": []
+  },
+  {
+    "id": "8330c980-516c-48fb-858e-d46d7f772666",
+    "created_at": "2026-10-16T07:08:47.478136+00:00",
+    "updated_at": "2026-10-16T07:08:47.532794+00:00",
+    "title": "ROI Cohort Study",
+    "subject_code": "STAT-ROI-01",
+    "description": "Cohort with masked region of interest analyses",
+    "analysis_ids": [
+      "300b900e-200d-4ce5-960d-3fde5dd34532",
+      "1e6416d6-47ae-4ef4-a667-ac612bf4dc79",
+      "534e7f88-aab4-43cb-9ed5-d5decb8226a8"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "f97eadfb-8a73-46fd-8ee7-e8724f4ec88f",
+    "created_at": "2026-10-16T07:08:47.177048+00:00",
+    "updated_at": "2026-10-16T07:08:47.290281+00:00",
+    "title": "Longitudinal Research Cohort",
+    "subject_code": "STAT-P002",
+    "description": "5 session research study with calibration and high deformation",
+    "analysis_ids": [
+      "3656cfd7-6e8e-44f6-abf0-88584b2ceab0",
+      "dfe81b86-2aba-4fad-b8e6-e5e8b329b9e3",
+      "1fa85e02-0a59-48aa-a7df-617579d650f6",
+      "8ed512c7-0102-48b1-8ef3-71a81d54206d",
+      "7c744d9a-80ed-440b-b8b5-321c5b851183"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "3f1d7713-cf47-4562-a7e4-ac9f4feebcb9",
+    "created_at": "2026-10-16T07:08:47.133716+00:00",
+    "updated_at": "2026-10-16T07:08:47.153540+00:00",
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "3656cfd7-6e8e-44f6-abf0-88584b2ceab0"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "c737dc00-64f8-45a8-b026-8b8c244a2977",
+    "created_at": "2026-10-16T05:37:27.887603+00:00",
+    "updated_at": "2026-10-16T05:37:27.938539+00:00",
+    "title": "ROI Cohort Study",
+    "subject_code": "STAT-ROI-01",
+    "description": "Cohort with masked region of interest analyses",
+    "analysis_ids": [
+      "77d7c89c-52b4-4396-8ba0-afe20b13d570",
+      "1571e7db-fcfa-44a0-93a6-5fbb2ad23884",
+      "48a1b054-3b7a-47f3-a277-7c060be71681"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "3b39f5f5-29f5-4f3a-bb09-f8ed911c8911",
+    "created_at": "2026-10-16T05:37:27.639878+00:00",
+    "updated_at": "2026-10-16T05:37:27.725694+00:00",
+    "title": "Longitudinal Research Cohort",
+    "subject_code": "STAT-P002",
+    "description": "5 session research study with calibration and high deformation",
+    "analysis_ids": [
+      "9baca854-8c80-4f37-b403-0dcf7afacef0",
+      "3c3f1d11-afe8-4258-bb3b-06bf559d2fc3",
+      "2f6c793d-882a-47c5-83d9-779a5b8f3b1c",
+      "e98a0472-d70b-4923-b910-da26b6b92fa8",
+      "262b4e7f-239a-41f2-bb4e-499ddf373643"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "e5683f3e-d085-408c-a630-902707fb3740",
+    "created_at": "2026-10-16T05:37:27.597477+00:00",
+    "updated_at": "2026-10-16T05:37:27.615899+00:00",
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "9baca854-8c80-4f37-b403-0dcf7afacef0"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "7ed3f588-ef42-4532-94a5-ac78f5bc46ed",
+    "created_at": "2026-10-16T05:36:59.003467+00:00",
+    "updated_at": "2026-10-16T05:36:59.071131+00:00",
+    "title": "ROI Cohort Study",
+    "subject_code": "STAT-ROI-01",
+    "description": "Cohort with masked region of interest analyses",
+    "analysis_ids": [
+      "4486941f-d650-47ba-99b0-80b543ebc131",
+      "d028a52b-2e9a-4422-928a-feb1a5104b91",
+      "ed0e2057-8976-44a0-b35e-e2817a7de79d"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "20948a9f-f892-4fdb-938a-1f862ebcd2e7",
+    "created_at": "2026-10-16T05:36:58.761528+00:00",
+    "updated_at": "2026-10-16T05:36:58.842553+00:00",
+    "title": "Longitudinal Research Cohort",
+    "subject_code": "STAT-P002",
+    "description": "5 session research study with calibration and high deformation",
+    "analysis_ids": [
+      "cab553c4-d720-49cb-8bd7-7b7771225401",
+      "7bffa834-5e8c-46ee-a3ea-4280a02d0e26",
+      "35d674a6-6d89-467e-94d8-e8236e0df90b",
+      "3f7512b4-5b87-489b-9436-8be3fe3aacfa",
+      "62597596-040e-4ec5-a6e9-a86e9e3c049f"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "e318e914-e84b-49ca-9e3b-bc02c36967b1",
+    "created_at": "2026-10-16T05:36:58.722318+00:00",
+    "updated_at": "2026-10-16T05:36:58.739045+00:00",
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "cab553c4-d720-49cb-8bd7-7b7771225401"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "803f422f-664e-4a5e-99e9-287382244c8e",
+    "created_at": "2026-10-16T05:36:40.367463+00:00",
+    "updated_at": "2026-10-16T05:36:40.421249+00:00",
+    "title": "ROI Cohort Study",
+    "subject_code": "STAT-ROI-01",
+    "description": "Cohort with masked region of interest analyses",
+    "analysis_ids": [
+      "f06125af-f55c-4529-87a0-c98c574bcf4a",
+      "33f25659-af3f-4872-87cf-4d565e0e864e",
+      "2376c8db-3f0d-4033-b297-9ce391a52af7"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "a5ee1b92-ca6c-4b72-b1b4-6c78dd118d71",
+    "created_at": "2026-10-16T05:36:40.084036+00:00",
+    "updated_at": "2026-10-16T05:36:40.177461+00:00",
+    "title": "Longitudinal Research Cohort",
+    "subject_code": "STAT-P002",
+    "description": "5 session research study with calibration and high deformation",
+    "analysis_ids": [
+      "249cc267-f0fd-48f7-911f-1c1b58bcbd0c",
+      "e205e10b-3930-41a0-99e3-785a1f4d9309",
+      "8dd5edc8-0632-4c97-9de7-4e17a9bbc77d",
+      "4cc9c006-5ebc-4d9e-b0f9-b91f28520ee6",
+      "0c38126b-4ae3-426c-a8f2-d26754b163d2"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "d463668b-f0a9-4fbf-bf3f-448ce81b45c5",
+    "created_at": "2026-10-16T05:36:40.037310+00:00",
+    "updated_at": "2026-10-16T05:36:40.054940+00:00",
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "249cc267-f0fd-48f7-911f-1c1b58bcbd0c"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "f21cb776-5590-447f-8798-9b3cb84c6b5c",
+    "created_at": "2026-10-16T05:36:04.733894+00:00",
+    "updated_at": "2026-10-16T05:36:04.818525+00:00",
+    "title": "Longitudinal Research Cohort",
+    "subject_code": "STAT-P002",
+    "description": "5 session research study with calibration and high deformation",
+    "analysis_ids": [
+      "39d9f1ce-ad76-4f72-8320-4b9d8a784ade",
+      "37e851af-569b-457a-a71f-f8c20e0592aa",
+      "943ae8b7-18ab-4f9b-a5fd-2dd711c8d7fb",
+      "eb5bca55-963a-47e8-9b17-c860b0c9f2b2",
+      "3f767f2c-2264-400f-accc-408421b26cbf"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "fc97003f-c2b4-4bff-96fb-c13e946ed0a8",
+    "created_at": "2026-10-16T05:36:04.693387+00:00",
+    "updated_at": "2026-10-16T05:36:04.710427+00:00",
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "39d9f1ce-ad76-4f72-8320-4b9d8a784ade"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "a5c048a6-3145-4ef7-8b9f-8cc7f686a8d7",
+    "created_at": "2026-10-16T05:35:36.129045+00:00",
+    "updated_at": "2026-10-16T05:35:36.145800+00:00",
+    "title": "Study Single Session",
+    "subject_code": "STAT-P001",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [
+      "632fa366-70d9-4c0d-9579-8e5612b3e2d8"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "648e3a22-089e-4b33-ad6f-1379c136094e",
+    "created_at": "2026-10-16T05:35:18.487546+00:00",
+    "updated_at": "2026-10-16T05:35:18.487546+00:00",
+    "title": "Study Single Session",
+    "subject_code": "",
+    "description": "Single session cohort for insufficiency validation",
+    "analysis_ids": [],
+    "owner_id": null
+  },
+  {
+    "id": "e01b7782-a341-4330-a930-4c99d200aa59",
+    "created_at": "2026-10-16T05:25:15.249414+00:00",
+    "updated_at": "2026-10-16T05:25:15.282117+00:00",
+    "title": "ROI Test Study",
+    "subject_code": "ROI-01",
+    "description": "",
+    "analysis_ids": [
+      "a0453fb6-4d00-4cea-b324-b95bc3a88e6d",
+      "edcfa1f3-9a29-4f47-a88f-912cff419b9c"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "5d77cd6d-f1de-42a5-8419-2ca34d11c1ea",
+    "created_at": "2026-10-16T05:25:15.192237+00:00",
+    "updated_at": "2026-10-16T05:25:15.228072+00:00",
+    "title": "Calibration Test Study",
+    "subject_code": "CAL-01",
+    "description": "",
+    "analysis_ids": [
+      "a0453fb6-4d00-4cea-b324-b95bc3a88e6d",
+      "b5997614-9015-4226-968d-1f58cf8ce542"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "2c6c0762-a136-4ed8-8d54-17ba93756a10",
+    "created_at": "2026-10-16T05:25:15.080740+00:00",
+    "updated_at": "2026-10-16T05:25:15.143287+00:00",
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "a0453fb6-4d00-4cea-b324-b95bc3a88e6d",
+      "ae54ad80-52fc-4260-87d5-cf401af62864",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "91f682bc-ee1f-441c-a132-432c0804ddb4",
+    "created_at": "2026-10-16T05:25:15.042108+00:00",
+    "updated_at": "2026-10-16T05:25:15.059079+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "a0453fb6-4d00-4cea-b324-b95bc3a88e6d"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "f27fc0ea-84f8-4a81-92bb-ce01246e37f5",
+    "created_at": "2026-10-16T05:24:40.817290+00:00",
+    "updated_at": "2026-10-16T05:24:40.864439+00:00",
+    "title": "ROI Test Study",
+    "subject_code": "ROI-01",
+    "description": "",
+    "analysis_ids": [
+      "508cc2cc-9685-46df-8b5a-5b178b130b83",
+      "033293fe-eb73-4d79-9dd4-77decb38c102"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "64c57e16-9246-4944-9eb1-b6562e9160bd",
+    "created_at": "2026-10-16T05:24:40.763583+00:00",
+    "updated_at": "2026-10-16T05:24:40.797102+00:00",
+    "title": "Calibration Test Study",
+    "subject_code": "CAL-01",
+    "description": "",
+    "analysis_ids": [
+      "508cc2cc-9685-46df-8b5a-5b178b130b83",
+      "6659db7c-b8c2-4c7e-b40b-ea6517496498"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "4cdc4cbb-f6d1-4418-a876-e80d76972173",
+    "created_at": "2026-10-16T05:24:40.654622+00:00",
+    "updated_at": "2026-10-16T05:24:40.712117+00:00",
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "508cc2cc-9685-46df-8b5a-5b178b130b83",
+      "db1be489-d5c3-45af-967f-c625ab1dcc9c",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "7f40cd72-8e6a-44f7-a674-489aa7b70807",
+    "created_at": "2026-10-16T05:24:40.607321+00:00",
+    "updated_at": "2026-10-16T05:24:40.624866+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "508cc2cc-9685-46df-8b5a-5b178b130b83"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "b82f6cb6-70f9-49af-832f-b4eef0c98bdf",
+    "created_at": "2026-10-16T05:23:17.131195+00:00",
+    "updated_at": "2026-10-16T05:23:17.162536+00:00",
+    "title": "Calibration Test Study",
+    "subject_code": "CAL-01",
+    "description": "",
+    "analysis_ids": [
+      "d383672a-12b6-4292-9318-d8c3ceb0371b",
+      "a99a5483-c38d-4440-a453-c4534de1eff3"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "0a1be989-d826-4b13-a899-bde1f71bb805",
+    "created_at": "2026-10-16T05:23:17.022725+00:00",
+    "updated_at": "2026-10-16T05:23:17.081520+00:00",
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "d383672a-12b6-4292-9318-d8c3ceb0371b",
+      "8d5e0f5f-cdc6-40a8-9bc5-dd03c55dae5e",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "d6a30b77-041b-49dc-849f-6f656cdfccc4",
+    "created_at": "2026-10-16T05:23:16.982952+00:00",
+    "updated_at": "2026-10-16T05:23:16.999684+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "d383672a-12b6-4292-9318-d8c3ceb0371b"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "daf50e97-a3cf-422f-9bb3-c0c6db5cb84b",
+    "created_at": "2026-10-16T05:22:22.920579+00:00",
+    "updated_at": "2026-10-16T05:22:22.952912+00:00",
+    "title": "Calibration Test Study",
+    "subject_code": "CAL-01",
+    "description": "",
+    "analysis_ids": [
+      "99b58ced-fa43-4488-8f19-3e3963933fb8",
+      "8f694cfa-394b-4f27-a76c-ee1fe358b33a"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "a4a5dbe9-4ccb-4e3e-8d42-9e8b4e580f5a",
+    "created_at": "2026-10-16T05:22:22.805684+00:00",
+    "updated_at": "2026-10-16T05:22:22.862096+00:00",
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "99b58ced-fa43-4488-8f19-3e3963933fb8",
+      "82aeac52-a081-4e58-ac9c-bc330f899548",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "99f3ed69-425a-4413-8c1c-c77a73bb9318",
+    "created_at": "2026-10-16T05:22:22.766750+00:00",
+    "updated_at": "2026-10-16T05:22:22.782754+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "99b58ced-fa43-4488-8f19-3e3963933fb8"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "8d89e99e-b3e1-4e0a-b4c7-b1c1dcf3f132",
+    "created_at": "2026-10-16T05:21:27.946771+00:00",
+    "updated_at": "2026-10-16T05:21:27.992570+00:00",
+    "title": "Calibration Test Study",
+    "subject_code": "CAL-01",
+    "description": "",
+    "analysis_ids": [
+      "08cbe908-f850-4211-acdc-e6b2376a2253",
+      "76538df9-17db-4dbe-829c-f1759b2cded5"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "dfdb3cb9-f90a-4da1-94a9-5ab5dda115ee",
+    "created_at": "2026-10-16T05:21:27.832584+00:00",
+    "updated_at": "2026-10-16T05:21:27.892184+00:00",
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "08cbe908-f850-4211-acdc-e6b2376a2253",
+      "bb731848-841f-467b-aae4-3cd95094e130",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "11426d7e-6fe6-4c64-84f9-a0cfd9d5615f",
+    "created_at": "2026-10-16T05:21:27.784022+00:00",
+    "updated_at": "2026-10-16T05:21:27.799939+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "08cbe908-f850-4211-acdc-e6b2376a2253"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "1d244b9b-6767-42e0-bdf6-e1b4548af556",
+    "created_at": "2026-10-16T05:20:36.142672+00:00",
+    "updated_at": "2026-10-16T05:20:36.156995+00:00",
+    "title": "Legacy Study",
+    "subject_code": "LEG-01",
+    "description": "",
+    "analysis_ids": [
+      "27a79008-26c9-4efb-b6f5-cdc7e7deccf7"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "a17db590-e8fc-4a2a-ac79-d45a56511a0b",
+    "created_at": "2026-10-16T05:20:36.046298+00:00",
+    "updated_at": "2026-10-16T05:20:36.119826+00:00",
+    "title": "Multi-Session Progression Study",
+    "subject_code": "SUBJ-002",
+    "description": "",
+    "analysis_ids": [
+      "7f2afd0f-1def-42dd-91b7-2368ef1987f9",
+      "78f007f1-4c03-475c-bfd9-eb883af72e0e",
+      "00000000-0000-0000-0000-000000000000"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "d9a8f0be-458b-4b55-a310-b9b3ced985dc",
+    "created_at": "2026-10-16T05:20:36.003684+00:00",
+    "updated_at": "2026-10-16T05:20:36.019399+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [
+      "7f2afd0f-1def-42dd-91b7-2368ef1987f9"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "b2dacf93-33b8-4f39-b146-e70197c36e30",
+    "created_at": "2026-10-16T05:18:35.429106+00:00",
+    "updated_at": "2026-10-16T05:18:35.429106+00:00",
+    "title": "Single Session Study",
+    "subject_code": "SUBJ-001",
+    "description": "",
+    "analysis_ids": [],
+    "owner_id": null
+  },
+  {
+    "id": "db50c556-6dc3-436b-8058-63ad9d719ee5",
+    "created_at": "2026-10-16T04:45:05.088044+00:00",
+    "updated_at": "2026-10-16T04:45:05.117228+00:00",
+    "title": "Verification Study B",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [
+      "953b7448-4181-412b-bd91-29aa17f9c881"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "186f191b-b4e5-4eea-b71f-03cbaf3b6420",
+    "created_at": "2026-10-16T04:45:05.004915+00:00",
+    "updated_at": "2026-10-16T04:45:05.058188+00:00",
+    "title": "Verification Study A",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [
+      "60c193af-712d-4c8a-857c-adfa88b74db0",
+      "110bcfc1-ef7c-475b-8020-6625b166bb17"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "8e8db099-fd8a-4197-93c2-59dcba8a8cf0",
+    "created_at": "2026-10-16T04:43:49.164179+00:00",
+    "updated_at": "2026-10-16T04:53:55.640838+00:00",
+    "title": "Verification Study B",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [],
+    "owner_id": null
+  },
+  {
+    "id": "f1361934-6214-4dc6-8f73-38d427caa5fd",
+    "created_at": "2026-10-16T04:43:49.070535+00:00",
+    "updated_at": "2026-10-16T04:43:49.140883+00:00",
+    "title": "Verification Study A",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [
+      "c1942c5b-c41c-4f90-b69b-206ecacaa09a",
+      "8248d3ca-03f9-440a-aa95-223e820ad312"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "e87ab301-6d6b-47fa-a7a3-e6038aae99c4",
+    "created_at": "2026-10-16T04:43:01.033980+00:00",
+    "updated_at": "2026-10-16T04:43:01.049273+00:00",
+    "title": "Verification Study B",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [
+      "d621c391-2685-4ada-80df-3538010feecf"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "5d19fbb3-0266-40d2-a94c-e24d3b481ea3",
+    "created_at": "2026-10-16T04:43:00.955301+00:00",
+    "updated_at": "2026-10-16T04:43:01.010244+00:00",
+    "title": "Verification Study A",
+    "subject_code": "",
+    "description": "",
+    "analysis_ids": [
+      "7704de20-0df9-4017-8e6f-b5d82204a489",
+      "2d96128a-7730-4b40-8ff4-6db3e70b78cf"
+    ],
+    "owner_id": null
+  },
+  {
+    "id": "a58b2ea2-27a9-4736-81b5-07854576d966",
+    "created_at": "2026-10-15T16:45:34.705664+00:00",
+    "updated_at": "2026-10-15T17:09:20.408915+00:00",
+    "title": "Clinical Cohort Trial",
+    "subject_code": "COHORT-A",
+    "description": "Testing study flow",
+    "analysis_ids": [
+      "b3d3b8d1-7628-42a3-b742-87a006cadfcb"
+    ],
+    "owner_id": null
+  }
+]

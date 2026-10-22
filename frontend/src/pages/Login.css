@@ -1,0 +1,788 @@
+/* Cardiac Deformation Lab - Research Workspace Login Page Styles */
+
+/* ==========================================================================
+   Root Layout Container (Split Screen)
+   ========================================================================== */
+.cdl-login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Left Panel: Research / Scientific Branding & Cardiac Visualization
+   ========================================================================== */
+.cdl-left-panel {
+  flex: 1 1 50%;
+  min-width: 0;
+  position: relative;
+  background: radial-gradient(circle at 65% 45%, #2563eb 0%, #1d4ed8 35%, #1e3a8a 70%, #0f172a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 44px 48px;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* Scientific Background Grid */
+.cdl-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ambient Glow & Radial Light Cones */
+.cdl-ambient-glow-1 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.28) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 2;
+  animation: pulseSlow 8s ease-in-out infinite alternate;
+}
+
+.cdl-ambient-glow-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.2) 0%, rgba(147, 51, 234, 0.12) 50%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes pulseSlow {
+  0% { transform: scale(0.96) translate(0, 0); opacity: 0.8; }
+  100% { transform: scale(1.04) translate(8px, -8px); opacity: 1; }
+}
+
+/* Central Cardiac Visualization Asset */
+.cdl-heart-vis-container {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  width: min(340px, 42vw);
+  max-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cdl-heart-vis-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 35px rgba(56, 189, 248, 0.35)) drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
+  animation: cardiacFloat 6s ease-in-out infinite alternate;
+}
+
+@keyframes cardiacFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-10px) rotate(1deg); }
+}
+
+/* Background EKG Sine Waves */
+.cdl-ekg-svg-bg {
+  position: absolute;
+  top: 42%;
+  right: -5%;
+  width: 60%;
+  height: 160px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+/* Left Panel Top Header */
+.cdl-left-header {
+  position: relative;
+  z-index: 10;
+  max-width: 440px;
+}
+
+.cdl-brand-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.cdl-header-logo-icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.cdl-header-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.cdl-header-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.4px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cdl-header-tagline {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+  color: #7dd3fc;
+  text-transform: uppercase;
+  margin: 3px 0 0 0;
+}
+
+.cdl-header-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(224, 242, 254, 0.88);
+  margin-top: 14px;
+  max-width: 380px;
+}
+
+/* Vertical 3-Feature Cards */
+.cdl-features-column {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 28px 0;
+  max-width: 250px;
+}
+
+.cdl-feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.cdl-feature-card:hover {
+  transform: translateX(4px);
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.cdl-feature-icon-box {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+}
+
+.cdl-feature-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cdl-feature-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cdl-feature-desc {
+  font-size: 11.5px;
+  color: rgba(186, 230, 253, 0.85);
+  margin: 2px 0 0 0;
+  line-height: 1.3;
+}
+
+/* Bottom Research Prototype Disclaimer Card */
+.cdl-prototype-card {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.cdl-warning-badge {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+}
+
+.cdl-prototype-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cdl-prototype-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cdl-prototype-desc {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: rgba(224, 242, 254, 0.8);
+  margin: 3px 0 0 0;
+}
+
+/* ==========================================================================
+   Right Panel: Modern Light Login Card
+   ========================================================================== */
+.cdl-right-panel {
+  flex: 1 1 50%;
+  min-width: 0;
+  position: relative;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 28px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Subtle background pastel light blobs */
+.cdl-light-blob-top {
+  position: absolute;
+  top: -8%;
+  right: -5%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(147, 197, 253, 0.28) 0%, rgba(224, 231, 255, 0.12) 55%, transparent 75%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cdl-light-blob-bottom {
+  position: absolute;
+  bottom: -6%;
+  right: -2%;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(196, 181, 253, 0.22) 0%, rgba(238, 242, 255, 0.08) 55%, transparent 75%);
+  filter: blur(45px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main White Floating Card */
+.cdl-login-card-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 28px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  padding: 38px 38px 32px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Card Header Branding */
+.cdl-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.cdl-card-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 6px 12px rgba(225, 29, 72, 0.15));
+}
+
+.cdl-card-title {
+  font-size: 23px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cdl-card-subtitle {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: #64748b;
+  text-transform: uppercase;
+  margin: 4px 0 0 0;
+}
+
+.cdl-card-desc {
+  font-size: 13px;
+  color: #64748b;
+  margin: 10px auto 0;
+  line-height: 1.45;
+  max-width: 320px;
+}
+
+/* Alert Banners */
+.cdl-alert-banner {
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12.5px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.cdl-alert-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+}
+
+.cdl-alert-info {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+}
+
+/* Login Form Styles */
+.cdl-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.cdl-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdl-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-label-icon {
+  color: #64748b;
+}
+
+.cdl-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cdl-input-icon {
+  position: absolute;
+  left: 14px;
+  color: #64748b;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdl-input {
+  width: 100%;
+  padding: 11px 14px 11px 40px;
+  font-size: 13.5px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.cdl-input:hover {
+  border-color: #94a3b8;
+  background: #ffffff;
+}
+
+.cdl-input:focus {
+  outline: none;
+  border-color: #0284c7;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.cdl-input.has-value {
+  background: rgba(240, 249, 255, 0.4);
+  border-color: #7dd3fc;
+}
+
+.cdl-password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: color 0.15s ease;
+}
+
+.cdl-password-toggle:hover {
+  color: #0284c7;
+}
+
+/* Form Helper Row (Remember Me & Forgot Password) */
+.cdl-form-helper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -2px;
+  font-size: 12.5px;
+}
+
+.cdl-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #475569;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cdl-checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1.5px solid #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  accent-color: #0284c7;
+}
+
+.cdl-forgot-btn {
+  background: none;
+  border: none;
+  color: #0284c7;
+  font-weight: 600;
+  font-size: 12.5px;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s ease;
+}
+
+.cdl-forgot-btn:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+/* Primary Action Button */
+.cdl-submit-btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.38);
+  transition: all 0.2s ease;
+  margin-top: 6px;
+}
+
+.cdl-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #0369a1 0%, #1d4ed8 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px -5px rgba(37, 99, 235, 0.48);
+}
+
+.cdl-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* OR Divider */
+.cdl-divider-row {
+  display: flex;
+  align-items: center;
+  margin: 18px 0 14px;
+  gap: 12px;
+}
+
+.cdl-divider-line {
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.cdl-divider-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* Quick Demo Accounts */
+.cdl-demo-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cdl-demo-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #475569;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+.cdl-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.cdl-demo-btn {
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+}
+
+/* Demo Researcher: Emerald */
+.cdl-demo-btn.researcher {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #047857;
+}
+
+.cdl-demo-btn.researcher:hover {
+  background: #d1fae5;
+  border-color: #6ee7b7;
+  transform: translateY(-1px);
+}
+
+/* Reviewer: Blue */
+.cdl-demo-btn.reviewer {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0369a1;
+}
+
+.cdl-demo-btn.reviewer:hover {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+  transform: translateY(-1px);
+}
+
+/* Admin: Purple */
+.cdl-demo-btn.admin {
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  color: #6d28d9;
+}
+
+.cdl-demo-btn.admin:hover {
+  background: #ede9fe;
+  border-color: #c4b5fd;
+  transform: translateY(-1px);
+}
+
+/* Bottom Footer */
+.cdl-card-footer {
+  margin-top: 22px;
+  font-size: 12.5px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cdl-card-footer a {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  transition: color 0.15s ease;
+}
+
+.cdl-card-footer a:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 1120px) {
+  .cdl-left-panel {
+    padding: 36px 32px;
+  }
+  
+  .cdl-heart-vis-container {
+    width: 280px;
+    right: 1%;
+  }
+
+  .cdl-features-column {
+    max-width: 220px;
+  }
+
+  .cdl-feature-card {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cdl-login-page {
+    flex-direction: column;
+  }
+
+  .cdl-left-panel {
+    flex: none;
+    width: 100%;
+    padding: 32px 24px;
+    min-height: auto;
+  }
+
+  .cdl-heart-vis-container {
+    display: none; /* Hide large graphic on mobile/tablet to give full room to form */
+  }
+
+  .cdl-ekg-svg-bg {
+    display: none;
+  }
+
+  .cdl-features-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .cdl-feature-card {
+    flex: 1 1 calc(33.333% - 12px);
+    min-width: 180px;
+  }
+
+  .cdl-prototype-card {
+    max-width: 100%;
+  }
+
+  .cdl-right-panel {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 32px 20px 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cdl-features-column {
+    display: none; /* Hide feature cards on compact mobile screens */
+  }
+
+  .cdl-left-panel {
+    padding: 24px 20px;
+  }
+
+  .cdl-prototype-card {
+    margin-top: 14px;
+    padding: 12px 14px;
+  }
+
+  .cdl-login-card-container {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .cdl-demo-grid {
+    grid-template-columns: 1fr;
+  }
+}

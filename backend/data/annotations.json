@@ -1,0 +1,2686 @@
+[
+  {
+    "id": "e729ac04-ed23-4a71-b4d3-12bae1c900d4",
+    "created_at": "2026-10-16T07:38:23.489772+00:00",
+    "updated_at": "2026-10-16T07:38:23.489772+00:00",
+    "analysis_id": "test-anal-3a2e798e",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "d8ba5579-ac6d-4b59-8dd8-51ff0474ddc5",
+    "created_at": "2026-10-16T07:38:23.498561+00:00",
+    "updated_at": "2026-10-16T07:38:23.498561+00:00",
+    "analysis_id": "test-anal-3a2e798e",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "73d1bf24-8bf5-4907-a18f-1f5a0a07d333",
+    "created_at": "2026-10-16T07:38:23.527475+00:00",
+    "updated_at": "2026-10-16T07:38:23.527475+00:00",
+    "analysis_id": "test-anal-3a2e798e",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "b2822f67-534d-43df-b1b6-2e2440e3ef3a",
+    "created_at": "2026-10-16T07:44:30.404541+00:00",
+    "updated_at": "2026-10-16T07:44:30.404541+00:00",
+    "analysis_id": "test-anal-0b1ec483",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "888496d6-4c6b-481c-9516-a7e4f98b7dfa",
+    "created_at": "2026-10-16T07:44:30.418720+00:00",
+    "updated_at": "2026-10-16T07:44:30.418720+00:00",
+    "analysis_id": "test-anal-0b1ec483",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "557f9706-b7f0-42d9-8806-a48b67c6fc19",
+    "created_at": "2026-10-16T07:44:30.430900+00:00",
+    "updated_at": "2026-10-16T07:44:30.430900+00:00",
+    "analysis_id": "test-anal-0b1ec483",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "6044a073-07ec-48f0-bfe2-80a3f00d2485",
+    "created_at": "2026-10-16T07:44:51.621655+00:00",
+    "updated_at": "2026-10-16T07:44:51.621655+00:00",
+    "analysis_id": "test-anal-07b007c9",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "77df90db-bb2f-4a0b-85a3-85de8dbf1797",
+    "created_at": "2026-10-16T07:44:51.637311+00:00",
+    "updated_at": "2026-10-16T07:44:51.637311+00:00",
+    "analysis_id": "test-anal-07b007c9",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "46374b04-95d8-45d2-86cf-5e9f4f799b64",
+    "created_at": "2026-10-16T07:44:51.650495+00:00",
+    "updated_at": "2026-10-16T07:44:51.650495+00:00",
+    "analysis_id": "test-anal-07b007c9",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "219f47a9-dfb3-47f4-8e13-65e81e81bf61",
+    "created_at": "2026-10-16T07:46:18.528976+00:00",
+    "updated_at": "2026-10-16T07:46:18.528976+00:00",
+    "analysis_id": "test-anal-49aa7877",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "bb4c3fce-fccd-46f1-89d0-dab36a9aca5e",
+    "created_at": "2026-10-16T07:46:18.546637+00:00",
+    "updated_at": "2026-10-16T07:46:18.546637+00:00",
+    "analysis_id": "test-anal-49aa7877",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "ffa5c5e5-bafa-4bf1-a0b4-9e0a63cf5048",
+    "created_at": "2026-10-16T07:46:18.560783+00:00",
+    "updated_at": "2026-10-16T07:46:18.599299+00:00",
+    "analysis_id": "test-anal-49aa7877",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "29cde7e5-617e-47bf-92b5-d50ee366c61e",
+    "created_at": "2026-10-16T07:46:18.625210+00:00",
+    "updated_at": "2026-10-16T07:46:18.625210+00:00",
+    "analysis_id": "test-anal-49aa7877",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "e873e049-2e2f-4295-be6d-e31873864305",
+    "created_at": "2026-10-16T07:46:18.626863+00:00",
+    "updated_at": "2026-10-16T07:46:18.626863+00:00",
+    "analysis_id": "test-anal-49aa7877",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "ad60d968-5b97-4a52-94c6-7715a4ea0b25",
+    "created_at": "2026-10-16T07:46:18.640176+00:00",
+    "updated_at": "2026-10-16T07:46:18.640176+00:00",
+    "analysis_id": "test-anal-49aa7877",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "21e8b78f-5fdf-4931-8bfe-fae383a35298",
+    "created_at": "2026-10-16T07:46:18.879659+00:00",
+    "updated_at": "2026-10-16T07:46:18.879659+00:00",
+    "analysis_id": "dfdb4dfc-ea81-43d2-bd24-7a47367575e3",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 128.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "a967dfa2-3769-4aed-8437-112768f66b93",
+    "created_at": "2026-10-16T07:46:18.884684+00:00",
+    "updated_at": "2026-10-16T07:46:18.884684+00:00",
+    "analysis_id": "dfdb4dfc-ea81-43d2-bd24-7a47367575e3",
+    "study_id": null,
+    "image_filename": "test_bench_f1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex",
+    "points": [
+      {
+        "x": 132.0,
+        "y": 130.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "892d0d48-8cd6-472e-94b2-7ae54991694e",
+    "created_at": "2026-10-16T07:46:18.903043+00:00",
+    "updated_at": "2026-10-16T07:46:18.903043+00:00",
+    "analysis_id": "dfdb4dfc-ea81-43d2-bd24-7a47367575e3",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "base",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 78.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "base"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "fa68a731-dcb3-4389-9bb7-8ff670a3a35f",
+    "created_at": "2026-10-16T07:46:18.918307+00:00",
+    "updated_at": "2026-10-16T07:46:18.918307+00:00",
+    "analysis_id": "dfdb4dfc-ea81-43d2-bd24-7a47367575e3",
+    "study_id": null,
+    "image_filename": "test_bench_f1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "base",
+    "points": [
+      {
+        "x": 132.0,
+        "y": 79.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "base"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "8aaf0d4b-d657-45f7-b291-cbf13df4948e",
+    "created_at": "2026-10-16T07:46:18.933876+00:00",
+    "updated_at": "2026-10-16T07:46:18.933876+00:00",
+    "analysis_id": "dfdb4dfc-ea81-43d2-bd24-7a47367575e3",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_cavity",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "4ba86552-c049-44f5-9e23-791891000c55",
+    "created_at": "2026-10-16T07:47:02.323259+00:00",
+    "updated_at": "2026-10-16T07:47:02.323259+00:00",
+    "analysis_id": "test-anal-b28fb620",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "5ffbfc96-f49f-44d5-898e-c62b385394c0",
+    "created_at": "2026-10-16T07:47:02.327004+00:00",
+    "updated_at": "2026-10-16T07:47:02.327004+00:00",
+    "analysis_id": "test-anal-b28fb620",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "9e7daa89-3b61-42d8-85f3-9684150e235e",
+    "created_at": "2026-10-16T07:47:02.340994+00:00",
+    "updated_at": "2026-10-16T07:47:02.373717+00:00",
+    "analysis_id": "test-anal-b28fb620",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "821d2e98-b121-45a4-8a4a-bd25b669ce83",
+    "created_at": "2026-10-16T07:47:02.394003+00:00",
+    "updated_at": "2026-10-16T07:47:02.394003+00:00",
+    "analysis_id": "test-anal-b28fb620",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "c41181bf-9ace-45df-971b-136b860f7e7f",
+    "created_at": "2026-10-16T07:47:02.395323+00:00",
+    "updated_at": "2026-10-16T07:47:02.395323+00:00",
+    "analysis_id": "test-anal-b28fb620",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "f9ed960e-e5e3-40d6-ad71-d1fa591627e0",
+    "created_at": "2026-10-16T07:47:02.408480+00:00",
+    "updated_at": "2026-10-16T07:47:02.408480+00:00",
+    "analysis_id": "test-anal-b28fb620",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "07021e15-727d-4628-90bc-76723e84009d",
+    "created_at": "2026-10-16T07:47:02.483663+00:00",
+    "updated_at": "2026-10-16T07:47:02.483663+00:00",
+    "analysis_id": "9e4d5dd0-ffca-4f15-9829-73fcdd97926b",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 128.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "c598d643-7e51-429e-808a-4cd4fe6b2ec7",
+    "created_at": "2026-10-16T07:47:02.487928+00:00",
+    "updated_at": "2026-10-16T07:47:02.487928+00:00",
+    "analysis_id": "9e4d5dd0-ffca-4f15-9829-73fcdd97926b",
+    "study_id": null,
+    "image_filename": "test_bench_f1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex",
+    "points": [
+      {
+        "x": 132.0,
+        "y": 130.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "34d99057-5559-49c2-b077-a4692a38ce77",
+    "created_at": "2026-10-16T07:47:02.504276+00:00",
+    "updated_at": "2026-10-16T07:47:02.504276+00:00",
+    "analysis_id": "9e4d5dd0-ffca-4f15-9829-73fcdd97926b",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "base",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 78.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "base"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "13d25804-67fa-4269-beca-ec26d88e3f92",
+    "created_at": "2026-10-16T07:47:02.520868+00:00",
+    "updated_at": "2026-10-16T07:47:02.520868+00:00",
+    "analysis_id": "9e4d5dd0-ffca-4f15-9829-73fcdd97926b",
+    "study_id": null,
+    "image_filename": "test_bench_f1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "base",
+    "points": [
+      {
+        "x": 132.0,
+        "y": 79.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "base"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "b6053e2c-5173-4e7a-aa33-09e34bae8d71",
+    "created_at": "2026-10-16T07:47:02.536173+00:00",
+    "updated_at": "2026-10-16T07:47:02.536173+00:00",
+    "analysis_id": "9e4d5dd0-ffca-4f15-9829-73fcdd97926b",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_cavity",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "b6a36e00-7c92-4786-8f04-d8d576d47253",
+    "created_at": "2026-10-16T07:48:06.000742+00:00",
+    "updated_at": "2026-10-16T07:48:06.000742+00:00",
+    "analysis_id": "test-anal-ab9ec15a",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "45a64b42-b385-447c-a187-421aad637b75",
+    "created_at": "2026-10-16T07:48:06.005397+00:00",
+    "updated_at": "2026-10-16T07:48:06.005397+00:00",
+    "analysis_id": "test-anal-ab9ec15a",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "b4870af3-63ce-4dc9-88a6-1b94d8e8ae18",
+    "created_at": "2026-10-16T07:48:06.022850+00:00",
+    "updated_at": "2026-10-16T07:48:06.061191+00:00",
+    "analysis_id": "test-anal-ab9ec15a",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "5cf98331-69d8-4c4a-ae70-e69a3e27ce36",
+    "created_at": "2026-10-16T07:48:06.084588+00:00",
+    "updated_at": "2026-10-16T07:48:06.084588+00:00",
+    "analysis_id": "test-anal-ab9ec15a",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "bdcc54d7-6e49-430a-9788-f421ca6bdb11",
+    "created_at": "2026-10-16T07:48:06.086930+00:00",
+    "updated_at": "2026-10-16T07:48:06.086930+00:00",
+    "analysis_id": "test-anal-ab9ec15a",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "978693f8-319d-4618-b1da-bac2455397bb",
+    "created_at": "2026-10-16T07:48:06.101819+00:00",
+    "updated_at": "2026-10-16T07:48:06.101819+00:00",
+    "analysis_id": "test-anal-ab9ec15a",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "bfc5b2b3-390b-46e6-a0a5-2ca8a5735f91",
+    "created_at": "2026-10-16T07:48:06.214289+00:00",
+    "updated_at": "2026-10-16T07:48:06.214289+00:00",
+    "analysis_id": "77c66ab8-3185-40d4-8e63-c1dbfeddaaf9",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 128.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "6d335c12-0193-4597-9853-bd0a7ca5a49f",
+    "created_at": "2026-10-16T07:48:06.219064+00:00",
+    "updated_at": "2026-10-16T07:48:06.219064+00:00",
+    "analysis_id": "77c66ab8-3185-40d4-8e63-c1dbfeddaaf9",
+    "study_id": null,
+    "image_filename": "test_bench_f1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex",
+    "points": [
+      {
+        "x": 132.0,
+        "y": 130.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "e68ca058-d0bb-4858-9a0f-be70eafa68b3",
+    "created_at": "2026-10-16T07:48:06.235140+00:00",
+    "updated_at": "2026-10-16T07:48:06.235140+00:00",
+    "analysis_id": "77c66ab8-3185-40d4-8e63-c1dbfeddaaf9",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "base",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 78.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "base"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "c9409d01-c134-47d8-9e6f-02528f776217",
+    "created_at": "2026-10-16T07:48:06.250898+00:00",
+    "updated_at": "2026-10-16T07:48:06.250898+00:00",
+    "analysis_id": "77c66ab8-3185-40d4-8e63-c1dbfeddaaf9",
+    "study_id": null,
+    "image_filename": "test_bench_f1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "base",
+    "points": [
+      {
+        "x": 132.0,
+        "y": 79.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "base"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "d8d3a39d-845a-4e69-a874-ff5ba28cb6af",
+    "created_at": "2026-10-16T07:48:06.268156+00:00",
+    "updated_at": "2026-10-16T07:48:06.268156+00:00",
+    "analysis_id": "77c66ab8-3185-40d4-8e63-c1dbfeddaaf9",
+    "study_id": null,
+    "image_filename": "test_bench_f0.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_cavity",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "998435c9-1ee1-4cd2-ab7c-a7979550ec00",
+    "created_at": "2026-10-16T07:49:09.946323+00:00",
+    "updated_at": "2026-10-16T07:49:09.946323+00:00",
+    "analysis_id": "test-anal-75a4c97b",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "d9462bfc-5d50-4703-b990-01df69970040",
+    "created_at": "2026-10-16T07:49:09.951269+00:00",
+    "updated_at": "2026-10-16T07:49:09.951269+00:00",
+    "analysis_id": "test-anal-75a4c97b",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "6869b3fa-e8cf-4c8e-94b2-68fac34718f5",
+    "created_at": "2026-10-16T07:49:09.968682+00:00",
+    "updated_at": "2026-10-16T07:49:10.010900+00:00",
+    "analysis_id": "test-anal-75a4c97b",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "98f1e53a-1e70-4180-b18d-7e6718bb5d70",
+    "created_at": "2026-10-16T07:49:10.035244+00:00",
+    "updated_at": "2026-10-16T07:49:10.035244+00:00",
+    "analysis_id": "test-anal-75a4c97b",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "836cf604-3403-4ea2-8155-e7cb099cf4d1",
+    "created_at": "2026-10-16T07:49:10.037636+00:00",
+    "updated_at": "2026-10-16T07:49:10.037636+00:00",
+    "analysis_id": "test-anal-75a4c97b",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "05213cd3-0de2-4f48-a0bd-1b9703be0b60",
+    "created_at": "2026-10-16T07:49:10.052452+00:00",
+    "updated_at": "2026-10-16T07:49:10.052452+00:00",
+    "analysis_id": "test-anal-75a4c97b",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "92764e5f-109a-4a62-8141-c60891e147de",
+    "created_at": "2026-10-16T07:50:33.690647+00:00",
+    "updated_at": "2026-10-16T07:50:33.690647+00:00",
+    "analysis_id": "test-anal-6deabdd5",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "40c56dbd-a20c-4a93-8728-4f0cafcd1e90",
+    "created_at": "2026-10-16T07:50:33.705523+00:00",
+    "updated_at": "2026-10-16T07:50:33.705523+00:00",
+    "analysis_id": "test-anal-6deabdd5",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "a0808ab0-4703-4356-bdea-c02831f5223e",
+    "created_at": "2026-10-16T07:50:33.720056+00:00",
+    "updated_at": "2026-10-16T07:50:33.759213+00:00",
+    "analysis_id": "test-anal-6deabdd5",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "52244ec4-43be-400e-9d3d-68722d99a002",
+    "created_at": "2026-10-16T07:50:33.780237+00:00",
+    "updated_at": "2026-10-16T07:50:33.780237+00:00",
+    "analysis_id": "test-anal-6deabdd5",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "8d3d0e11-8f19-44d6-8822-27ca2c464b50",
+    "created_at": "2026-10-16T07:50:33.783279+00:00",
+    "updated_at": "2026-10-16T07:50:33.783279+00:00",
+    "analysis_id": "test-anal-6deabdd5",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "6854a2e8-f423-4475-a300-652f5f758707",
+    "created_at": "2026-10-16T07:50:33.801697+00:00",
+    "updated_at": "2026-10-16T07:50:33.801697+00:00",
+    "analysis_id": "test-anal-6deabdd5",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth.",
+    "owner_id": null
+  },
+  {
+    "id": "a688b48e-8999-4a08-a5f1-af3c75f26a2e",
+    "created_at": "2026-10-18T08:43:46.951660+00:00",
+    "updated_at": "2026-10-18T08:43:46.951660+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-62c89962",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "6cdaeec0-f42c-47d3-a245-d35fb18f8e74",
+    "created_at": "2026-10-18T08:43:46.971511+00:00",
+    "updated_at": "2026-10-18T08:43:46.971511+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-62c89962",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "d878e1ca-76b7-4808-b668-9d5241454498",
+    "created_at": "2026-10-18T08:43:46.992049+00:00",
+    "updated_at": "2026-10-18T08:43:47.047748+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-62c89962",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "a75f2aed-8505-40f8-9799-7219fe2fcad8",
+    "created_at": "2026-10-18T08:43:47.077356+00:00",
+    "updated_at": "2026-10-18T08:43:47.077356+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-62c89962",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "0a164259-9c9e-4df6-b36e-96c808ff6bfb",
+    "created_at": "2026-10-18T08:43:47.082827+00:00",
+    "updated_at": "2026-10-18T08:43:47.082827+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-62c89962",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "d9530ca8-ebd2-4097-986d-fc95f78ab737",
+    "created_at": "2026-10-18T08:43:47.100474+00:00",
+    "updated_at": "2026-10-18T08:43:47.100474+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-62c89962",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "ce32b84b-6b0c-43c2-a600-c02c1dd28f0b",
+    "created_at": "2026-10-18T08:58:19.013190+00:00",
+    "updated_at": "2026-10-18T08:58:19.013190+00:00",
+    "owner_id": "a897a3fa-36ef-4e4f-b3b6-938ee96524e5",
+    "analysis_id": "d21aadf7-0d1b-4154-8a8d-d4e6c79f4d2d",
+    "study_id": null,
+    "image_filename": "test_sci_f1_9b4d61.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "Apex Landmark",
+    "points": [
+      {
+        "x": 60.0,
+        "y": 60.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "6bef97f4-c738-4b4b-92e3-491451faf7e0",
+    "created_at": "2026-10-18T09:01:24.268136+00:00",
+    "updated_at": "2026-10-18T09:01:24.268136+00:00",
+    "owner_id": "02385df2-c32c-4b3a-b17e-aa0c1e59a250",
+    "analysis_id": "dcb89be0-9558-4246-a8e2-aa937f1494cc",
+    "study_id": null,
+    "image_filename": "test_sci_f1_a082d9.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "Apex Landmark",
+    "points": [
+      {
+        "x": 60.0,
+        "y": 60.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "a02029dc-a2d8-485d-92e2-9a66f018ba92",
+    "created_at": "2026-10-18T09:02:00.805164+00:00",
+    "updated_at": "2026-10-18T09:02:00.805164+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-c090850e",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "e8f4560a-c895-4519-95ff-dffd0c02adf3",
+    "created_at": "2026-10-18T09:02:00.834385+00:00",
+    "updated_at": "2026-10-18T09:02:00.834385+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-c090850e",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "13135b75-b679-488a-b539-7477526b58ae",
+    "created_at": "2026-10-18T09:02:00.857104+00:00",
+    "updated_at": "2026-10-18T09:02:00.925076+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-c090850e",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "55dd36bc-6a23-4e41-bac2-678728e01c7e",
+    "created_at": "2026-10-18T09:02:00.964489+00:00",
+    "updated_at": "2026-10-18T09:02:00.964489+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-c090850e",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "polygon",
+    "annotator_label": "lv_endocardium_updated",
+    "points": [
+      {
+        "x": 100.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 100.0
+      },
+      {
+        "x": 160.0,
+        "y": 160.0
+      },
+      {
+        "x": 100.0,
+        "y": 160.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": {
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "metadata": {
+      "region": "LV",
+      "area": 3600.0,
+      "perimeter": 240.0,
+      "centroid": {
+        "x": 130.0,
+        "y": 130.0
+      },
+      "bounding_box": {
+        "x": 100.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "3f29c046-5cbc-42a1-9e34-d9e4ac3948eb",
+    "created_at": "2026-10-18T09:02:00.971079+00:00",
+    "updated_at": "2026-10-18T09:02:00.971079+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-c090850e",
+    "study_id": null,
+    "image_filename": "frame_01.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 130.0,
+        "y": 196.0
+      }
+    ],
+    "frame_index": 1,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "0e05d095-f226-4cfa-9e8d-a5d5db096887",
+    "created_at": "2026-10-18T09:02:00.992188+00:00",
+    "updated_at": "2026-10-18T09:02:00.992188+00:00",
+    "owner_id": null,
+    "analysis_id": "test-anal-c090850e",
+    "study_id": null,
+    "image_filename": "frame_00.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "apex_tip",
+    "points": [
+      {
+        "x": 128.0,
+        "y": 200.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {
+      "landmark_name": "apex"
+    },
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "2ef85db8-772b-4e9b-8e7b-a81bd000e209",
+    "created_at": "2026-10-18T09:15:31.649077+00:00",
+    "updated_at": "2026-10-18T09:15:31.649077+00:00",
+    "owner_id": "0bec63e9-fee9-4b69-9d7c-d21994ec2768",
+    "analysis_id": "dcf3ccb4-1e53-408e-943a-ba327038f37d",
+    "study_id": null,
+    "image_filename": "test_sci_f1_4774d6.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "Apex Landmark",
+    "points": [
+      {
+        "x": 60.0,
+        "y": 60.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "a2a154d6-463a-4efb-b0ba-60708149e1ac",
+    "created_at": "2026-10-18T09:38:30.819032+00:00",
+    "updated_at": "2026-10-18T09:38:30.819032+00:00",
+    "owner_id": "0194c662-6fc6-4357-9862-600b4e06c9f5",
+    "analysis_id": "6b1e6df5-6a5f-423d-952c-649bc39e68ff",
+    "study_id": null,
+    "image_filename": "test_sci_f1_8c1e93.png",
+    "image_type": "analysis_image",
+    "annotation_type": "point",
+    "annotator_label": "Apex Landmark",
+    "points": [
+      {
+        "x": 60.0,
+        "y": 60.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "40c2f266-f65d-4738-8042-478dac14846d",
+    "created_at": "2026-10-18T09:56:02.289550+00:00",
+    "updated_at": "2026-10-18T09:56:02.289550+00:00",
+    "owner_id": "c4fbc458-c930-4439-b56e-1a551d7907a3",
+    "analysis_id": "91a6bb2f-fbc8-4a14-963c-28d22b3981e8",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "f1f8df00-aafe-43ae-98d5-b0e5a9151489",
+    "created_at": "2026-10-18T09:56:42.094905+00:00",
+    "updated_at": "2026-10-18T09:56:42.094905+00:00",
+    "owner_id": "5f93f62d-8989-41fc-9f04-fb17ae59e778",
+    "analysis_id": "58e66db6-6b21-4435-a9b4-351048a08aee",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "b6a5b41a-614f-4a16-aec4-a4c6828864ee",
+    "created_at": "2026-10-18T09:57:18.586781+00:00",
+    "updated_at": "2026-10-18T09:57:18.586781+00:00",
+    "owner_id": "fdf15b0c-ec21-48ba-bbe3-a8c34bef797d",
+    "analysis_id": "83eaf19f-63a1-4c8a-892b-7505cbdf8169",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "8c581607-5aff-4246-8ced-4fcd0f412b67",
+    "created_at": "2026-10-18T09:59:39.197242+00:00",
+    "updated_at": "2026-10-18T09:59:39.197242+00:00",
+    "owner_id": "73ef1fef-590a-4fcc-bec8-9bd3696aa262",
+    "analysis_id": "bdf20370-d756-43dc-a8ae-d90fe376bec6",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "7cd24b94-ad7d-42c1-b1c0-9f2047d17702",
+    "created_at": "2026-10-18T10:00:00.333721+00:00",
+    "updated_at": "2026-10-18T10:00:00.333721+00:00",
+    "owner_id": "d56cec68-6d65-4aaf-80db-b57d3e20ea49",
+    "analysis_id": "f13933d4-1bd0-4d82-a91e-27e4cfb69b3b",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "239d5107-ffec-4b52-bcc6-5f74417d65f0",
+    "created_at": "2026-10-18T10:01:31.511347+00:00",
+    "updated_at": "2026-10-18T10:01:31.511347+00:00",
+    "owner_id": "de519488-1a4a-487d-b4b7-cbfb39269918",
+    "analysis_id": "6072e956-a1a7-40d9-b21b-c6d4e65b3b26",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "e5740fe2-dcca-4292-82b4-39e01e8f6e14",
+    "created_at": "2026-10-18T10:02:06.620436+00:00",
+    "updated_at": "2026-10-18T10:02:06.620436+00:00",
+    "owner_id": "282cd280-79d1-4dbb-839e-4b00382015c2",
+    "analysis_id": "a0b89e90-03bc-4fd2-9e63-ab5c4845ff56",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "d958f20d-cdac-4c9e-be4b-60357edd8f98",
+    "created_at": "2026-10-18T10:02:54.088502+00:00",
+    "updated_at": "2026-10-18T10:02:54.088502+00:00",
+    "owner_id": "2027249a-d592-4a7f-87f1-daf2f1b66648",
+    "analysis_id": "d56e6ac2-1ce5-4610-9228-15c3a45ca7dc",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "433e3ccd-1ece-401d-bc44-d0558efd25ae",
+    "created_at": "2026-10-18T10:13:49.133239+00:00",
+    "updated_at": "2026-10-18T10:13:49.133239+00:00",
+    "owner_id": "fbf1267c-c6aa-45c9-a79b-e010593d811b",
+    "analysis_id": "7a16acf5-7aa4-4645-8d61-83b8e5fbb5c7",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "7228de05-d1b5-47f0-b76a-aab6d752c862",
+    "created_at": "2026-10-21T04:58:12.708394+00:00",
+    "updated_at": "2026-10-21T04:58:12.708394+00:00",
+    "owner_id": "821f1568-21f8-470d-8ef9-6fdc4842c066",
+    "analysis_id": "5a6e57cb-d688-47c1-80f4-cdb91d5a1d4a",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  },
+  {
+    "id": "e03ee14c-fdb1-4776-b395-71d93f50516e",
+    "created_at": "2026-10-21T05:06:24.816513+00:00",
+    "updated_at": "2026-10-21T05:06:24.816513+00:00",
+    "owner_id": "af92441c-5e39-4725-8c11-d2ac675bb1de",
+    "analysis_id": "6f4c39f4-9343-4197-8e00-beb645d97ac4",
+    "study_id": null,
+    "image_filename": "test_frame_1.png",
+    "image_type": "analysis_image",
+    "annotation_type": "landmark",
+    "annotator_label": "apex_reference",
+    "points": [
+      {
+        "x": 64.0,
+        "y": 64.0
+      }
+    ],
+    "frame_index": 0,
+    "geometry": null,
+    "metadata": {},
+    "qc_warnings": [],
+    "disclaimer": "Manual annotations are reference labels for computational benchmarking and do not represent clinical ground truth."
+  }
+]

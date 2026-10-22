@@ -1,0 +1,759 @@
+/* Cardiac Deformation Lab - Research Workspace Registration Page Styles */
+
+/* ==========================================================================
+   Root Layout Container (Split Screen)
+   ========================================================================== */
+.cdl-reg-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Left Panel: Research / Scientific Branding & Cardiac Visualization
+   ========================================================================== */
+.cdl-reg-left-panel {
+  flex: 1 1 50%;
+  min-width: 0;
+  position: relative;
+  background: radial-gradient(circle at 65% 45%, #2563eb 0%, #1d4ed8 35%, #1e3a8a 70%, #0f172a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 44px 48px;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* Scientific Background Grid */
+.cdl-reg-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ambient Glow & Radial Light Cones */
+.cdl-reg-ambient-glow-1 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.28) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 2;
+  animation: pulseSlow 8s ease-in-out infinite alternate;
+}
+
+.cdl-reg-ambient-glow-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.2) 0%, rgba(147, 51, 234, 0.12) 50%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes pulseSlow {
+  0% { transform: scale(0.96) translate(0, 0); opacity: 0.8; }
+  100% { transform: scale(1.04) translate(8px, -8px); opacity: 1; }
+}
+
+/* Central Cardiac Visualization Asset */
+.cdl-reg-heart-vis-container {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  width: min(340px, 42vw);
+  max-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cdl-reg-heart-vis-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 35px rgba(56, 189, 248, 0.35)) drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
+  animation: cardiacFloat 6s ease-in-out infinite alternate;
+}
+
+@keyframes cardiacFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-10px) rotate(1deg); }
+}
+
+/* Background EKG Sine Waves */
+.cdl-reg-ekg-svg-bg {
+  position: absolute;
+  top: 42%;
+  right: -5%;
+  width: 60%;
+  height: 160px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+/* Left Panel Top Header */
+.cdl-reg-left-header {
+  position: relative;
+  z-index: 10;
+  max-width: 440px;
+}
+
+.cdl-reg-brand-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.cdl-reg-header-logo-icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.cdl-reg-header-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.cdl-reg-header-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.4px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cdl-reg-header-tagline {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+  color: #7dd3fc;
+  text-transform: uppercase;
+  margin: 3px 0 0 0;
+}
+
+.cdl-reg-header-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(224, 242, 254, 0.88);
+  margin-top: 14px;
+  max-width: 380px;
+}
+
+/* Vertical 3-Feature Cards */
+.cdl-reg-features-column {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 28px 0;
+  max-width: 250px;
+}
+
+.cdl-reg-feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.cdl-reg-feature-card:hover {
+  transform: translateX(4px);
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.cdl-reg-feature-icon-box {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdl-reg-feature-icon-box.blue {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: #38bdf8;
+}
+
+.cdl-reg-feature-icon-box.purple {
+  background: rgba(88, 28, 135, 0.45);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+  color: #c084fc;
+}
+
+.cdl-reg-feature-icon-box.green {
+  background: rgba(6, 78, 59, 0.45);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  color: #34d399;
+}
+
+.cdl-reg-feature-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cdl-reg-feature-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cdl-reg-feature-desc {
+  font-size: 11.5px;
+  color: rgba(186, 230, 253, 0.85);
+  margin: 2px 0 0 0;
+  line-height: 1.3;
+}
+
+/* Bottom Research Prototype Disclaimer Card */
+.cdl-reg-prototype-card {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.cdl-reg-warning-badge {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+}
+
+.cdl-reg-prototype-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cdl-reg-prototype-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cdl-reg-prototype-desc {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: rgba(224, 242, 254, 0.8);
+  margin: 3px 0 0 0;
+}
+
+/* ==========================================================================
+   Right Panel: Modern Light Registration Card
+   ========================================================================== */
+.cdl-reg-right-panel {
+  flex: 1 1 50%;
+  min-width: 0;
+  position: relative;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 28px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Subtle background pastel light blobs */
+.cdl-reg-light-blob-top {
+  position: absolute;
+  top: -8%;
+  right: -5%;
+  width: 440px;
+  height: 440px;
+  background: radial-gradient(circle, rgba(147, 197, 253, 0.28) 0%, rgba(224, 231, 255, 0.12) 55%, transparent 75%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cdl-reg-light-blob-bottom {
+  position: absolute;
+  bottom: -6%;
+  right: -2%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(196, 181, 253, 0.22) 0%, rgba(238, 242, 255, 0.08) 55%, transparent 75%);
+  filter: blur(45px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main White Floating Registration Card */
+.cdl-reg-card-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 530px;
+  background: #ffffff;
+  border-radius: 28px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  padding: 34px 38px 28px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+
+/* Card Header Branding */
+.cdl-reg-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cdl-reg-card-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 6px 12px rgba(225, 29, 72, 0.15));
+}
+
+.cdl-reg-card-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cdl-reg-card-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: #64748b;
+  text-transform: uppercase;
+  margin: 4px 0 0 0;
+}
+
+.cdl-reg-card-desc {
+  font-size: 13px;
+  color: #64748b;
+  margin: 8px auto 0;
+  line-height: 1.45;
+  max-width: 380px;
+}
+
+/* Notice Banner: Lavender/Blue Research Prototype Notice */
+.cdl-reg-notice-banner {
+  background: #f0f4ff;
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.cdl-reg-notice-icon-badge {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 10px;
+  background: #e0e7fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4338ca;
+}
+
+.cdl-reg-notice-content {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #475569;
+}
+
+.cdl-reg-notice-title {
+  font-weight: 700;
+  color: #2563eb;
+  margin-right: 4px;
+}
+
+/* Alert Banners */
+.cdl-reg-alert-banner {
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12.5px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.cdl-reg-alert-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+}
+
+.cdl-reg-alert-success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+}
+
+/* Registration Form */
+.cdl-reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.cdl-reg-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdl-reg-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-reg-label-icon {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+}
+
+.cdl-reg-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cdl-reg-input-icon {
+  position: absolute;
+  left: 14px;
+  color: #64748b;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdl-reg-input {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  font-size: 13.5px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.cdl-reg-input:hover {
+  border-color: #94a3b8;
+  background: #ffffff;
+}
+
+.cdl-reg-input:focus {
+  outline: none;
+  border-color: #0284c7;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.cdl-reg-input.has-value {
+  background: rgba(240, 249, 255, 0.4);
+  border-color: #7dd3fc;
+}
+
+/* Select Dropdown Styling */
+.cdl-reg-select {
+  width: 100%;
+  padding: 10px 36px 10px 14px;
+  font-size: 13.5px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+.cdl-reg-select:hover {
+  border-color: #94a3b8;
+}
+
+.cdl-reg-select:focus {
+  outline: none;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* Passwords Side-by-Side Row */
+.cdl-reg-passwords-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.cdl-reg-password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: color 0.15s ease;
+}
+
+.cdl-reg-password-toggle:hover {
+  color: #0284c7;
+}
+
+/* Submit Action Button */
+.cdl-reg-submit-btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.38);
+  transition: all 0.2s ease;
+  margin-top: 6px;
+}
+
+.cdl-reg-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #0369a1 0%, #1d4ed8 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px -5px rgba(37, 99, 235, 0.48);
+}
+
+.cdl-reg-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* OR Divider */
+.cdl-reg-divider-row {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 14px;
+  gap: 12px;
+}
+
+.cdl-reg-divider-line {
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.cdl-reg-divider-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* Bottom Footer */
+.cdl-reg-card-footer {
+  font-size: 12.5px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cdl-reg-card-footer a {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  transition: color 0.15s ease;
+}
+
+.cdl-reg-card-footer a:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 1120px) {
+  .cdl-reg-left-panel {
+    padding: 36px 32px;
+  }
+  
+  .cdl-reg-heart-vis-container {
+    width: 280px;
+    right: 1%;
+  }
+
+  .cdl-reg-features-column {
+    max-width: 220px;
+  }
+
+  .cdl-reg-feature-card {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cdl-reg-page {
+    flex-direction: column;
+  }
+
+  .cdl-reg-left-panel {
+    flex: none;
+    width: 100%;
+    padding: 32px 24px;
+    min-height: auto;
+  }
+
+  .cdl-reg-heart-vis-container {
+    display: none;
+  }
+
+  .cdl-reg-ekg-svg-bg {
+    display: none;
+  }
+
+  .cdl-reg-features-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .cdl-reg-feature-card {
+    flex: 1 1 calc(33.333% - 12px);
+    min-width: 180px;
+  }
+
+  .cdl-reg-prototype-card {
+    max-width: 100%;
+  }
+
+  .cdl-reg-right-panel {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 32px 20px 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cdl-reg-features-column {
+    display: none;
+  }
+
+  .cdl-reg-left-panel {
+    padding: 24px 20px;
+  }
+
+  .cdl-reg-prototype-card {
+    margin-top: 14px;
+    padding: 12px 14px;
+  }
+
+  .cdl-reg-card-container {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .cdl-reg-passwords-row {
+    grid-template-columns: 1fr;
+  }
+}

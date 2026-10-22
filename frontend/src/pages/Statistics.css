@@ -1,0 +1,1271 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — ADVANCED STATISTICS & RESEARCH ANALYTICS
+   Unified Scientific Design: Dark Navy / Royal Blue / Electric Cyan / Indigo
+   ========================================================================== */
+
+/* Page Container */
+.cdl-stats-page {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 4px 60px;
+  box-sizing: border-box;
+  animation: cdlStatsFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #1e293b;
+  position: relative;
+}
+
+@keyframes cdlStatsFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   1. PAGE HEADER & BREADCRUMB
+   ========================================================================== */
+.cdl-stats-header-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 4px 2px;
+}
+
+.cdl-stats-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.cdl-stats-breadcrumb .bc-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.cdl-stats-breadcrumb .bc-link:hover {
+  color: #1d4ed8;
+}
+
+.cdl-stats-breadcrumb .bc-sep {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.cdl-stats-breadcrumb .bc-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.cdl-stats-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-stats-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.cdl-stats-subject-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.cdl-stats-scope-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdl-stats-scope-pill.roi {
+  background: rgba(139, 92, 246, 0.1);
+  color: #7c3aed;
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.cdl-stats-scope-pill.full {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.cdl-stats-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+}
+
+.cdl-stats-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin: 2px 0 0;
+  max-width: 840px;
+  line-height: 1.45;
+}
+
+/* Header Action Toolbar */
+.cdl-stats-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cdl-stats-switcher-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 4px 8px 4px 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.cdl-stats-switcher-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.cdl-stats-select {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  outline: none;
+  cursor: pointer;
+  padding: 4px;
+  max-width: 220px;
+}
+
+.cdl-stats-scope-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.cdl-stats-scope-btn {
+  border: none;
+  background: transparent;
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.cdl-stats-scope-btn.active {
+  background: #ffffff;
+  color: #2563eb;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.cdl-stats-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.cdl-stats-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-stats-btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cdl-stats-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.cdl-stats-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+/* Spinner */
+.cdl-stats-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: cdlStatsSpin 0.7s linear infinite;
+}
+
+@keyframes cdlStatsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+   2. NOTIFICATION / STATUS BANNERS & DISCLAIMER
+   ========================================================================== */
+.cdl-stats-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  line-height: 1.4;
+  animation: cdlStatsFadeIn 0.25s ease;
+}
+
+.cdl-stats-banner-success {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  color: #065f46;
+}
+
+.cdl-stats-banner-error {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  color: #991b1b;
+}
+
+.cdl-stats-banner-warning {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  color: #92400e;
+}
+
+.cdl-stats-banner-info {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: #1e40af;
+}
+
+.cdl-stats-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #059669;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.cdl-stats-download-link:hover {
+  background: #047857;
+}
+
+.cdl-stats-disclaimer-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+}
+
+.cdl-stats-disclaimer-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.cdl-stats-disclaimer-text {
+  font-size: 12.5px;
+  color: #475569;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   3. TOP SUMMARY METRIC CARDS
+   ========================================================================== */
+.cdl-stats-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.cdl-stats-kpi-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cdl-stats-kpi-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  opacity: 0.8;
+}
+
+.cdl-stats-kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+.cdl-stats-kpi-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cdl-stats-kpi-icon {
+  font-size: 16px;
+}
+
+.cdl-stats-kpi-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.cdl-stats-kpi-sub {
+  font-size: 11.5px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   4. INTERNAL SECTION TABS SYSTEM
+   ========================================================================== */
+.cdl-stats-nav-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 6px 8px;
+  overflow-x: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  scrollbar-width: thin;
+}
+
+.cdl-stats-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.cdl-stats-nav-btn:hover {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.cdl-stats-nav-btn.active {
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.cdl-stats-nav-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 6px;
+  border-radius: 9999px;
+  font-size: 10.5px;
+  font-weight: 800;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.cdl-stats-nav-btn.active .cdl-stats-nav-count {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   5. SCIENTIFIC SECTION CARD WRAPPER
+   ========================================================================== */
+.cdl-stats-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cdl-stats-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cdl-stats-section-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdl-stats-section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.cdl-stats-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdl-stats-badge-blue {
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+}
+
+.cdl-stats-badge-purple {
+  background: rgba(139, 92, 246, 0.1);
+  color: #7c3aed;
+}
+
+.cdl-stats-badge-emerald {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+}
+
+.cdl-stats-badge-amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #d97706;
+}
+
+.cdl-stats-badge-slate {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.cdl-stats-section-desc {
+  font-size: 13px;
+  color: #64748b;
+  margin: -10px 0 0;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   6. SCIENTIFIC TABLE DESIGN
+   ========================================================================== */
+.cdl-stats-table-box {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.cdl-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.cdl-stats-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.cdl-stats-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.cdl-stats-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cdl-stats-table tr:hover td {
+  background: #f8fafc;
+}
+
+.cdl-stats-cell-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-stats-cell-label {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-stats-cell-unit {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.cdl-stats-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12.5px;
+}
+
+.cdl-stats-cell-delta {
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #0f172a;
+}
+
+.cdl-stats-pct-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.cdl-stats-pct-tag.pos {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cdl-stats-pct-tag.neg {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.cdl-stats-pct-tag.zero {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* Category Filter Chips */
+.cdl-stats-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-bottom: 4px;
+}
+
+.cdl-stats-chips-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cdl-stats-chip {
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cdl-stats-chip:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.cdl-stats-chip.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+.cdl-stats-search-input {
+  padding: 5px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 12.5px;
+  color: #0f172a;
+  outline: none;
+  width: 180px;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-stats-search-input:focus {
+  border-color: #3b82f6;
+}
+
+/* ==========================================================================
+   7. METRIC DISTRIBUTION ANALYSIS (BOX PLOT / QUANTILE DISPLAY)
+   ========================================================================== */
+.cdl-stats-dist-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cdl-stats-dist-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cdl-stats-dist-select-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-stats-dist-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+  outline: none;
+}
+
+.cdl-stats-5num-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.cdl-stats-5num-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-stats-5num-item .item-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.cdl-stats-5num-item .item-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.cdl-stats-chart-canvas-box {
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  height: 240px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   8. CORRELATION ANALYSIS (HEATMAP & RANKINGS)
+   ========================================================================== */
+.cdl-stats-heatmap-box {
+  background: #090e1a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cdl-stats-heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 11px;
+  color: #94a3b8;
+  padding-bottom: 4px;
+}
+
+.cdl-stats-legend-grad {
+  width: 160px;
+  height: 10px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #a855f7 0%, rgba(148, 163, 184, 0.2) 50%, #0ea5e9 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cdl-stats-heatmap-scroll {
+  overflow-x: auto;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+}
+
+.cdl-stats-heatmap-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.cdl-stats-heatmap-corner {
+  background: #0f172a;
+  color: #64748b;
+  padding: 8px 10px;
+  font-size: 11px;
+  text-align: left;
+  border: 1px solid #1e293b;
+  white-space: nowrap;
+}
+
+.cdl-stats-heatmap-col-th {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 8px 6px;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #1e293b;
+  min-width: 65px;
+  white-space: nowrap;
+}
+
+.cdl-stats-heatmap-row-th {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  border: 1px solid #1e293b;
+  white-space: nowrap;
+}
+
+.cdl-stats-heatmap-cell {
+  text-align: center;
+  padding: 10px 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 700;
+  font-size: 11.5px;
+  color: #ffffff;
+  border: 1px solid #1e293b;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.cdl-stats-heatmap-cell:hover {
+  outline: 2px solid #38bdf8;
+  z-index: 2;
+  transform: scale(1.04);
+}
+
+.cdl-stats-heatmap-cell.self {
+  color: #64748b;
+  background: rgba(100, 116, 139, 0.12) !important;
+}
+
+.cdl-stats-heatmap-active-pill {
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #e2e8f0;
+}
+
+.cdl-stats-corr-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.cdl-stats-corr-pill.pos {
+  background: rgba(14, 165, 233, 0.15);
+  color: #0284c7;
+}
+
+.cdl-stats-corr-pill.neg {
+  background: rgba(168, 85, 247, 0.15);
+  color: #9333ea;
+}
+
+.cdl-stats-corr-pill.neutral {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* ==========================================================================
+   9. COMPUTATIONAL OUTLIER DETECTION
+   ========================================================================== */
+.cdl-stats-outlier-clean {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 10px;
+}
+
+.cdl-stats-outlier-val {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border-radius: 4px;
+  font-weight: 800;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* ==========================================================================
+   10. CONSISTENCY & CONTEXT GRID
+   ========================================================================== */
+.cdl-stats-context-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 16px;
+}
+
+.cdl-stats-context-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cdl-stats-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cdl-stats-card-top-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.cdl-stats-qc-metrics-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #f8fafc;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.cdl-stats-qc-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-stats-qc-stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.cdl-stats-qc-stat-num {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.cdl-stats-tier-chip {
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cdl-stats-tier-chip.high {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.cdl-stats-tier-chip.mod {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.cdl-stats-tier-chip.low {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cdl-stats-context-desc {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cdl-stats-context-sub {
+  font-size: 11.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Empty State */
+.cdl-stats-empty-card {
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.cdl-stats-empty-icon {
+  font-size: 42px;
+}
+
+.cdl-stats-empty-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.cdl-stats-empty-desc {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cdl-stats-empty-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   DARK THEME OVERRIDES ([data-theme="dark"])
+   ========================================================================== */
+[data-theme="dark"] .cdl-stats-page {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .cdl-stats-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-subtitle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-stats-breadcrumb .bc-current {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-stats-switcher-box {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-stats-select {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-scope-toggle {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-stats-scope-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-stats-scope-btn.active {
+  background: #0f172a;
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .cdl-stats-btn-secondary {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-stats-btn-secondary:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-stats-disclaimer-card {
+  background: #0f172a;
+  border-color: #1e293b;
+  border-left-color: #3b82f6;
+}
+
+[data-theme="dark"] .cdl-stats-disclaimer-text {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-stats-kpi-card,
+[data-theme="dark"] .cdl-stats-section,
+[data-theme="dark"] .cdl-stats-nav-strip,
+[data-theme="dark"] .cdl-stats-context-card {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .cdl-stats-section-title,
+[data-theme="dark"] .cdl-stats-kpi-val,
+[data-theme="dark"] .cdl-stats-card-top-title,
+[data-theme="dark"] .cdl-stats-empty-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-table-box {
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-stats-table th {
+  background: #1e293b;
+  color: #94a3b8;
+  border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .cdl-stats-table td {
+  border-bottom-color: #1e293b;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-stats-table tr:hover td {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .cdl-stats-cell-label,
+[data-theme="dark"] .cdl-stats-cell-delta {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-dist-card {
+  background: #131d31;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-stats-5num-item {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-stats-5num-item .item-val {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-dist-select {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-chip {
+  background: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-stats-chip:hover {
+  background: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-chip.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-stats-search-input {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-qc-metrics-row {
+  background: #131d31;
+}
+
+[data-theme="dark"] .cdl-stats-qc-stat-num {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-stats-context-desc {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-stats-empty-card {
+  background: #0f172a;
+  border-color: #334155;
+}
+

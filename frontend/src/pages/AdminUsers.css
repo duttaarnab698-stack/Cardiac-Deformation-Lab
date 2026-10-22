@@ -1,0 +1,1202 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — USER ADMINISTRATION WORKSPACE STYLESHEET
+   Unified Scientific Design: Dark Navy / Royal Blue / Electric Cyan / Emerald
+   Scoped with .cdl-adm- prefix
+   ========================================================================== */
+
+/* Page Container */
+.cdl-adm-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 4px 60px;
+  box-sizing: border-box;
+  animation: cdlAdmFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #1e293b;
+  position: relative;
+}
+
+@keyframes cdlAdmFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   1. PAGE HEADER & BREADCRUMBS
+   ========================================================================== */
+.cdl-adm-header-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 4px 2px;
+}
+
+.cdl-adm-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.cdl-adm-breadcrumb .bc-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.cdl-adm-breadcrumb .bc-link:hover {
+  color: #1d4ed8;
+}
+
+.cdl-adm-breadcrumb .bc-sep {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.cdl-adm-breadcrumb .bc-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.cdl-adm-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-adm-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.cdl-adm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdl-adm-badge-primary {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.cdl-adm-badge-cyan {
+  background: #ecfeff;
+  color: #0e7490;
+  border: 1px solid #a5f3fc;
+}
+
+.cdl-adm-badge-amber {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.cdl-adm-badge-purple {
+  background: #faf5ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+}
+
+.cdl-adm-badge-emerald {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.cdl-adm-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdl-adm-title .icon-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-adm-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  max-width: 780px;
+  line-height: 1.5;
+}
+
+/* Header Action Buttons */
+.cdl-adm-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cdl-adm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.cdl-adm-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-adm-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-adm-btn-secondary {
+  background: #ffffff;
+  color: #334155;
+  border-color: #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cdl-adm-btn-secondary:hover:not(:disabled) {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+.cdl-adm-btn-danger {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.cdl-adm-btn-danger:hover:not(:disabled) {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cdl-adm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Notification Banners */
+.cdl-adm-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.cdl-adm-alert.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 4px solid #ef4444;
+  color: #991b1b;
+}
+
+.cdl-adm-alert.success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-left: 4px solid #22c55e;
+  color: #166534;
+}
+
+.cdl-adm-alert.info {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid #3b82f6;
+  color: #1e40af;
+}
+
+/* ==========================================================================
+   2. TOP SUMMARY CARDS
+   ========================================================================== */
+.cdl-adm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 1200px) {
+  .cdl-adm-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cdl-adm-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cdl-adm-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cdl-adm-stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cdl-adm-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+.cdl-adm-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #2563eb;
+}
+
+.cdl-adm-stat-card.researchers::before {
+  background: #0ea5e9;
+}
+
+.cdl-adm-stat-card.reviewers::before {
+  background: #8b5cf6;
+}
+
+.cdl-adm-stat-card.admins::before {
+  background: #2563eb;
+}
+
+.cdl-adm-stat-card.active::before {
+  background: #10b981;
+}
+
+.cdl-adm-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cdl-adm-stat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.cdl-adm-stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.cdl-adm-stat-val {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.cdl-adm-stat-sub {
+  font-size: 11px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ==========================================================================
+   3. ROLE & PERMISSION VISUALIZATION CARD
+   ========================================================================== */
+.cdl-adm-rbac-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cdl-adm-rbac-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cdl-adm-rbac-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cdl-adm-rbac-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .cdl-adm-rbac-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cdl-adm-role-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-adm-role-box:hover {
+  border-color: #cbd5e1;
+}
+
+.cdl-adm-role-box.researcher {
+  border-left: 3px solid #0ea5e9;
+}
+
+.cdl-adm-role-box.reviewer {
+  border-left: 3px solid #8b5cf6;
+}
+
+.cdl-adm-role-box.admin {
+  border-left: 3px solid #2563eb;
+}
+
+.cdl-adm-role-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-adm-role-desc {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Security policy callout */
+.cdl-adm-security-notice {
+  font-size: 11px;
+  color: #64748b;
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 8px 12px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   4. USER MANAGEMENT TOOLBAR
+   ========================================================================== */
+.cdl-adm-toolbar {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.03);
+}
+
+.cdl-adm-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 280px;
+  flex-wrap: wrap;
+}
+
+.cdl-adm-search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 6px 12px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 380px;
+  transition: all 0.15s ease;
+}
+
+.cdl-adm-search-input-wrap:focus-within {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.cdl-adm-search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: #0f172a;
+  outline: none;
+}
+
+.cdl-adm-filter-select {
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 13px;
+  color: #334155;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-adm-filter-select:focus {
+  border-color: #2563eb;
+}
+
+.cdl-adm-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdl-adm-user-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+/* ==========================================================================
+   5. USER TABLE & SCIENTIFIC LIST
+   ========================================================================== */
+.cdl-adm-table-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.cdl-adm-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cdl-adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.cdl-adm-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.cdl-adm-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.cdl-adm-table tbody tr {
+  transition: background-color 0.12s ease;
+}
+
+.cdl-adm-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.cdl-adm-table tbody tr.is-selected {
+  background-color: #f0f7ff;
+}
+
+/* User Profile Column */
+.cdl-adm-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdl-adm-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cdl-adm-avatar.researcher {
+  background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%);
+}
+
+.cdl-adm-avatar.reviewer {
+  background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+}
+
+.cdl-adm-avatar.admin {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+}
+
+.cdl-adm-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-adm-user-name {
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-adm-self-tag {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  border: 1px solid #bfdbfe;
+}
+
+.cdl-adm-user-id {
+  font-size: 10px;
+  color: #94a3b8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.cdl-adm-email-cell {
+  color: #475569;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+
+/* Role Dropdown / Pill */
+.cdl-adm-role-select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cdl-adm-role-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.cdl-adm-role-select.role-researcher {
+  border-left: 3px solid #0ea5e9;
+}
+
+.cdl-adm-role-select.role-reviewer {
+  border-left: 3px solid #8b5cf6;
+}
+
+.cdl-adm-role-select.role-admin {
+  border-left: 3px solid #2563eb;
+}
+
+/* Status Badges */
+.cdl-adm-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.cdl-adm-status-badge.active {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.cdl-adm-status-badge.deactivated {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.cdl-adm-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.cdl-adm-date-cell {
+  font-size: 12px;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* Action Buttons in Row */
+.cdl-adm-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cdl-adm-table-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.2;
+}
+
+.cdl-adm-table-btn.inspect {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+}
+
+.cdl-adm-table-btn.inspect:hover {
+  background: #dbeafe;
+}
+
+.cdl-adm-table-btn.deactivate {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.cdl-adm-table-btn.deactivate:hover:not(:disabled) {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cdl-adm-table-btn.activate {
+  background: #f0fdf4;
+  color: #16a34a;
+  border-color: #bbf7d0;
+}
+
+.cdl-adm-table-btn.activate:hover:not(:disabled) {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.cdl-adm-table-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   6. USER DETAILS / INSPECTOR DRAWER
+   ========================================================================== */
+.cdl-adm-drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  animation: cdlAdmFadeIn 0.2s ease;
+}
+
+.cdl-adm-drawer {
+  width: 440px;
+  max-width: 90vw;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -4px 0 24px rgba(15, 23, 42, 0.15);
+  display: flex;
+  flex-direction: column;
+  animation: cdlAdmSlideLeft 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cdlAdmSlideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cdl-adm-drawer-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cdl-adm-drawer-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-adm-drawer-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.cdl-adm-drawer-close:hover {
+  color: #0f172a;
+}
+
+.cdl-adm-drawer-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.cdl-adm-drawer-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.cdl-adm-drawer-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.cdl-adm-drawer-meta-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cdl-adm-drawer-meta-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.cdl-adm-drawer-meta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.cdl-adm-drawer-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.cdl-adm-drawer-meta-row span.label {
+  color: #64748b;
+}
+
+.cdl-adm-drawer-meta-row span.value {
+  color: #0f172a;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+.cdl-adm-drawer-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   7. DESTRUCTIVE ACTION CONFIRMATION MODAL
+   ========================================================================== */
+.cdl-adm-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: cdlAdmFadeIn 0.15s ease;
+}
+
+.cdl-adm-modal {
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.2);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.cdl-adm-modal-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdl-adm-modal-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.cdl-adm-modal-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.cdl-adm-modal-p {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cdl-adm-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   8. SKELETON LOADERS & EMPTY STATES
+   ========================================================================== */
+.cdl-adm-skeleton {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: cdlAdmShimmer 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes cdlAdmShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.cdl-adm-empty {
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #64748b;
+}
+
+.cdl-adm-empty-icon {
+  font-size: 36px;
+}
+
+/* ==========================================================================
+   9. DARK THEME OVERRIDES
+   ========================================================================== */
+[data-theme="dark"] .cdl-adm-page {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-adm-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-adm-subtitle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-adm-breadcrumb .bc-current {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-adm-btn-secondary {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-adm-btn-secondary:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-adm-stat-card,
+[data-theme="dark"] .cdl-adm-rbac-card,
+[data-theme="dark"] .cdl-adm-toolbar,
+[data-theme="dark"] .cdl-adm-table-card,
+[data-theme="dark"] .cdl-adm-drawer,
+[data-theme="dark"] .cdl-adm-modal {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-adm-stat-val,
+[data-theme="dark"] .cdl-adm-rbac-title,
+[data-theme="dark"] .cdl-adm-user-name,
+[data-theme="dark"] .cdl-adm-drawer-title,
+[data-theme="dark"] .cdl-adm-modal-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-adm-stat-icon {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-adm-role-box,
+[data-theme="dark"] .cdl-adm-security-notice,
+[data-theme="dark"] .cdl-adm-search-input-wrap,
+[data-theme="dark"] .cdl-adm-drawer-profile-card,
+[data-theme="dark"] .cdl-adm-drawer-meta-grid {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-adm-role-name {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-adm-role-desc {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-adm-search-input {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-adm-filter-select,
+[data-theme="dark"] .cdl-adm-role-select {
+  background: #0b1120;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-adm-user-count {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-adm-table th {
+  background: #131d33;
+  color: #94a3b8;
+  border-bottom-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-adm-table td {
+  border-bottom-color: #1e293b;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-adm-table tbody tr:hover {
+  background-color: #172554;
+}
+
+[data-theme="dark"] .cdl-adm-table tbody tr.is-selected {
+  background-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-adm-email-cell {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-adm-table-btn.inspect {
+  background: #1e293b;
+  color: #60a5fa;
+  border-color: #3b82f6;
+}
+
+[data-theme="dark"] .cdl-adm-drawer-header,
+[data-theme="dark"] .cdl-adm-drawer-footer {
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-adm-drawer-meta-row span.value {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-adm-skeleton {
+  background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+  background-size: 200% 100%;
+}
+

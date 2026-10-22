@@ -1,0 +1,46 @@
+{
+  "dataset_id": "94481cea-87e9-4d7e-8452-c7566eb03c7d",
+  "created_at": "2026-10-16T07:09:32.581287+00:00",
+  "is_synthetic": true,
+  "synthetic_label": "Synthetic / Phantom Data \u2014 Mathematical Benchmark",
+  "config": {
+    "width": 256,
+    "height": 256,
+    "center_x": 128.0,
+    "center_y": 128.0,
+    "inner_radius": 40.0,
+    "outer_radius": 70.0,
+    "deformation_mode": "radial_expansion",
+    "deformation_strength": 0.04,
+    "noise_level": 0.0,
+    "blur_sigma": 0.0,
+    "frame_count": 4
+  },
+  "frame_count": 4,
+  "dimensions": {
+    "width": 256,
+    "height": 256
+  },
+  "ground_truth_summary": {
+    "mean_displacement": 3.9178481101989746,
+    "max_displacement": 7.2407732009887695,
+    "myo_mean_displacement": 2.252599000930786,
+    "mean_principal_strain_1": 0.03999999910593033,
+    "mean_principal_strain_2": 0.03999999910593033,
+    "mean_radial_deformation": 0.03999999538064003,
+    "mean_circumferential_deformation": 0.03999999538064003
+  },
+  "disclaimer": "Synthetic data generated for computational benchmark purposes with exact mathematical ground truth. Does not represent patient data and does not establish clinical validity.",
+  "frame_filenames": [
+    "frame_000.png",
+    "frame_001.png",
+    "frame_002.png",
+    "frame_003.png"
+  ],
+  "frame_urls": [
+    "/synthetic-data/dataset_94481cea-87e9-4d7e-8452-c7566eb03c7d/frame_000.png",
+    "/synthetic-data/dataset_94481cea-87e9-4d7e-8452-c7566eb03c7d/frame_001.png",
+    "/synthetic-data/dataset_94481cea-87e9-4d7e-8452-c7566eb03c7d/frame_002.png",
+    "/synthetic-data/dataset_94481cea-87e9-4d7e-8452-c7566eb03c7d/frame_003.png"
+  ]
+}

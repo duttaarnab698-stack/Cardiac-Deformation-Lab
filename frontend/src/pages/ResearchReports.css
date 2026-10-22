@@ -1,0 +1,1220 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — RESEARCH REPORTS WORKSPACE STYLESHEET
+   Unified Scientific Design: Dark Navy / Royal Blue / Electric Cyan / Amber
+   Scoped with .cdl-rep- prefix
+   ========================================================================== */
+
+/* Page Container */
+.cdl-rep-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 4px 60px;
+  box-sizing: border-box;
+  animation: cdlRepFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #1e293b;
+  position: relative;
+}
+
+@keyframes cdlRepFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   1. PAGE HEADER & BREADCRUMBS
+   ========================================================================== */
+.cdl-rep-header-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 4px 2px;
+}
+
+.cdl-rep-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.cdl-rep-breadcrumb .bc-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.cdl-rep-breadcrumb .bc-link:hover {
+  color: #1d4ed8;
+}
+
+.cdl-rep-breadcrumb .bc-sep {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.cdl-rep-breadcrumb .bc-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.cdl-rep-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-rep-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.cdl-rep-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdl-rep-badge-primary {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.cdl-rep-badge-cyan {
+  background: #ecfeff;
+  color: #0e7490;
+  border: 1px solid #a5f3fc;
+}
+
+.cdl-rep-badge-amber {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.cdl-rep-badge-purple {
+  background: #faf5ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+}
+
+.cdl-rep-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdl-rep-title .icon-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-rep-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  max-width: 780px;
+  line-height: 1.5;
+}
+
+/* Header Action Buttons */
+.cdl-rep-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cdl-rep-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.cdl-rep-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-rep-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-rep-btn-secondary {
+  background: #ffffff;
+  color: #334155;
+  border-color: #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cdl-rep-btn-secondary:hover:not(:disabled) {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+.cdl-rep-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Notice Banner */
+.cdl-rep-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 18px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+  color: #92400e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cdl-rep-notice-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ==========================================================================
+   2. GENERATOR WORKFLOW CARD
+   ========================================================================== */
+.cdl-rep-generator-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.cdl-rep-generator-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #06b6d4, #8b5cf6);
+}
+
+.cdl-rep-generator-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cdl-rep-generator-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-rep-generator-title span.step-tag {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* 3-Step Workflow Grid */
+.cdl-rep-generator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 960px) {
+  .cdl-rep-generator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cdl-rep-step-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  transition: border-color 0.15s ease;
+}
+
+.cdl-rep-step-box:focus-within {
+  border-color: #93c5fd;
+  background: #fdfefe;
+}
+
+.cdl-rep-step-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.cdl-rep-step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: #2563eb;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.cdl-rep-select,
+.cdl-rep-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 13px;
+  color: #1e293b;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.cdl-rep-select:focus,
+.cdl-rep-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.cdl-rep-step-meta {
+  font-size: 11px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Generator Action Foot */
+.cdl-rep-generator-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.cdl-rep-gen-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.cdl-rep-gen-status.success {
+  color: #15803d;
+}
+
+.cdl-rep-gen-status.error {
+  color: #b91c1c;
+}
+
+/* ==========================================================================
+   3. WORKSPACE 3-ZONE LAYOUT
+   ========================================================================== */
+.cdl-rep-workspace {
+  display: grid;
+  grid-template-columns: 340px 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 1400px) {
+  .cdl-rep-workspace {
+    grid-template-columns: 310px 1fr 310px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cdl-rep-workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   4. ZONE 1: REPORT LIBRARY (LEFT)
+   ========================================================================== */
+.cdl-rep-library {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cdl-rep-pane-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cdl-rep-pane-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-rep-counter-pill {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cdl-rep-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.cdl-rep-search-bar input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 12px;
+  color: #1e293b;
+  outline: none;
+}
+
+.cdl-rep-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cdl-rep-filter-chip {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #64748b;
+  transition: all 0.15s ease;
+}
+
+.cdl-rep-filter-chip:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.cdl-rep-filter-chip.is-active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Report Cards Scroll Area */
+.cdl-rep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 750px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.cdl-rep-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cdl-rep-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.cdl-rep-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  border-left: 3px solid transparent;
+}
+
+.cdl-rep-card:hover {
+  border-color: #93c5fd;
+  background: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+.cdl-rep-card.is-active {
+  border-color: #2563eb;
+  border-left: 3px solid #2563eb;
+  background: #f0f7ff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.12);
+}
+
+.cdl-rep-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cdl-rep-card-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #dbeafe;
+}
+
+.cdl-rep-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cdl-rep-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #64748b;
+  gap: 8px;
+}
+
+.cdl-rep-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.cdl-rep-mini-btn {
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.12s ease;
+}
+
+.cdl-rep-mini-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* ==========================================================================
+   5. ZONE 2: PUBLICATION-STYLE DOCUMENT PREVIEW (CENTER)
+   ========================================================================== */
+.cdl-rep-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cdl-rep-doc-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #475569;
+}
+
+/* Academic Manuscript Paper Sheet */
+.cdl-rep-doc-sheet {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.05);
+  padding: 44px 48px;
+  color: #1e293b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  position: relative;
+  min-height: 800px;
+}
+
+@media (max-width: 768px) {
+  .cdl-rep-doc-sheet {
+    padding: 24px 20px;
+  }
+}
+
+/* Manuscript Header */
+.cdl-rep-doc-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #0f172a;
+  margin-bottom: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.cdl-rep-doc-meta-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  color: #64748b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Paper Title Block */
+.cdl-rep-doc-title-block {
+  text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cdl-rep-doc-category {
+  font-size: 11px;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.cdl-rep-doc-main-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.cdl-rep-doc-study-ref {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+  margin: 0 0 12px 0;
+}
+
+.cdl-rep-doc-authors {
+  font-size: 12px;
+  color: #64748b;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Scientific Sections */
+.cdl-rep-doc-section {
+  margin-bottom: 26px;
+}
+
+.cdl-rep-doc-h2 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-rep-doc-h2 .sec-num {
+  color: #2563eb;
+}
+
+.cdl-rep-doc-p {
+  font-size: 13px;
+  color: #334155;
+  margin: 0 0 10px 0;
+  text-align: justify;
+}
+
+/* Document Callout Box */
+.cdl-rep-doc-callout {
+  background: #f8fafc;
+  border-left: 3px solid #2563eb;
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: #334155;
+  margin: 12px 0;
+}
+
+.cdl-rep-doc-callout.warning {
+  background: #fffbeb;
+  border-left-color: #f59e0b;
+  color: #92400e;
+}
+
+/* Equations Block */
+.cdl-rep-math-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 14px 0;
+  font-family: "Cambria Math", "Latin Modern Math", KaTeX_Main, Georgia, serif;
+}
+
+.cdl-rep-math-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.cdl-rep-math-row:last-child {
+  border-bottom: none;
+}
+
+.cdl-rep-equation {
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.cdl-rep-eq-num {
+  font-size: 11px;
+  color: #94a3b8;
+  font-style: italic;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Scientific Tables */
+.cdl-rep-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 14px 0;
+}
+
+.cdl-rep-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.cdl-rep-table th {
+  background: #f1f5f9;
+  color: #1e293b;
+  text-align: left;
+  padding: 8px 12px;
+  font-weight: 700;
+  border-top: 1.5px solid #0f172a;
+  border-bottom: 1.5px solid #0f172a;
+  letter-spacing: 0.3px;
+}
+
+.cdl-rep-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.cdl-rep-table tr:last-child td {
+  border-bottom: 1.5px solid #0f172a;
+}
+
+.cdl-rep-table td.num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-align: right;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cdl-rep-table th.num {
+  text-align: right;
+}
+
+/* Manuscript Footer */
+.cdl-rep-doc-footer {
+  margin-top: 36px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #94a3b8;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   6. ZONE 3: REPORT INSPECTOR & EXPORT ACTIONS (RIGHT)
+   ========================================================================== */
+.cdl-rep-inspector {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cdl-rep-spec-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cdl-rep-spec-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cdl-rep-spec-row strong {
+  color: #0f172a;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Primary Export Action Stack */
+.cdl-rep-action-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cdl-rep-export-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.cdl-rep-export-btn.pdf {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-rep-export-btn.pdf:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-rep-export-btn.zip {
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(14, 116, 144, 0.25);
+}
+
+.cdl-rep-export-btn.zip:hover {
+  background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+  box-shadow: 0 4px 12px rgba(14, 116, 144, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-rep-export-btn.json {
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.cdl-rep-export-btn.json:hover {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+/* Package Checklist */
+.cdl-rep-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #475569;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.cdl-rep-check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-rep-check-icon {
+  color: #16a34a;
+  font-weight: 800;
+}
+
+/* Quick Navigation Links */
+.cdl-rep-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdl-rep-link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.12s ease;
+}
+
+.cdl-rep-link-item:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+/* ==========================================================================
+   7. DARK MODE THEME OVERRIDES
+   ========================================================================== */
+[data-theme="dark"] .cdl-rep-page {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-rep-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-rep-subtitle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-rep-breadcrumb .bc-current {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-rep-btn-secondary {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-rep-btn-secondary:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-rep-notice {
+  background: #2a1f0a;
+  border-color: #78350f;
+  border-left-color: #d97706;
+  color: #fde68a;
+}
+
+[data-theme="dark"] .cdl-rep-generator-card,
+[data-theme="dark"] .cdl-rep-library,
+[data-theme="dark"] .cdl-rep-inspector,
+[data-theme="dark"] .cdl-rep-doc-toolbar {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .cdl-rep-pane-title,
+[data-theme="dark"] .cdl-rep-generator-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-rep-step-box {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-rep-select,
+[data-theme="dark"] .cdl-rep-input {
+  background: #0b1120;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-rep-search-bar {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-rep-search-bar input {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-rep-filter-chip {
+  background: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-rep-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-rep-card:hover {
+  background: #24324d;
+  border-color: #3b82f6;
+}
+
+[data-theme="dark"] .cdl-rep-card.is-active {
+  background: #172554;
+  border-color: #3b82f6;
+  border-left-color: #60a5fa;
+}
+
+[data-theme="dark"] .cdl-rep-card-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-rep-mini-btn {
+  background: #0f172a;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+/* Paper Sheet in Dark Mode: Scientific Dark Docket View */
+[data-theme="dark"] .cdl-rep-doc-sheet {
+  background: #0b1329;
+  border-color: #1e2d4d;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .cdl-rep-doc-topbar {
+  border-bottom-color: #38bdf8;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-rep-doc-main-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-rep-doc-study-ref {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-rep-doc-h2 {
+  color: #f8fafc;
+  border-bottom-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-rep-doc-p {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-rep-doc-callout {
+  background: #131d33;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-rep-doc-callout.warning {
+  background: #2a1f0a;
+  color: #fde68a;
+}
+
+[data-theme="dark"] .cdl-rep-math-box {
+  background: #131d33;
+  border-color: #1e2d4d;
+}
+
+[data-theme="dark"] .cdl-rep-equation {
+  color: #67e8f9;
+}
+
+[data-theme="dark"] .cdl-rep-table th {
+  background: #131d33;
+  color: #f8fafc;
+  border-top-color: #38bdf8;
+  border-bottom-color: #38bdf8;
+}
+
+[data-theme="dark"] .cdl-rep-table td {
+  border-bottom-color: #1e293b;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-rep-table tr:last-child td {
+  border-bottom-color: #38bdf8;
+}
+
+[data-theme="dark"] .cdl-rep-table td.num {
+  color: #67e8f9;
+}
+
+[data-theme="dark"] .cdl-rep-spec-card,
+[data-theme="dark"] .cdl-rep-checklist {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-rep-spec-row strong {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-rep-export-btn.json {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-rep-link-item {
+  background: #1e293b;
+  border-color: #334155;
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .cdl-rep-link-item:hover {
+  background: #172554;
+  border-color: #3b82f6;
+}
+

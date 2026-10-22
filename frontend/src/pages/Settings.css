@@ -1,0 +1,690 @@
+/* ==========================================================================
+   CARDIAC DEFORMATION LAB — WORKSPACE SETTINGS STYLESHEET
+   Unified Scientific Design: Dark Navy / Royal Blue / Electric Cyan / Amber
+   Scoped with .cdl-set- prefix
+   ========================================================================== */
+
+/* Page Container */
+.cdl-set-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 4px 60px;
+  box-sizing: border-box;
+  animation: cdlSetFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #1e293b;
+  position: relative;
+}
+
+@keyframes cdlSetFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   1. PAGE HEADER & BREADCRUMBS
+   ========================================================================== */
+.cdl-set-header-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 4px 2px;
+}
+
+.cdl-set-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.cdl-set-breadcrumb .bc-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.cdl-set-breadcrumb .bc-link:hover {
+  color: #1d4ed8;
+}
+
+.cdl-set-breadcrumb .bc-sep {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.cdl-set-breadcrumb .bc-current {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.cdl-set-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cdl-set-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.cdl-set-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdl-set-badge-primary {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.cdl-set-badge-cyan {
+  background: #ecfeff;
+  color: #0e7490;
+  border: 1px solid #a5f3fc;
+}
+
+.cdl-set-badge-purple {
+  background: #faf5ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+}
+
+.cdl-set-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cdl-set-title .icon-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-set-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  max-width: 780px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   2. TWO-COLUMN WORKSPACE LAYOUT
+   ========================================================================== */
+.cdl-set-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .cdl-set-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   3. LEFT NAVIGATION PANEL
+   ========================================================================== */
+.cdl-set-nav {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: sticky;
+  top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .cdl-set-nav {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 8px;
+  }
+}
+
+.cdl-set-nav-header {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.6px;
+  padding: 6px 10px 8px;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1024px) {
+  .cdl-set-nav-header {
+    display: none;
+  }
+}
+
+.cdl-set-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.cdl-set-nav-btn:hover {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.cdl-set-nav-btn.is-active {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.12);
+}
+
+.cdl-set-nav-icon {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   4. RIGHT CONTENT AREA & CARDS
+   ========================================================================== */
+.cdl-set-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cdl-set-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  overflow: hidden;
+  position: relative;
+}
+
+.cdl-set-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9);
+}
+
+.cdl-set-card.theme-card::before {
+  background: linear-gradient(90deg, #8b5cf6, #2563eb);
+}
+
+.cdl-set-card.api-card::before {
+  background: linear-gradient(90deg, #0ea5e9, #10b981);
+}
+
+.cdl-set-card.cache-card::before {
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+}
+
+.cdl-set-card.about-card::before {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+}
+
+.cdl-set-card-header {
+  padding: 18px 24px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cdl-set-card-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdl-set-card-body {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Settings Row */
+.cdl-set-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+}
+
+.cdl-set-row:last-child {
+  border-bottom: none;
+  padding-bottom: 4px;
+}
+
+.cdl-set-row:first-child {
+  padding-top: 4px;
+}
+
+.cdl-set-row-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.cdl-set-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-set-desc {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Value Badges & Actions */
+.cdl-set-badge-val {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.cdl-set-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.cdl-set-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.25);
+}
+
+.cdl-set-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.cdl-set-btn-secondary {
+  background: #ffffff;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.cdl-set-btn-secondary:hover:not(:disabled) {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+.cdl-set-btn-danger {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.cdl-set-btn-danger:hover:not(:disabled) {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cdl-set-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Endpoint Code Blocks */
+.cdl-set-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 5px 10px;
+  border-radius: 6px;
+  max-width: 100%;
+  word-break: break-all;
+}
+
+/* Role Badges */
+.cdl-set-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.cdl-set-role-badge.researcher {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.cdl-set-role-badge.reviewer {
+  background: #ede9fe;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+}
+
+.cdl-set-role-badge.admin {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+/* Theme Switcher Widget */
+.cdl-set-theme-picker {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+  .cdl-set-theme-picker {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cdl-set-theme-option {
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  background: #ffffff;
+}
+
+.cdl-set-theme-option:hover {
+  border-color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+.cdl-set-theme-option.is-active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+.cdl-set-theme-preview {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cdl-set-theme-preview.light {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #d97706;
+}
+
+.cdl-set-theme-preview.dark {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #38bdf8;
+}
+
+.cdl-set-theme-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cdl-set-theme-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cdl-set-theme-sub {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* Seed Box Callout */
+.cdl-set-seed-box {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* About / Prototype Warning Box */
+.cdl-set-warning-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: #92400e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cdl-set-arch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.cdl-set-arch-tag {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+   5. DARK THEME OVERRIDES
+   ========================================================================== */
+[data-theme="dark"] .cdl-set-page {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .cdl-set-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-set-subtitle {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-set-breadcrumb .bc-current {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-set-nav,
+[data-theme="dark"] .cdl-set-card {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-set-card-title,
+[data-theme="dark"] .cdl-set-name,
+[data-theme="dark"] .cdl-set-theme-name {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .cdl-set-nav-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .cdl-set-nav-btn:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .cdl-set-nav-btn.is-active {
+  background: #172554;
+  color: #60a5fa;
+  border-color: #3b82f6;
+}
+
+[data-theme="dark"] .cdl-set-row {
+  border-bottom-color: #1e293b;
+}
+
+[data-theme="dark"] .cdl-set-btn-secondary {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-set-btn-secondary:hover:not(:disabled) {
+  background: #334155;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cdl-set-code {
+  background: #1e293b;
+  border-color: #334155;
+  color: #67e8f9;
+}
+
+[data-theme="dark"] .cdl-set-theme-option {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-set-theme-option.is-active {
+  background: #172554;
+  border-color: #3b82f6;
+}
+
+[data-theme="dark"] .cdl-set-seed-box {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cdl-set-warning-box {
+  background: #2a1f0a;
+  border-color: #78350f;
+  border-left-color: #d97706;
+  color: #fde68a;
+}
+
+[data-theme="dark"] .cdl-set-arch-tag {
+  background: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
